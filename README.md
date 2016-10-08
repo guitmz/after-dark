@@ -31,7 +31,7 @@ A retro dark theme for [Hugo](https://gohugo.io/).
 From your Hugo site directory, run:
 
 ```shell
-(cd themes; git clone git@github.com:comfusion/after-dark.git)
+(cd themes; git clone https://github.com/comfusion/after-dark)
 hugo serve --theme=after-dark
 ```
 
