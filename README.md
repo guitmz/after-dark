@@ -1,4 +1,4 @@
-<h1 align="center">After Dark</h1>
+<h1 align="center">After Dark Green</h1>
 
 <p align="center">
   <strong>A robust, elegant dark theme for <a target="intro" href="https://gohugo.io/">Hugo</a>.</strong>
