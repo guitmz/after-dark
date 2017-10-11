@@ -2,6 +2,66 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="3.2.0"></a>
+# [3.2.0](https://github.com/comfusion/after-dark/compare/v3.1.1...v3.2.0) (2017-10-06)
+
+
+### Bug Fixes
+
+* **$shortcodes:** fix issue with external link appearance ([afcc8e6](https://github.com/comfusion/after-dark/commit/afcc8e6))
+
+
+### Features
+
+* **$layout:** add base element to base layout ([bf25c67](https://github.com/comfusion/after-dark/commit/bf25c67)), closes [#60](https://github.com/comfusion/after-dark/issues/60)
+* **$shortcode:** style cite element inside block quotation ([65a4278](https://github.com/comfusion/after-dark/commit/65a4278))
+* **$shortcodes:** add frame targeting to custom figure shortcode ([a66b076](https://github.com/comfusion/after-dark/commit/a66b076))
+* **$shortcodes:** enable target and method control for button/buttongroup ([f705d19](https://github.com/comfusion/after-dark/commit/f705d19)), closes [#56](https://github.com/comfusion/after-dark/issues/56)
+* **$shortcodes:** make button shortcode clickable ([1bc643f](https://github.com/comfusion/after-dark/commit/1bc643f)), closes [#40](https://github.com/comfusion/after-dark/issues/40)
+
+
+### Reverts
+
+* **$layout:** add base element to base layout ([769e2d9](https://github.com/comfusion/after-dark/commit/769e2d9))
+
+
+
+<a name="3.1.1"></a>
+## [3.1.1](https://github.com/comfusion/after-dark/compare/v3.1.0...v3.1.1) (2017-09-13)
+
+
+### Bug Fixes
+
+* **$layouts:** fix error calling partial in related content ([8a6253d](https://github.com/comfusion/after-dark/commit/8a6253d)), closes [#55](https://github.com/comfusion/after-dark/issues/55)
+
+
+
+<a name="3.1.0"></a>
+# [3.1.0](https://github.com/comfusion/after-dark/compare/v3.0.0...v3.1.0) (2017-09-13)
+
+
+### Features
+
+* **$layouts:** use related content feature introduced in hugo@0.27 ([f0474f4](https://github.com/comfusion/after-dark/commit/f0474f4)), closes [#54](https://github.com/comfusion/after-dark/issues/54)
+
+
+
+<a name="3.0.0"></a>
+# [3.0.0](https://github.com/comfusion/after-dark/compare/v2.1.1...v3.0.0) (2017-09-13)
+
+
+### Features
+
+* **$archetypes:** turn archetypes into go templates ([5ed2d9f](https://github.com/comfusion/after-dark/commit/5ed2d9f))
+
+### BREAKING CHANGES
+
+* **$archetypes:** Minimum Hugo version set 0.24, 0.16 - 0.23 must modify archetypes
+
+to upgrade add `date` and `title` to custom archetypes. if using a version of hugo prior to 0.24 the custom templates should remove `title` and `date` and not use go templating logic in the archetype files
+
+
+
 <a name="2.1.1"></a>
 ## [2.1.1](https://github.com/comfusion/after-dark/compare/v2.1.0...v2.1.1) (2017-09-11)
 
@@ -35,9 +95,11 @@ All notable changes to this project will be documented in this file. See [standa
 
 * **$theme:** add support for bpg image format ([49204d0](https://github.com/comfusion/after-dark/commit/49204d0))
 
-### Other
+### BREAKING CHANGES
 
-* **$build:** BREAKING CHANGE: inline css using readFile template function ([3787d10](https://github.com/comfusion/after-dark/commit/3787d10))
+* **$build:** inline css using readFile template function ([3787d10](https://github.com/comfusion/after-dark/commit/3787d10))
+
+to upgrade skip this release and move directly to 2.1.1 or a later release
 
 <a name="1.8.4"></a>
 ## [1.8.4](https://github.com/comfusion/after-dark/compare/v1.8.3...v1.8.4) (2017-06-27)

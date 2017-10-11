@@ -1,4 +1,6 @@
 <!-- {{/*
+Available types: "default", "primary", "success", "info", "warning", "error"
+
 Basic usage:
 {{< hackcss-button text="Default" />}}
 {{< hackcss-button text="Info" type="info" />}}
@@ -15,10 +17,20 @@ With loading indicator:
   Please wait&hellip; {{< hackcss-throbber >}}
 {{< /hackcss-button >}}
 
-Available types: "default", "primary", "success", "info", "warning", "error"
+Inside a ButtonGroup:
+{{< hackcss-buttongroup action="/go/somewhere" >}}
+  {{< hackcss-button text="Default Action" isghost="true" />}}
+  {{< hackcss-button text="Custom Action" action="/go/elsewhere" />}}
+  {{< hackcss-button text="Custom Target" target="_blank" />}}
+  {{< hackcss-button text="Custom Method" method="get" />}}
+{{< /hackcss-buttongroup >}}
+
 */}} -->
-{{ $type := .Get "type" | default "default" }}
-{{ $body := .Get "text" | default .Inner }}
+{{ $type := .Get "type" }}
+{{ $body := .Get "body" | default .Inner }}
 {{ $isghost := .Get "isghost" }}
 {{ $isblock := .Get "isblock" }}
-<button class="btn btn-{{ $type }} {{ if eq $isghost "true" }}btn-ghost{{ end }} {{ if eq $isblock "true" }}btn-block{{ end }}">{{ $body }}</button>
+{{ $action := .Get "action" }}
+{{ $target := .Get "target" }}
+{{ $method := .Get "method" }}
+{{ partial "components/button" (dict "type" $type "body" $body "isghost" $isghost "isblock" $isblock "action" $action "target" $target "method" $method) }}
