@@ -4,7 +4,7 @@
 # The suspicious-looking install script for After Dark.
 # https://themes.gohugo.io/after-dark/
 #
-# Copyright (c) 2016-2017  Josh Habdas <josh@habd.as> (https://habd.as)
+# Copyright (c) 2016-2017  Josh Habdas <jhabas@pm.me> (https://habd.as)
 # Licensed under WTFPL. You just DO WHAT THE FUCK YOU WANT TO.
 #
 
