@@ -2,6 +2,92 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="3.8.2"></a>
+## [3.8.2](https://github.com/comfusion/after-dark/compare/v3.8.1...v3.8.2) (2018-04-16)
+
+
+### Bug Fixes
+
+* **$layouts:** disable ua input styling safari mobile ([f7c81f4](https://github.com/comfusion/after-dark/commit/f7c81f4))
+* **$layouts:** prevent auto-zoom on safari mobile ([81c3f39](https://github.com/comfusion/after-dark/commit/81c3f39))
+
+
+
+<a name="3.8.1"></a>
+## [3.8.1](https://github.com/comfusion/after-dark/compare/v3.8.0...v3.8.1) (2018-04-15)
+
+
+### Bug Fixes
+
+* **$layouts:** remove duplicate descriptor from post image srcset ([0295370](https://github.com/comfusion/after-dark/commit/0295370))
+
+
+
+<a name="3.8.0"></a>
+# [3.8.0](https://github.com/comfusion/after-dark/compare/v3.7.0...v3.8.0) (2018-04-15)
+
+
+### Features
+
+* **$layouts:** add fuzzy search ([93d2a29](https://github.com/comfusion/after-dark/commit/93d2a29)), closes [#83](https://github.com/comfusion/after-dark/issues/83)
+
+
+
+<a name="3.7.0"></a>
+# [3.7.0](https://github.com/comfusion/after-dark/compare/v3.6.0...v3.7.0) (2018-03-25)
+
+
+### Features
+
+* **$layouts:** add post images ([06457bc](https://github.com/comfusion/after-dark/commit/06457bc))
+
+
+
+<a name="3.6.0"></a>
+# [3.6.0](https://github.com/comfusion/after-dark/compare/v3.5.1...v3.6.0) (2018-03-22)
+
+
+### Bug Fixes
+
+* **$style:** add more whitespace on list pages and darken muted text ([646e98b](https://github.com/comfusion/after-dark/commit/646e98b))
+
+
+### Features
+
+* **$layouts:** add twitter cards ([6562e80](https://github.com/comfusion/after-dark/commit/6562e80)), closes [#76](https://github.com/comfusion/after-dark/issues/76)
+
+
+
+<a name="3.5.1"></a>
+## [3.5.1](https://github.com/comfusion/after-dark/compare/v3.5.0...v3.5.1) (2018-01-17)
+
+
+### Bug Fixes
+
+* **$style:** fix a whitespace issue near the readmore link ([dee3530](https://github.com/comfusion/after-dark/commit/dee3530)), closes [#70](https://github.com/comfusion/after-dark/issues/70)
+
+
+
+<a name="3.5.0"></a>
+# [3.5.0](https://github.com/comfusion/after-dark/compare/v3.4.0...v3.5.0) (2017-11-08)
+
+
+### Features
+
+* **$shortcodes:** add youtube without cookies ([613e545](https://github.com/comfusion/after-dark/commit/613e545)), closes [#62](https://github.com/comfusion/after-dark/issues/62)
+
+
+
+<a name="3.4.0"></a>
+# [3.4.0](https://github.com/comfusion/after-dark/compare/v3.3.0...v3.4.0) (2017-10-27)
+
+
+### Features
+
+* **$shortcode:** add coub shortcode for gifs with sound ([0267d5b](https://github.com/comfusion/after-dark/commit/0267d5b)), closes [#63](https://github.com/comfusion/after-dark/issues/63)
+
+
+
 <a name="3.3.0"></a>
 # [3.3.0](https://github.com/comfusion/after-dark/compare/v3.2.0...v3.3.0) (2017-10-13)
 

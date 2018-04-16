@@ -1,16 +1,12 @@
 name = "After Dark"
 license = "WTFPL"
 licenselink = "https://github.com/comfusion/after-dark/blob/master/COPYING"
-description = "A robust, elegant dark theme for Hugo."
+description = "A retro dark theme for Hugo."
 homepage = "https://comfusion.github.io/after-dark/"
 tags = [
-  "minimalist",
+  "minimal",
   "responsive",
-  "technical",
   "accessible",
-  "terminal",
-  "custom themes",
-  "simple",
   "dark"
 ]
 features = [
@@ -21,8 +17,11 @@ features = [
   "Google Analytics",
   "Disqus",
   "BPG Image Support",
-  "Lazyloading",
-  "OpenGraph",
+  "Fuzzy Search",
+  "Lazy Loading",
+  "Responsive Images",
+  "Low-Quality Image Placeholders",
+  "OpenGraph Data",
   "Schema Structured Data",
   "Pagination",
   "Reading time",

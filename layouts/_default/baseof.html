@@ -16,6 +16,7 @@
     {{ end }}
     {{ partial "meta/name-author.html" . }}
     {{ template "_internal/opengraph.html" . }}
+    {{ template "_internal/twitter_cards.html" . }}
     {{ partial "meta/ogimage-maybe.html" . }}
     {{ partial "meta/theme-color.html" . }}
     {{ if eq .Kind "home" }}
@@ -34,15 +35,7 @@
     {{ end }}
     {{ partial "head/favicon.html" . }}
     {{ partial "global-styles.html" . }}
-    {{ $lazylist := findRE "class=\".*?\\blazyload\\b.*?\"|class=lazyload\b" .Content }}<!-- http://regexr.com/3f9d1 -->
-    {{ if ge (len $lazylist) 1 }}
-      <script async src="/js/lazysizes.min.js"></script>
-    {{ end }}
-    {{ if ne .Site.Params.seo.disable_bpg true }}
-      <script async src="/js/bpgdec8a.js"></script>
-      <script async src="/js/bpgdec8.js"></script>
-      <script async src="/js/bpgdec.js"></script>
-    {{ end }}
+    {{ partial "async-scripts.html" . }}
   </head>
   {{ $theme_variant := .Site.Params.theme_variant | default "hack dark" }}
   <body class="{{ $theme_variant }} main container">

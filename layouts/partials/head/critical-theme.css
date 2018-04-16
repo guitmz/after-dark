@@ -9,8 +9,34 @@
     opacity: 1;
   }
 }
-.muted {
-  color: rgba(255, 255, 255, 0.5);
+.blur-up {
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+  transition: filter 400ms, -webkit-filter 400ms;
+}
+.blur-up.lazyloaded {
+  -webkit-filter: blur(0);
+  filter: blur(0);
+}
+.muted,
+.hack .help-block {
+  color: #e0e0e070;
+}
+.hack .readmore {
+  margin-bottom: 2.2em;
+}
+.responsive-iframe {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+.responsive-iframe iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 iframe {
   border: 0;
@@ -44,6 +70,16 @@ blockquote cite::before {
 .main {
   padding: 20px 10px;
 }
+input.form-control {
+  border-radius: 0;
+  background-color: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+}
+input.form-control {
+  font-size: initial;
+}
 nav a.active {
   background-color: #43a047;
   color: #fff;
@@ -68,9 +104,19 @@ html {
 .hack pre {
   font-size: 17px;
 }
+.hack .form input,
+.hack .form textarea,
+.hack .form button,
+.hack .form label {
+  font-size: 1rem;
+}
 article [itemprop="description"] {
   margin-bottom: 20px;
   margin-top: 20px;
+}
+article header img {
+  width: 100%;
+  border-radius: 3px;
 }
 @media screen and (min-width: 768px) {
   html {
