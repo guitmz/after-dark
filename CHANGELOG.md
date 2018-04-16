@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="3.8.3"></a>
+## [3.8.3](https://github.com/comfusion/after-dark/compare/v3.8.2...v3.8.3) (2018-04-16)
+
+
+### Bug Fixes
+
+* **$layouts:** improve search input focus and usability ([e94f6df](https://github.com/comfusion/after-dark/commit/e94f6df)), closes [#91](https://github.com/comfusion/after-dark/issues/91)
+
+
+
 <a name="3.8.2"></a>
 ## [3.8.2](https://github.com/comfusion/after-dark/compare/v3.8.1...v3.8.2) (2018-04-16)
 
