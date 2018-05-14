@@ -80,6 +80,9 @@ input.form-control {
 input.form-control {
   font-size: initial;
 }
+.hack .help-block {
+  font-size: 1rem;
+}
 nav a.active {
   background-color: #43a047;
   color: #fff;
@@ -125,4 +128,7 @@ article header img {
   .container {
     max-width: 50rem;
   }
+}
+[v-cloak] {
+  display: none;
 }

@@ -2,6 +2,46 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="3.9.1"></a>
+## [3.9.1](https://github.com/comfusion/after-dark/compare/v3.9.0...v3.9.1) (2018-05-13)
+
+
+### Bug Fixes
+
+* **$layouts:** hide search app when noscript ([c3bcff0](https://github.com/comfusion/after-dark/commit/c3bcff0))
+
+
+
+<a name="3.9.0"></a>
+# [3.9.0](https://github.com/comfusion/after-dark/compare/v3.8.4...v3.9.0) (2018-05-03)
+
+
+### Features
+
+* **$layouts:** allow customization of referrer policy and add privacy-focused default ([5759a30](https://github.com/comfusion/after-dark/commit/5759a30)), closes [#96](https://github.com/comfusion/after-dark/issues/96)
+
+
+
+<a name="3.8.4"></a>
+## [3.8.4](https://github.com/comfusion/after-dark/compare/v3.8.3...v3.8.4) (2018-05-01)
+
+
+### Bug Fixes
+
+* **$layouts:** prevent js error on search form submit ([0dce741](https://github.com/comfusion/after-dark/commit/0dce741)), closes [#94](https://github.com/comfusion/after-dark/issues/94)
+
+
+
+<a name="3.8.3"></a>
+## [3.8.3](https://github.com/comfusion/after-dark/compare/v3.8.2...v3.8.3) (2018-04-16)
+
+
+### Bug Fixes
+
+* **$layouts:** improve search input focus and usability ([e94f6df](https://github.com/comfusion/after-dark/commit/e94f6df)), closes [#91](https://github.com/comfusion/after-dark/issues/91)
+
+
+
 <a name="3.8.2"></a>
 ## [3.8.2](https://github.com/comfusion/after-dark/compare/v3.8.1...v3.8.2) (2018-04-16)
 

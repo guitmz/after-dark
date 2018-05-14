@@ -411,6 +411,27 @@ And, finally, if you're using Hugo `v0.18` or newer, you can also add an `_index
 
 To learn more about how crawlers use this feature read [block search indexing with meta tags](https://support.google.com/webmasters/answer/93710).
 
+#### Referrer Policy
+
+Resource requests such as images and scripts typically send an HTTP header containing the location where the request originated. Most of the time this is okay. But sometimes it's not. Sometimes the referrer header is used to censor information or even perform [spear phishing](https://en.wikipedia.org/wiki/Phishing#Spear_phishing) attacks. Perhaps more importantly, transmission of the referrer header can present a privacy concern when transmitted to external sites. But not in After Dark.
+
+After Dark leverages [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/) to increase security and privacy beyond browser defaults by preventing spec-compliant browsers from passing referrer data when making cross-origin requests.
+
+If you wish to relax the security policy for whatever reason you may do so by:
+
+- Setting the [`referrerpolicy`](https://w3c.github.io/webappsec-referrer-policy/#referrer-policy-delivery-referrer-attribute) by HTML attribute;
+- Override the policy using a [nested browsing context](https://w3c.github.io/webappsec-referrer-policy/#referrer-policy-delivery-nested); or,
+- Override the page-level default specified by After Dark.
+
+To override the page-level default of [`same-origin`](https://w3c.github.io/webappsec-referrer-policy/#referrer-policy-same-origin) add/adjust the following config when building your site:
+
+```
+[params.seo]
+  referrer = "same-origin"
+```
+
+For a list of possible values and their meanings please see W3C's [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/).
+
 #### Link Types
 
 For related content split across multiple pages in a sequence After Dark supports use of `prev` and `next` settings in your front matter. Use them to provide semantic relationships between pages in a segmented article or series or [LiveBlogPosting](https://schema.org/LiveBlogPosting).
@@ -490,7 +511,17 @@ noindex = true
 +++
 ```
 
-Then navigate to the `/search/` path on your site and let the fun begin.
+Then tell Hugo to output an `index.json` file along with your site when building by adding the following to the config:
+
+```
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  section = ["HTML", "RSS", "JSON"]
+```
+
+**Note:** If you don't see `index.json` in your `public` folder after building try running a `hugo --gc` to cajole the generator into creating the JSON file.
+
+After that navigate to the `/search/` path on your site and let the fun begin.
 
 **Tip:** Consider enabling the After Dark [section menu](#section-menu) to expose the search section to users.
 
@@ -632,7 +663,7 @@ After Dark ships with a lightweight SVG favicon embedded into every page. To cus
 
 ## License
 
-Copyright © 2016-2017 Josh Habdas <jhabas@pm.me> (https://habd.as)
+Copyright 2016-2018 Josh Habdas <jhabas@protonmail.com> (https://habd.as)
 <br>This work is free. You can redistribute it and/or modify it under the
 <br>terms of the Do What The Fuck You Want To Public License, Version 2,
 <br>as published by Sam Hocevar. See the COPYING file for more details.
