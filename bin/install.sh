@@ -4,8 +4,11 @@
 # The suspicious-looking install script for After Dark.
 # https://themes.gohugo.io/after-dark/
 #
-# Copyright (c) 2016-2017  Josh Habdas <jhabas@pm.me> (https://habd.as)
-# Licensed under WTFPL. You just DO WHAT THE FUCK YOU WANT TO.
+# Copyright 2016-2018, 13AMDq9isKtQTxMQG4w7Yo7cEhqKAqQ4Lz
+#
+# Permission to use, copy, modify, and/or distribute this software for any
+# purpose with or without fee is hereby granted, provided that the above
+# copyright notice and this permission notice appear in all copies.
 #
 
 # Exit early on failure
@@ -27,7 +30,7 @@ fi
 echo "Installing After Dark ..."
 
 # Clone repo
-(cd themes; git clone -q --depth 1 https://github.com/comfusion/after-dark || { echo "cloning failed :/"; exit 1; })
+(cd themes; git clone -q --depth 1 https://git.habd.as/comfusion/after-dark || { echo "cloning failed :/"; exit 1; })
 
 # Copy archetypes
 cp themes/after-dark/archetypes/* ./archetypes
