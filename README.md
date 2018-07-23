@@ -61,7 +61,8 @@ After Dark uses Hugo's [Theme Components](https://gohugo.io/themes/theme-compone
 
 Module Name | Description
 ------------|--------
-[Voyeur](https://git.habd.as/comfusion/voyeur) | Simple, trustworthy website analytics
+[Fractal Forest] | Better Portable Graphics
+[Voyeur] | Simple, trustworthy website analytics
 
 ### Section Menu
 
@@ -599,3 +600,5 @@ terms of the Do What The Fuck You Want To Public License, Version 2,
 as published by Sam Hocevar. See the COPYING file for more details.
 
 [lazysizes]: https://github.com/aFarkas/lazysizes
+[Fractal Forest]: https://git.habd.as/comfusion/fractal-forest
+[Voyeur]: https://git.habd.as/comfusion/voyeur
