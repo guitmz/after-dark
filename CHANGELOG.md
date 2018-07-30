@@ -2,13 +2,73 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="5.2.3"></a>
+## [5.2.3](https://git.habd.as/comfusion/after-dark/compare/v5.2.2...v5.2.3) (2018-07-29)
+
+
+
+<a name="5.2.2"></a>
+## [5.2.2](https://git.habd.as/comfusion/after-dark/compare/v5.2.1...v5.2.2) (2018-07-29)
+
+
+### Bug Fixes
+
+* **theme:** enable white theme variant ([3f8f000](https://git.habd.as/comfusion/after-dark/commits/3f8f000))
+
+
+
+<a name="5.2.1"></a>
+## [5.2.1](https://git.habd.as/comfusion/after-dark/compare/v5.2.0...v5.2.1) (2018-07-26)
+
+
+### Bug Fixes
+
+* **install:** remove git cruft & supply actual module name ([a0097a0](https://git.habd.as/comfusion/after-dark/commits/a0097a0))
+
+
+
+<a name="5.2.0"></a>
+# [5.2.0](https://git.habd.as/comfusion/after-dark/compare/v5.1.0...v5.2.0) (2018-07-26)
+
+
+### Features
+
+* **install:** streamline installation ([abf92fe](https://git.habd.as/comfusion/after-dark/commits/abf92fe)), closes [#2](https://git.habd.as/comfusion/after-dark/issues/2)
+
+
+
+<a name="5.1.0"></a>
+# [5.1.0](https://git.habd.as/comfusion/after-dark/compare/v5.0.0...v5.1.0) (2018-07-24)
+
+
+### Features
+
+* **modules:** add fractal forest module for bpg image format support ([8aa35b2](https://git.habd.as/comfusion/after-dark/commits/8aa35b2)), closes [#8](https://git.habd.as/comfusion/after-dark/issues/8)
+
+
+
+<a name="5.0.0"></a>
+# [5.0.0](https://git.habd.as/comfusion/after-dark/compare/v4.1.0...v5.0.0) (2018-07-21)
+
+
+### Features
+
+* **modules:** add analytics module ([9334f15](https://git.habd.as/comfusion/after-dark/commits/9334f15)), closes [#1](https://git.habd.as/comfusion/after-dark/issues/1)
+
+
+### BREAKING CHANGES
+
+* **modules:** google analytics no longer supported
+
+
+
 <a name="4.1.0"></a>
 # [4.1.0](https://git.habd.as/comfusion/after-dark/compare/v4.0.2...v4.1.0) (2018-07-19)
 
 
 ### Features
 
-* select theme variant directly from site config ([aa82f5d](https://git.habd.as/comfusion/after-dark/commits/aa82f5d)), closes [#6](https://git.habd.as/comfusion/after-dark/issues/6)
+* select theme variant directly from site config ([aa82f5d](https://git.habd.as/comfusion/after-dark/commit/aa82f5d)), closes [#6](https://git.habd.as/comfusion/after-dark/issues/6)
 
 
 ### BREAKING CHANGES
@@ -23,9 +83,9 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### Bug Fixes
 
-* **install:** update default open graph image ([aaaf64e](https://git.habd.as/comfusion/after-dark/commits/aaaf64e))
-* **layouts:** output urls relative to baseurl ([2d278dd](https://git.habd.as/comfusion/after-dark/commits/2d278dd)), closes [#4](https://git.habd.as/comfusion/after-dark/issues/4)
-* **layouts:** restore smooth scrolling to toc links ([89a9c8d](https://git.habd.as/comfusion/after-dark/commits/89a9c8d))
+* **install:** update default open graph image ([aaaf64e](https://git.habd.as/comfusion/after-dark/commit/aaaf64e))
+* **layouts:** output urls relative to baseurl ([2d278dd](https://git.habd.as/comfusion/after-dark/commit/2d278dd)), closes [#4](https://git.habd.as/comfusion/after-dark/issues/4)
+* **layouts:** restore smooth scrolling to toc links ([89a9c8d](https://git.habd.as/comfusion/after-dark/commit/89a9c8d))
 
 
 
