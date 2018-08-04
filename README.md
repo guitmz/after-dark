@@ -72,6 +72,7 @@ Module Name | Latest Version | Description
 ---|---|---
 [Fractal Forest] | [![Latest NPM version](https://img.shields.io/badge/dynamic/json.svg?url=https://git.habd.as/comfusion/fractal-forest/raw/branch/master/package.json&label=vers&query=$.version&colorB=000000&style=for-the-badge&longCache=true&maxAge=86400)](https://git.habd.as/comfusion/fractal-forest.git) | Better Portable Graphics
 [Voyeur] | [![Latest NPM version](https://img.shields.io/badge/dynamic/json.svg?url=https://git.habd.as/comfusion/voyeur/raw/branch/master/package.json&label=vers&query=$.version&colorB=000000&style=for-the-badge&longCache=true&maxAge=86400)](https://git.habd.as/comfusion/voyeur.git) | Simple, trustworthy website analytics
+[Hall of Mirrors] | [![Latest NPM version](https://img.shields.io/badge/dynamic/json.svg?url=https://git.habd.as/comfusion/hall-of-mirrors/raw/branch/master/package.json&label=vers&query=$.version&colorB=000000&style=for-the-badge&longCache=true&maxAge=86400)](https://git.habd.as/comfusion/hall-of-mirrors.git) | PhotoSwipe Image Gallery
 
 ### Section Menu
 
