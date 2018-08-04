@@ -612,3 +612,4 @@ as published by Sam Hocevar. See the COPYING file for more details.
 [elinks]: http://elinks.or.cz/
 [Fractal Forest]: https://git.habd.as/comfusion/fractal-forest
 [Voyeur]: https://git.habd.as/comfusion/voyeur
+[Hall of Mirrors]: https://git.habd.as/comfusion/hall-of-mirrors
