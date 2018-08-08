@@ -16,28 +16,26 @@ Visit [Hack Cabin](https://hackcabin.com) for a production example of which the 
 
 ## Features
 
-The following table summarizes key features which differentiate After Dark from other Hugo themes.
+The following table outlines key features which differentiate After Dark for other themes.
 
 Feature | Summary
 --------|--------
-[Quick Installer](#getting-started) | After Dark provides a cross-platform quick installer. One command is all you need to start creating a website.
+[Quick Installer](#getting-started) | After Dark provides a cross-platform quick installer. One command is all you need to start creating a website anywhere you can access a terminal.
 [Module System](#module-system) | Add additional functionality to your site using [Hugo Theme Components](https://gohugo.io/themes/theme-components/). After Dark includes a module system and a number of custom-built modules specifically designed to enhance your site.
 [Theme Variants](#theme-variants) | Choose from one of three dark color pallets and two different display modes. Toggle between them anytime directly from your site configuration.
-[Lazy Loading](#lazy-loading) | Decrease page load time and improve user experience on slower connections. After Dark includes [lazysizes](https://github.com/aFarkas/lazysizes), a zero-configuration JavaScript library, for frictionless lazy-loading of images, scripts, iFrames and more.
+[Lazy Loading](#lazy-loading) | Decrease page load time and improve user experience on slower connections. After Dark includes [lazysizes](https://github.com/aFarkas/lazysizes), a zero-configuration JavaScript library, for low-friction lazy-loading of images, scripts, iFrames and more.
 [Social Engagement](#social-engagement) | After Dark provides automatic and configurable [Open Graph](http://ogp.me/) support, Twitter Cards and Telegram Instant View template to make social shares pop like 37 pieces of flair.
 [Search Optimization](#search-optimization) | Using [Schema Structured Data](https://moz.com/learn/seo/schema-structured-data) and meta tags, After Dark gives crawlers rich data about the site structure and content. No configuration required.
 [Post Images](#post-images) | Increase visual appeal of posts. After Dark enables configuration-driven post images which are lazy-loaded, responsive and automatically cropped for a consistent look-and-feel across your site.
 [Fuzzy Search](#fuzzy-search) | After Dark ships with an in-browser search app built with [Vue](https://vuejs.org/), [Fuse](http://fusejs.io/) and [Mark](https://markjs.io). Use it to quickly find crawlable content anywhere your site.
 [Personalization](#personalization) | Tweak CSS using the purpose-built [customization file](#custom-styles). Swap in [your own favicon](#favicon). Leverage [block templates](https://gohugo.io/templates/blocks) to quickly extend new custom layouts. And use [hack.css](https://hackcss.egoist.moe/dark.html) flexbox grids and CSS components to add style your site.
-[Content Reuse](#content-reuse) | Sometimes plan markdown isn't enough to build engaging page content. For this reason After Dark provides a number of reusable code snippets and shortcodes for adding things blockquotes, figure elements, coubs, videos, <a target="feature" href="https://hackcss.egoist.moe/">hackcss components</a> and more to your pages and posts. Use them to create completely custom layouts or simply spice up an old page.
+[Snippets](#snippets) | After Dark provides a number of reusable code snippets for adding things like tweets, [coubs](https://coub.com), blockquotes, figures, [hackcss components](https://hackcss.egoist.moe/) and more. Use them to create completely custom layouts or simply spice up an existing document.
 [Related Content](#related-content) | Promote more of your content to your site visitors. By offering your readers more content that's relevant to them you can increase your site's page views, the time spent on your site and reader loyalty.
 [Table of Contents](#table-of-contents) | Help users locate and share information in long posts. By providing a Table of Contents, users will spend less time scrolling to locate information in larger documents and are more likely to deep link to specific information on a page.
 [Modification Dating](#modification-dating) | Surface recently updated content to users and crawlers, allowing them to understand when a post or page was was last modified. Recently updated posts will be flagged as modified and visually lifted upwards in chronological listings.
 [Syntax Highlighting](#syntax-highlighting) | Share code snippets with style. After Dark provides Atom One [Light](https://atom.io/themes/one-light-syntax) and [Dark](https://atom.io/themes/one-dark-syntax) syntax highlighting for 1337 code sharing.
 [Taxonomy Pages](https://gohugo.io/content-management/taxonomies) | Help users discover taxonomic content. After Dark automatically generates taxonomy and taxonomy terms pages and links to them in post bylines.
 [Error Page](https://hackcabin.com/post/after-dark-error-page-redesign/) | Decrease bounce rate when URL errors occur. After Dark provides an engaging 404 page with animated background.
-Pagination | Pagination can be hard. After Dark makes it easy with simple list pagination with page indicators.
-Reading Time | Set user expectations up-front. After Dark provides estimated reading time for each post near the top of the page. This feature is automatic and assumes a reading speed of 200-250 words per minute.
 Post Bylines | Rich post bylines include optional author name, word count, links to taxonomy pages and metadata for search engines.
 
 ## Getting Started
@@ -48,13 +46,21 @@ First [Install Hugo](https://gohugo.io/getting-started/installing) and, optional
 brew install hugo elinks
 ```
 
-Then run the cross-platform install script located in `bin/install`, or just paste this into a terminal and press <kbd>Enter</kbd>:
+Then run the quick install script located in `bin/install`, or just paste this into a terminal and press <kbd>Enter</kbd>:
 
 ```shell
-curl -s https://git.habd.as/comfusion/after-dark/raw/branch/master/bin/install | bash
+wget -qO - https://git.habd.as/comfusion/after-dark/raw/branch/master/bin/install | sh
 ```
 
-Installation should complete in a matter of seconds, [even on Android](https://git.habd.as/comfusion/after-dark/src/branch/master/images/docs/feat-quick-installer.mp4).
+Installation should complete in a matter of seconds. If you have `elinks` installed your site will open automatically for [terminal browsing](https://git.habd.as/comfusion/after-dark/src/branch/master/images/docs/feat-terminal-browsing-fs8.png).
+
+After installation use the [`hugo new`](https://gohugo.io/commands/hugo_new/) command to create content and [`hugo server`](https://gohugo.io/commands/hugo_server/) to see your content locally. To view your content online run the included preview script from your site directory:
+
+```sh
+cd flying-toasters && ./themes/after-dark/bin/preview
+```
+
+Preview starts a hugo server and connects to [Serveo](https://serveo.net) using an SSH tunnel to expose your local server to the internet. You must have an ssh server such as [dropbear](https://matt.ucc.asn.au/dropbear/dropbear.html) or similar installed for this to work.
 
 ## Customizing
 
@@ -62,16 +68,17 @@ Installation should complete in a matter of seconds, [even on Android](https://g
 
 After Dark uses Hugo [Theme Components](https://gohugo.io/themes/theme-components/) to provide optional add-on modules. Each module is packaged using NPM for convenience. A summary of available modules can be found in the following table. Got an idea for a new module? Drop into the [Telegram chatroom][1] and let it be known.
 
-Module Name | Latest Version | Description
----|---|---
-[Fractal Forest] | [![Latest NPM version](https://img.shields.io/badge/dynamic/json.svg?url=https://git.habd.as/comfusion/fractal-forest/raw/branch/master/package.json&label=vers&query=$.version&colorB=000000&style=for-the-badge&longCache=true&maxAge=86400)](https://git.habd.as/comfusion/fractal-forest.git) | Better Portable Graphics
-[Voyeur] | [![Latest NPM version](https://img.shields.io/badge/dynamic/json.svg?url=https://git.habd.as/comfusion/voyeur/raw/branch/master/package.json&label=vers&query=$.version&colorB=000000&style=for-the-badge&longCache=true&maxAge=86400)](https://git.habd.as/comfusion/voyeur.git) | Simple, trustworthy website analytics
+Module Name | Difficulty | Latest Version | Description
+---|---|---|---
+[Fractal Forest] | Easy | [![Latest NPM version](https://img.shields.io/badge/dynamic/json.svg?url=https://git.habd.as/comfusion/fractal-forest/raw/branch/master/package.json&label=vers&query=$.version&colorB=000000&style=for-the-badge&longCache=true&maxAge=86400)](https://git.habd.as/comfusion/fractal-forest.git) | Better Portable Graphics (Preinstalled)
+[Voyeur] | Medium | [![Latest NPM version](https://img.shields.io/badge/dynamic/json.svg?url=https://git.habd.as/comfusion/voyeur/raw/branch/master/package.json&label=vers&query=$.version&colorB=000000&style=for-the-badge&longCache=true&maxAge=86400)](https://git.habd.as/comfusion/voyeur.git) | Fathom Analytics
+[Hall of Mirrors] | Easy | [![Latest NPM version](https://img.shields.io/badge/dynamic/json.svg?url=https://git.habd.as/comfusion/hall-of-mirrors/raw/branch/master/package.json&label=vers&query=$.version&colorB=000000&style=for-the-badge&longCache=true&maxAge=86400)](https://git.habd.as/comfusion/hall-of-mirrors.git) | PhotoSwipe Image Gallery
 
 ### Section Menu
 
-After Dark uses Hugo's [Section Menu for Lazy Bloggers](https://gohugo.io/extras/menus/#section-menu-for-the-lazy-blogger) to produce global site navigation if enabled.
+After Dark uses Hugo's [Section Menu for Lazy Bloggers](https://gohugo.io/templates/menu-templates/#section-menu-for-lazy-bloggers) to produce global site navigation, if enabled.
 
-To customize the menu, update the settings in `config.toml` like:
+To customize the section menu add and adjust settings in `config.toml` like:
 
 ```toml
 [[menu.main]]
@@ -86,12 +93,21 @@ To customize the menu, update the settings in `config.toml` like:
   url = "/post/"
 ```
 
-Or update the menu using front matter from your pages:
+Alternatively, update the menu from your content front matter like:
 
 ```toml
 menu = "main"
 weight = 3
 ```
+
+Finally, the menu can be disabled from site config anytime:
+
+```toml
+[params]
+  show_menu = false
+```
+
+See Hugo's [Menu docs](https://gohugo.io/content-management/menus/) for more information.
 
 ### Lazy Loading
 
@@ -122,7 +138,7 @@ To activate lazy loading with [lazysizes], add `lazyload` to the `class` attribu
 </iframe>
 ```
 
-After Dark includes a _Shortcode_ taking advantage of this feature, enabling you to easily create [lazy-loaded `figure` elements](#content-reuse) within your markdown content.
+After Dark includes a _Shortcode_ taking advantage of this feature, enabling you to easily create [lazy-loaded `figure` elements](#snippets) within your markdown content.
 
 Additional information and examples, including how to set-up and use LQIP (Low-Quality Image Placeholders), are available on the [lazysizes] repository on GitHub.
 
@@ -189,7 +205,7 @@ images = [
 ]
 ```
 
-Or, if using [Page Bundle](https://gohugo.io/content-management/page-bundles/), specify the relative path to an image resource for the page:
+Or, if using [Page Bundles](https://gohugo.io/content-management/page-bundles/), specify the relative path to an image resource for the page:
 
 ```toml
 images = [
@@ -197,9 +213,9 @@ images = [
 ]
 ```
 
-See [Unsplash Source](https://source.unsplash.com/) for image configuration options.
+Images stored in bundles can be grouped together with content (i.e. `/post-title/images/*`) or kept together in a [headless bundle](https://gohugo.io/content-management/page-bundles/#headless-bundle) (e.g. `content/uploads`) and reused anywhere on your site.
 
-**Note:** While it would be possible, After Dark does not currently support relative links to images. If you would like to see this feature, please [open a new issue](https://git.habd.as/comfusion/after-dark/issues/new).
+See [Unsplash Source](https://source.unsplash.com/) for image configuration options for images sourced externally or copied from Unsplash.
 
 #### Twitter Cards
 
@@ -472,11 +488,11 @@ Overrides to theme markdown processing defaults are available from page front ma
 
 See the Hugo docs for additional [configuration options](http://gohugo.io/overview/configuration/#configure-blackfriday-rendering).
 
-### Content Reuse
+### Snippets
 
-Keep your content <abbr title="Don't Repeat Yourself">DRY</abbr> and improve thematic consistency across your site. After Dark provides a number [Shortcodes](https://gohugo.io/extras/shortcodes) and composable components to help you keep your content and layouts easy to maintain.
+Snippets are reusable bits of code you can sprinkle across your site to reduce repetition and improve consistency. After Dark provides a number of snippets in the form of [hackcss components](https://hackcss.egoist.moe/) and [Hugo Shortcodes](https://gohugo.io/extras/shortcodes) to help make your site easier to maintain.
 
-Take for example After Dark's `blockquote` shortcode:
+Take for example the After Dark `blockquote` shortcode:
 
 ```html
 <blockquote {{ with .Get "class" }}class="{{ . }}"{{ end }} {{ with .Get "citelink" }}cite="{{ . }}"{{ end }}>
@@ -489,7 +505,7 @@ Take for example After Dark's `blockquote` shortcode:
 </blockquote>
 ```
 
-Use it in your page or post markdown files like:
+Rather than repeating the HTML to create a blockquote in your content simply call the shortcode from your markdown files like so:
 
 ```html
 {{< blockquote cite="Bitly" citelink="https://bitly.is/2mkxskj" >}}
@@ -497,13 +513,7 @@ Use it in your page or post markdown files like:
 {{< /blockquote >}}
 ```
 
-Additional theme-provided shortcodes at your disposal:
-
-- `privacytube` – It's YouTube. But without cookies and UI cruft.
-- `coub` - GIFs with sound. Think of it like YouTube for video loops.
-- `figure` - Similar to the Hugo built-in, but with [Lazy Loading](#lazy-loading), an adjusted caption title and smaller caption text.
-
-Also included are a number of shortcodes for [hackcss components](https://hackcss.egoist.moe/). These shortcodes function across After Dark [theme variants](#theme-variants) and were created as partials, enabling reuse in both your content as well as your [personalized layouts](#personalization):
+Included are a number of shortcodes for hackcss components designed to work across all [theme variants](#theme-variants):
 
 - `hackcss-alert` - Provides themed alert boxes. See `hackcss-alert.html` for usage notes.
 - `hackcss-button` - Provides themed buttons. See `hackcss-button.html` for usage notes.
@@ -511,6 +521,14 @@ Also included are a number of shortcodes for [hackcss components](https://hackcs
 - `hackcss-card` - Provides themed card element. See `hackcss-card.html` for usage notes.
 - `hackcss-progress` - Provides themed progress meter. See `hackcss-progress.html` for usage notes.
 - `hackcss-throbber` - Provides themed loading indicator. See `hackcss-throbber.html` for usage notes.
+
+Because Hugo doesn't support the use of shortcodes outside of markdown files the After Dark hackcss components were created using partial _components_, enabling reuse in both your content as well as your [personalized layouts](#personalization).
+
+Additional theme-provided shortcodes at your disposal:
+
+- `privacytube` – It's YouTube. But without cookies and UI cruft.
+- `coub` - GIFs with sound. Think of it like YouTube for video loops.
+- `figure` - Similar to the Hugo built-in, but with [Lazy Loading](#lazy-loading), an adjusted caption title and smaller caption text.
 
 To create your own custom shortcodes add a `layouts/shortcodes` directory to your site, place your shortcodes within and start using them in your markdown content. To create or override provided components add a `layouts/partials/components` directory to your site and reference the theme-provided files as you hack away.
 
@@ -528,20 +546,22 @@ Reference Hugo's [Syntax Highlighting docs](https://gohugo.io/content-management
 
 ### Personalization
 
-After Dark uses [hack.css](https://hackcss.egoist.moe/dark.html) to automatically style your markup, giving you instant access to flexbox grids, light and dark theme variants, and other pre-built components. Use them while creating new [sections](#section-menu) leveraging [block templates](https://gohugo.io/templates/blocks). Additional personalization options listed below.
+After Dark uses [hack.css](https://hackcss.egoist.moe/dark.html) to automatically style your markup, giving you instant access to flexbox grids, several dark theme variants, and other pre-built components. Use them while creating new [sections](#section-menu) leveraging [block templates](https://gohugo.io/templates/blocks). Additional personalization options listed below.
 
 #### Theme Variants
 
-Choose between one of several theme variants. [`hack.css`](https://hackcss.egoist.moe/) provides two display modes and four different color palettes. Mix and match directly from your `config.toml`:
+Customize the look and feel of your site using theme variants. After Dark provides three dark color palettes and two display modes. Toggle between them anytime directly from your site configuration.
+
+The default theme variant uses the `dark` color palette with the `hack` display mode. To modify it add the following to your site configuration and choose one of the available options:
 
 ```toml
 [params.hackcss]
-  disabled = true # Disable hackcss for easier debugging
-  mode = "standard" # White background with high-contrast text
-  palette = "dark-grey" # Dark grey background
+  disabled = false # Optional, set true to disable hackcss styles
+  mode = "hack" # Optional, choose from 'hack' and 'standard'
+  palette = "dark" # Optional, choose from 'dark', 'dark-grey' and 'solarized-dark'
 ```
 
-Once updated adjust the 404 page, `theme-color.html` partial, and add any [Custom Styles](#custom-styles) you desire.
+Once updated review the included 404 page and `theme-color.html` partial and tweak your site using [Custom Styles](#custom-styles) and, if you desire even more control, [site-level overrides](https://gohugo.io/templates/lookup-order/).
 
 #### Custom Styles
 
@@ -550,15 +570,9 @@ Easily add and customize styles without modifying the theme simply by overriding
 1. Create a file named `custom.css` in your site's `assets/css` directory. If the directory does not exist yet, simply create it.
 2. Add your custom styles inside the file and rebuild your site.
 
-**Note:** After Dark ships with some example customizations. If you would like to keep these, copy the styles from the theme's version of `custom.css` into your site-level `custom.css` file after creating it.
-
-Example customizations:
+For example, to center figure elements, constrain the width and adjust their link styles add the following to your `custom.css`:
 
 ```css
-canvas {
-  margin: auto;
-  display: block;
-}
 figure {
   margin-left: auto;
   margin-right: auto;
@@ -574,6 +588,8 @@ figure a:hover {
   background-color: inherit !important;
 }
 ```
+
+**Note:** After Dark ships with some example customizations. If you would like to keep these, copy the styles from the theme's version of `custom.css` into your site-level `custom.css` file after creating it.
 
 Custom styles will be automatically be concatenated into a `style` element in the document `head` along with theme and vendor styles. See the [Asset Bundling](https://gohugo.io/hugo-pipes/bundling/) section of the [Hugo Pipes](https://gohugo.io/hugo-pipes/) documentation for a better understanding of how this works.
 
@@ -593,10 +609,8 @@ as published by Sam Hocevar. See the COPYING file for more details.
 
 [1]: https://t.me/joinchat/Iw_6FEhmKL9sPUAukX9jzg
 [lazysizes]: https://github.com/aFarkas/lazysizes
-<<<<<<< HEAD
-
-=======
 [elinks]: http://elinks.or.cz/
 [Fractal Forest]: https://git.habd.as/comfusion/fractal-forest
 [Voyeur]: https://git.habd.as/comfusion/voyeur
->>>>>>> upstream/master
+[Hall of Mirrors]: https://git.habd.as/comfusion/hall-of-mirrors
+

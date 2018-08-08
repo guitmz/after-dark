@@ -22,15 +22,13 @@ features = [
   "Post Images",
   "Fuzzy Search",
   "Personalization",
-  "Content Reuse",
+  "Snippets",
   "Related Content",
   "Table of Contents",
   "Modification Dating",
   "Syntax Highlighting",
   "Taxonomy Pages",
   "Error Page",
-  "Pagination",
-  "Reading Time",
   "Post Bylines"
 ]
 min_version = 0.44

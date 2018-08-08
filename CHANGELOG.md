@@ -2,10 +2,82 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="5.4.0"></a>
+# [5.4.0](https://git.habd.as/comfusion/after-dark/compare/v5.3.1...v5.4.0) (2018-08-04)
+
+
+### Features
+
+* **modules:** add hall of mirrors ([882c32d](https://git.habd.as/comfusion/after-dark/commits/882c32d)), closes [#24](https://git.habd.as/comfusion/after-dark/issues/24)
+
+
+
+<a name="5.3.1"></a>
+## [5.3.1](https://git.habd.as/comfusion/after-dark/compare/v5.3.0...v5.3.1) (2018-08-01)
+
+
+### Bug Fixes
+
+* **layouts:** show sarcastic message when no pages exist ([e5ce3b9](https://git.habd.as/comfusion/after-dark/commits/e5ce3b9))
+
+
+
+<a name="5.3.0"></a>
+# [5.3.0](https://git.habd.as/comfusion/after-dark/compare/v5.2.6...v5.3.0) (2018-08-01)
+
+
+### Bug Fixes
+
+* **install:** kill hugo server always ([abadfbf](https://git.habd.as/comfusion/after-dark/commits/abadfbf))
+* **install:** move kill command to eof ([a87a381](https://git.habd.as/comfusion/after-dark/commits/a87a381))
+
+
+### Features
+
+* **bin:** add script to preview site online over https ([51baf0c](https://git.habd.as/comfusion/after-dark/commits/51baf0c)), closes [#21](https://git.habd.as/comfusion/after-dark/issues/21)
+
+
+
+<a name="5.2.6"></a>
+## [5.2.6](https://git.habd.as/comfusion/after-dark/compare/v5.2.5...v5.2.6) (2018-07-31)
+
+
+### Bug Fixes
+
+* **install:** support both gnu and bsd grep ([35defb7](https://git.habd.as/comfusion/after-dark/commits/35defb7))
+
+
+
+<a name="5.2.5"></a>
+## [5.2.5](https://git.habd.as/comfusion/after-dark/compare/v5.2.3...v5.2.5) (2018-07-31)
+
+
+### Bug Fixes
+
+* **install:** install packages from npm ([65c4e99](https://git.habd.as/comfusion/after-dark/commits/65c4e99))
+* **install:** standardize install script ([aca07cc](https://git.habd.as/comfusion/after-dark/commits/aca07cc)), closes [#19](https://git.habd.as/comfusion/after-dark/issues/19)
+* **install:** update example base url ([da73a2f](https://git.habd.as/comfusion/after-dark/commits/da73a2f))
+* **install:** use latest version from npm dist tags ([7afe7b9](https://git.habd.as/comfusion/after-dark/commits/7afe7b9))
+
+
+
+<a name="5.2.4"></a>
+## [5.2.4](https://git.habd.as/comfusion/after-dark/compare/v5.2.3...v5.2.4) (2018-07-31)
+
+
+### Bug Fixes
+
+* **install:** install packages from npm ([65c4e99](https://git.habd.as/comfusion/after-dark/commits/65c4e99))
+* **install:** standardize install script ([aca07cc](https://git.habd.as/comfusion/after-dark/commits/aca07cc)), closes [#19](https://git.habd.as/comfusion/after-dark/issues/19)
+
+
+
 <a name="5.2.3"></a>
 ## [5.2.3](https://git.habd.as/comfusion/after-dark/compare/v5.2.2...v5.2.3) (2018-07-29)
 
+### Bug Fixes
 
+* **theme:** just kidding. remove white theme variant ([d73693c](https://git.habd.as/comfusion/after-dark/commits/d73693c))
 
 <a name="5.2.2"></a>
 ## [5.2.2](https://git.habd.as/comfusion/after-dark/compare/v5.2.1...v5.2.2) (2018-07-29)
