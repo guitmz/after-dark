@@ -49,6 +49,7 @@ Feature | Summary
 [Snippets](#snippets) | Adjust layouts, add form components and more without repeating yourself.
 [Related Content](#related-content) | Display links to relevant content below blog posts automatically.
 [Table of Contents](#table-of-contents) | Create collapsable content summaries with deep link and smooth-scroll support.
+[Theme Color](#theme-color) | Tell supporting browsers and OSes how they should style the UI surrounding your content.
 [SVG Favicon](#svg-favicon) | So small you didn't even know it was there.
 [404 Page](#404-page) | Entertain users into staying when they experience linkrot on your site.
 
@@ -523,7 +524,7 @@ See the Hugo docs for additional [configuration options](http://gohugo.io/overvi
 
 ### Snippets
 
-Snippets are reusable bits of code you can sprinkle across your site to reduce repetition and improve consistency. After Dark provides several snippets to help you stay consistent and make your site easier to customize and maintain.
+Snippets are reusable bits of code you can sprinkle across your site to reduce repetition and improve consistency. After Dark provides several snippets to help make your site easier to customize and maintain.
 
 Take for example the included After Dark `blockquote` shortcode:
 
@@ -586,7 +587,7 @@ The default theme variant uses the `dark` color palette with the `hack` display 
   palette = "dark" # Optional, choose from 'dark', 'dark-grey' and 'solarized-dark'
 ```
 
-Once updated review the included [404 Page](#404-page), override the [`theme-color.html` partial](layouts/partials/meta/theme-color.html) and tweak your [Custom Styles](#custom-styles) to suit your personal taste.
+Once updated review the [404 Page](#404-page), [Theme Color](#theme-color) and tweak your [Custom Styles](#custom-styles) to suit your personal taste.
 
 #### Custom Styles
 
@@ -630,6 +631,20 @@ With `hugo serve` running, changes to your site `custom.css` will trigger an aut
 **How does this work?** Custom styles are concatenated into a `style` element in the document `head` along with theme and vendor styles. [Specificity](https://devdocs.io/css/specificity) in this file trumps what is output at the theme or vendor levels, so no `!important` hacks are strictly necessary to override anything. See the [Asset Bundling](https://gohugo.io/hugo-pipes/bundling/) Hugo docs for a better understanding of file concatenation using [Hugo Pipes](https://gohugo.io/hugo-pipes/).
 
 Finally, if you wish to disable all theme styles, simply disable the [Display Variant](#display-variants) after creating your `custom.css`.
+
+#### Theme Color
+
+Use [`theme-color` meta extension](https://html.spec.whatwg.org/multipage/semantics.html#meta-theme-color) in the `<head>` of your pages to suggest the color that browsers and OSes should use if they customize the display of individual pages in their UIs with varying colors.
+
+Color set automatically to background color of [Theme Variant](#theme-variant) and may be customized by adding a CSS variable called `--theme-color` to your [Custom Styles](#custom-styles) (useful for accent colors):
+
+```css
+:root {
+  --theme-color: #8ADA55;
+}
+```
+
+You can then start [using the CSS variable](https://devdocs.io/css/using_css_variables) anywhere within your `custom.css` to for improved consistency.
 
 #### SVG Favicon
 
