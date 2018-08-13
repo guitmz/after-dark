@@ -2,6 +2,56 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="6.0.1"></a>
+## [6.0.1](https://git.habd.as/comfusion/after-dark/compare/v6.0.0...v6.0.1) (2018-08-12)
+
+
+### Bug Fixes
+
+* **layouts/search:** unblock blocking scripts and add command terminators ([7802937](https://git.habd.as/comfusion/after-dark/commits/7802937)), closes [#14](https://git.habd.as/comfusion/after-dark/issues/14)
+
+
+
+<a name="6.0.0"></a>
+# [6.0.0](https://git.habd.as/comfusion/after-dark/compare/v5.5.1...v6.0.0) (2018-08-12)
+
+
+### Bug Fixes
+
+* **shortcodes:** remove privacytube and coub shortcodes ([ada8286](https://git.habd.as/comfusion/after-dark/commits/ada8286)), closes [#35](https://git.habd.as/comfusion/after-dark/issues/35)
+
+
+### BREAKING CHANGES
+
+* **shortcodes:** shortcodes removed must now be copied to the theme, if used
+
+
+
+<a name="5.5.1"></a>
+## [5.5.1](https://git.habd.as/comfusion/after-dark/compare/v5.5.0...v5.5.1) (2018-08-11)
+
+
+### Bug Fixes
+
+* **install:** restore android support ([d3b2ab0](https://git.habd.as/comfusion/after-dark/commits/d3b2ab0)), closes [#25](https://git.habd.as/comfusion/after-dark/issues/25)
+
+
+
+<a name="5.5.0"></a>
+# [5.5.0](https://git.habd.as/comfusion/after-dark/compare/v5.4.0...v5.5.0) (2018-08-10)
+
+
+### Bug Fixes
+
+* **assets:** stop treating all permalinks as external ([d5e8e33](https://git.habd.as/comfusion/after-dark/commits/d5e8e33))
+
+
+### Features
+
+* **layout,install:** add automatic syntax highlighting ([3eed5dd](https://git.habd.as/comfusion/after-dark/commits/3eed5dd))
+
+
+
 <a name="5.4.0"></a>
 # [5.4.0](https://git.habd.as/comfusion/after-dark/compare/v5.3.1...v5.4.0) (2018-08-04)
 
