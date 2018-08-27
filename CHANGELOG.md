@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="6.7.6"></a>
+## [6.7.6](https://git.habd.as/comfusion/after-dark/compare/v6.7.5...v6.7.6) (2018-08-27)
+
+
+### Bug Fixes
+
+* **scripts:** always regnerate help docs ([90b0f21](https://git.habd.as/comfusion/after-dark/commits/90b0f21))
+
+
+
 <a name="6.7.5"></a>
 ## [6.7.5](https://git.habd.as/comfusion/after-dark/compare/v6.7.4...v6.7.5) (2018-08-27)
 
