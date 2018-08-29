@@ -1,0 +1,37 @@
+#!/bin/sh
+set -e
+
+CONFIG_FILE=config.toml
+CONTENT_DIR=`sed -n 's/contentDir[=:]"\([^"]*\)".*/\1/p' <<< "$(cat $CONFIG_FILE | tr -d ' ')"`
+[ -z $CONTENT_DIR ] && CONTENT_DIR=content
+
+generate_help_docs () {
+   echo "Generating help documentation ..."
+   meta_path=themes/after-dark/data/npm
+   mkdir -p "$meta_path" && echo "$LATEST_META" | tr '\r\n' ' ' > "$meta_path"/latest.json
+   [ -f "$CONTENT_DIR"/help/index.md ] && rm "$CONTENT_DIR"/help/index.md
+   hugo new help/index.md --kind help 1>/dev/null
+}
+
+upgrade () {
+   meta_file=themes/"$1"/data/npm/latest.json
+   current_vers=`sed -n 's/.*"version":"\([^"]*\).*/\1/p' < "$meta_file"`
+   if ! [ -f "$meta_file" ] ; then
+      echo "Error: Unable to locate metadata for $1. Cannot proceed with upgrade." >&2; exit 1
+   else
+      LATEST_META=$(wget -qO - https://registry.npmjs.org/"$1"/latest)
+      latest_vers=`sed -n 's/.*"version":"\([^"]*\).*/\1/p' <<< "$LATEST_META"`
+      if [ "$current_vers" = "$latest_vers" ] ; then
+         echo "Did not upgrade $1. Already using latest version." >&1; exit 0
+      else
+         echo "Starting upgrade from $current_vers to $latest_vers ..."
+         rm -rf themes/"$1"/*
+         wget -qO - https://registry.npmjs.org/"$1"/-/"$1"-"$latest_vers".tgz | tar --strip-components=1 -xz -C themes/"$1"
+         echo "Version $latest_vers downloaded to themes/$1"
+         [ "$1" = "after-dark" ] && generate_help_docs
+         echo "Upgrade complete! Please see CHANGELOG.md for changes."
+      fi
+   fi
+}
+
+upgrade "after-dark"

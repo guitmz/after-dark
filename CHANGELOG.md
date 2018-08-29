@@ -2,6 +2,249 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="6.7.7"></a>
+## [6.7.7](https://git.habd.as/comfusion/after-dark/compare/v6.7.6...v6.7.7) (2018-08-27)
+
+
+### Bug Fixes
+
+* **help:** change 404 page to error page and improve script perf ([f95aaa3](https://git.habd.as/comfusion/after-dark/commits/f95aaa3)), closes [#43](https://git.habd.as/comfusion/after-dark/issues/43)
+
+
+
+<a name="6.7.6"></a>
+## [6.7.6](https://git.habd.as/comfusion/after-dark/compare/v6.7.5...v6.7.6) (2018-08-27)
+
+
+### Bug Fixes
+
+* **scripts:** always regnerate help docs ([90b0f21](https://git.habd.as/comfusion/after-dark/commits/90b0f21))
+
+
+
+<a name="6.7.5"></a>
+## [6.7.5](https://git.habd.as/comfusion/after-dark/compare/v6.7.4...v6.7.5) (2018-08-27)
+
+
+### Bug Fixes
+
+* **scripts:** resolve help doc path lookups when no custom content dir ([300add1](https://git.habd.as/comfusion/after-dark/commits/300add1))
+
+
+
+<a name="6.7.4"></a>
+## [6.7.4](https://git.habd.as/comfusion/after-dark/compare/v6.7.3...v6.7.4) (2018-08-27)
+
+
+### Bug Fixes
+
+* **scripts:** remove help before generating on upgrade ([56b7543](https://git.habd.as/comfusion/after-dark/commits/56b7543))
+
+
+
+<a name="6.7.3"></a>
+## [6.7.3](https://git.habd.as/comfusion/after-dark/compare/v6.7.2...v6.7.3) (2018-08-27)
+
+
+### Bug Fixes
+
+* **scripts:** address error generating docs after upgrade ([3119918](https://git.habd.as/comfusion/after-dark/commits/3119918))
+
+
+
+<a name="6.7.2"></a>
+## [6.7.2](https://git.habd.as/comfusion/after-dark/compare/v6.7.1...v6.7.2) (2018-08-27)
+
+
+### Bug Fixes
+
+* **scripts:** resolve tar cd issue ([5fa2591](https://git.habd.as/comfusion/after-dark/commits/5fa2591))
+
+
+
+<a name="6.7.1"></a>
+## [6.7.1](https://git.habd.as/comfusion/after-dark/compare/v6.7.0...v6.7.1) (2018-08-27)
+
+
+### Bug Fixes
+
+* **scripts:** resolve syntax bugs in script ([f7bfb04](https://git.habd.as/comfusion/after-dark/commits/f7bfb04))
+
+
+
+<a name="6.7.0"></a>
+# [6.7.0](https://git.habd.as/comfusion/after-dark/compare/v6.6.4...v6.7.0) (2018-08-27)
+
+
+### Bug Fixes
+
+* **scripts:** update install to place theme metadata in theme data folder ([66168a1](https://git.habd.as/comfusion/after-dark/commits/66168a1)), closes [#59](https://git.habd.as/comfusion/after-dark/issues/59)
+
+
+### Features
+
+* **scripts:** add theme upgrade script ([6415250](https://git.habd.as/comfusion/after-dark/commits/6415250)), closes [#59](https://git.habd.as/comfusion/after-dark/issues/59)
+* **scripts:** support custom content dirs in config file ([adf90bc](https://git.habd.as/comfusion/after-dark/commits/adf90bc)), closes [#59](https://git.habd.as/comfusion/after-dark/issues/59)
+
+
+
+<a name="6.6.4"></a>
+## [6.6.4](https://git.habd.as/comfusion/after-dark/compare/v6.6.3...v6.6.4) (2018-08-27)
+
+### Security
+
+* **build:** enclose release tag sha512 in delimeters
+([543d32d](https://git.habd.as/comfusion/after-dark/commit/543d32d))
+
+<a name="6.6.3"></a>
+## [6.6.3](https://git.habd.as/comfusion/after-dark/compare/v6.6.1...v6.6.3) (2018-08-27)
+
+### Security
+
+* **build:** append sha512 to release tag and self-sign
+([112f616](https://git.habd.as/comfusion/after-dark/commits/112f616))
+
+<a name="6.6.2"></a>
+## [6.6.2](https://git.habd.as/comfusion/after-dark/compare/v6.6.1...v6.6.2) (2018-08-26)
+
+### Security
+
+* **build:** add sha512 digest to git tags and gpg sign them
+([35457ab](https://git.habd.as/comfusion/after-dark/commits/35457ab))
+
+<a name="6.6.1"></a>
+## [6.6.1](https://git.habd.as/comfusion/after-dark/compare/v6.6.0...v6.6.1) (2018-08-26)
+
+
+### Bug Fixes
+
+* **snippets:** reverse logic for external link styling ([0fcf238](https://git.habd.as/comfusion/after-dark/commits/0fcf238))
+
+
+
+<a name="6.6.0"></a>
+# [6.6.0](https://git.habd.as/comfusion/after-dark/compare/v6.5.2...v6.6.0) (2018-08-25)
+
+
+### Features
+
+* **help:** update and run help anytime using included script ([206bfdc](https://git.habd.as/comfusion/after-dark/commits/206bfdc))
+* **snippets:** add external link snippet ([7c885f3](https://git.habd.as/comfusion/after-dark/commits/7c885f3)), closes [#48](https://git.habd.as/comfusion/after-dark/issues/48)
+
+
+
+<a name="6.5.2"></a>
+## [6.5.2](https://git.habd.as/comfusion/after-dark/compare/v6.5.1...v6.5.2) (2018-08-24)
+
+
+### Bug Fixes
+
+* **install:** wait 1 second before serving help for docs to expire ([8e9e312](https://git.habd.as/comfusion/after-dark/commits/8e9e312))
+
+
+
+<a name="6.5.1"></a>
+## [6.5.1](https://git.habd.as/comfusion/after-dark/compare/v6.5.0...v6.5.1) (2018-08-24)
+
+
+### Bug Fixes
+
+* **install:** remove unexpected line in theme config ([a5eb197](https://git.habd.as/comfusion/after-dark/commits/a5eb197))
+
+
+
+<a name="6.5.0"></a>
+# [6.5.0](https://git.habd.as/comfusion/after-dark/compare/v6.4.1...v6.5.0) (2018-08-24)
+
+
+### Bug Fixes
+
+* **install:** stop copying all archetypes to site ([210412b](https://git.habd.as/comfusion/after-dark/commits/210412b)), closes [#45](https://git.habd.as/comfusion/after-dark/issues/45)
+
+
+### Features
+
+* **install:** faux install validation using npm sha512 digest ([5a8dec0](https://git.habd.as/comfusion/after-dark/commits/5a8dec0)), closes [#33](https://git.habd.as/comfusion/after-dark/issues/33)
+* **snippets:** alert user on invalid autocomplete value ([1105e20](https://git.habd.as/comfusion/after-dark/commits/1105e20)), closes [#46](https://git.habd.as/comfusion/after-dark/issues/46)
+
+
+
+<a name="6.4.1"></a>
+## [6.4.1](https://git.habd.as/comfusion/after-dark/compare/v6.4.0...v6.4.1) (2018-08-22)
+
+
+
+<a name="6.4.0"></a>
+# [6.4.0](https://git.habd.as/comfusion/after-dark/compare/v6.3.0...v6.4.0) (2018-08-20)
+
+
+### Bug Fixes
+
+* **install:** remove useful snippets content ([c224977](https://git.habd.as/comfusion/after-dark/commits/c224977))
+
+
+### Features
+
+* **install:** provide welcome post with online help ([c8f729a](https://git.habd.as/comfusion/after-dark/commits/c8f729a))
+
+
+
+<a name="6.3.0"></a>
+# [6.3.0](https://git.habd.as/comfusion/after-dark/compare/v6.2.0...v6.3.0) (2018-08-19)
+
+
+### Bug Fixes
+
+* **snippets:** add name attribute to form ([078ee4d](https://git.habd.as/comfusion/after-dark/commits/078ee4d))
+
+
+### Features
+
+* **install:** add installation challenge ([9b6106c](https://git.habd.as/comfusion/after-dark/commits/9b6106c))
+
+
+
+<a name="6.2.0"></a>
+# [6.2.0](https://git.habd.as/comfusion/after-dark/compare/v6.1.1...v6.2.0) (2018-08-18)
+
+
+### Bug Fixes
+
+* **bin:** remove preview script ([5ac1c12](https://git.habd.as/comfusion/after-dark/commits/5ac1c12)), closes [#38](https://git.habd.as/comfusion/after-dark/issues/38)
+* **layouts:** stop outputting trim color if none present ([fe58bed](https://git.habd.as/comfusion/after-dark/commits/fe58bed))
+
+
+### Features
+
+* **layouts:** provide form builder snippets ([c49d086](https://git.habd.as/comfusion/after-dark/commits/c49d086))
+
+
+
+<a name="6.1.1"></a>
+## [6.1.1](https://git.habd.as/comfusion/after-dark/compare/v6.1.0...v6.1.1) (2018-08-14)
+
+
+### Bug Fixes
+
+* **personalization:** rename accent color to trim color ([88cd373](https://git.habd.as/comfusion/after-dark/commits/88cd373))
+
+
+
+<a name="6.1.0"></a>
+# [6.1.0](https://git.habd.as/comfusion/after-dark/compare/v6.0.1...v6.1.0) (2018-08-13)
+
+
+### Bug Fixes
+
+* **layouts:** move inline-level content in navs inside <p> ([1b0187d](https://git.habd.as/comfusion/after-dark/commits/1b0187d))
+
+
+### Features
+
+* **personalization:** add customizable accent colors ([bf251a6](https://git.habd.as/comfusion/after-dark/commits/bf251a6))
+
+
+
 <a name="6.0.1"></a>
 ## [6.0.1](https://git.habd.as/comfusion/after-dark/compare/v6.0.0...v6.0.1) (2018-08-12)
 
