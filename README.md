@@ -64,7 +64,7 @@ After Dark requires Hugo `0.44` or later. Before running the quick installer ple
 Then run the quick installer located at [`bin/install`](https://git.habd.as/comfusion/after-dark/src/branch/master/bin/install), or just paste this into a POSIX terminal and press <kbd>Enter</kbd>:
 
 ```shell
-wget -qO - https://git.habd.as/comfusion/after-dark/raw/branch/master/bin/install | sh
+wget -qO - https://go.habd.as/after-dark | sh
 ```
 
 Installation should complete in a matter of seconds resulting in a functional offline website ready to go live.
