@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="6.9.2"></a>
+## [6.9.2](https://git.habd.as/comfusion/after-dark/compare/v6.9.1...v6.9.2) (2018-09-12)
+
+
+### Bug Fixes
+
+* **archetypes:** default posts to display as published content ([b4fd2bf](https://git.habd.as/comfusion/after-dark/commits/b4fd2bf))
+
+
+
 <a name="6.9.1"></a>
 ## [6.9.1](https://git.habd.as/comfusion/after-dark/compare/v6.9.0...v6.9.1) (2018-09-12)
 
