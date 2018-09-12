@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="6.9.3"></a>
+## [6.9.3](https://git.habd.as/comfusion/after-dark/compare/v6.9.2...v6.9.3) (2018-09-12)
+
+
+### Bug Fixes
+
+* **scripts:** automatically stop running help servers on upgrade ([b6b9a56](https://git.habd.as/comfusion/after-dark/commits/b6b9a56))
+
+
+
 <a name="6.9.2"></a>
 ## [6.9.2](https://git.habd.as/comfusion/after-dark/compare/v6.9.1...v6.9.2) (2018-09-12)
 
