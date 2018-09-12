@@ -1,31 +1,5 @@
-<!-- {{/*
-HTML attributes: "name", "accept-charset", "action", "enctype", "target", "novalidate", "method", "class", "autocomplete"
-
-Possible methods: "get", "post"
-Possible autocompletes: "on", "off"
-
-Basic usage:
-{{< hackcss-form >}}
-  {{< hackcss-textinput >}}
-{{< /hackcss-form >}}
-
-Named targeting self with text input and autocomplete disabled:
-{{< hackcss-form name="search" autocomplete="disabled" >}}
-  {{< hackcss-textinput name="query" >}}
-{{< /hackcss-form >}}
-
-Hidden with blank target, no validation and custom post action:
-{{< hackcss-form novalidate="true" method="post" action="/do/something" target="_blank" >}}
-  {{< hackcss-textinput type="hidden" name="throttle" value="80" >}}
-{{< /hackcss-form >}}
-
-Specify allowed encodings:
-{{< hackcss-form acceptcharset="UTF-8 ISO-8859-1" >}}
-  {{< hackcss-textinput value="☻" >}}
-{{< /hackcss-form >}}
-
-*/}} -->
 {{ $accept_charset := .Get "acceptcharset" }}
+{{ $id := .Get "id" }}
 {{ $name := .Get "name" }}
 {{ $action := .Get "action" }}
 {{ $enctype := .Get "enctype" }}
@@ -35,7 +9,7 @@ Specify allowed encodings:
 {{ $method := .Get "method" }}
 {{ $class := .Get "class" }}
 {{ $body := .Inner }}
-{{ partial "components/form.html" (dict "name" $name "accept_charset" $accept_charset "action" $action "enctype" $enctype "target" $target "novalidate" $novalidate "method" $method "class" $class "body" $body) }}
+{{ partial "components/form.html" (dict "id" $id "name" $name "accept_charset" $accept_charset "action" $action "enctype" $enctype "target" $target "novalidate" $novalidate "method" $method "class" $class "body" $body) }}
 {{ if eq "false" $autocomplete }}
   <p>{{ partial "components/alert.html" (dict "type" "error" "body" (errorf "Invalid autocomplete value for form. Did you mean \"off\" instead of %q?" $autocomplete)) }}</p>
 {{ end }}

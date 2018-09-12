@@ -49,14 +49,23 @@ blockquote cite {
   display: block;
 }
 blockquote cite::before {
-   content: "\2014";
+   content: "\2014\00A0";
 }
 :target {
   color: #fff;
 }
+:disabled {
+  cursor: not-allowed;
+}
+#search-app [v-cloak] {
+  display: none;
+}
 /* hack.css overrides and enhancements */
 .hack li ul {
   margin: 0;
+}
+.hack ol li {
+  padding-left: 27px;
 }
 .main {
   padding: 20px 10px;
@@ -87,6 +96,12 @@ html {
 .hack .form label {
   font-size: 1rem;
 }
+.hack figure a {
+  border-bottom: none;
+}
+.hack figure a:hover {
+  background-color: inherit;
+}
 article [itemprop="description"] {
   margin-bottom: 20px;
   margin-top: 20px;
@@ -104,12 +119,10 @@ img {
 @media screen and (min-width: 768px) {
   html {
     font-size: 1em;
+    margin-left: calc(100vw - 100%);
   }
   .container {
-    max-width: 55rem;
+    max-width: 50rem;
   }
-}
-[v-cloak] {
-  display: none;
 }
 

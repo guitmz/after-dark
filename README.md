@@ -31,11 +31,11 @@ Feature | Summary
 Quick Installer | One command is all you need to get started with After Dark.
 Online Help | Learn to use the theme with convenient help from within your site.
 Module System | Add functionality with prebuilt modules designed to compliment your site.
-Section Menu | Display an accessible site-wide navigation with links to content sections.
+Section Menu | Display a contextual site-wide navigation with links to content.
 Display Variants | Customize look-and-feel with one of eight included display variations.
 Custom Styles | Add to, adjust or disable theme styles for complete design control.
-Trim Color | Define how user agents should display the border around your site.
-SVG Favicon | Help push browser standards forward by decorating your site with an SVG favicon.
+Trim Color | Define the color used to display borders around your site.
+SVG Favicon | Push browser standards forward by decorating your site with an SVG favicon.
 Fuzzy Search | Find and share indexable content anywhere on your site. No registration required.
 Code Highlighter | Highlight code in over 160 languages without requiring JavaScript.
 Post Images | Add graphics to your posts without touching an image editor.
@@ -64,7 +64,7 @@ After Dark requires Hugo `0.44` or later. Before running the quick installer ple
 Then run the quick installer located at [`bin/install`](https://git.habd.as/comfusion/after-dark/src/branch/master/bin/install), or just paste this into a POSIX terminal and press <kbd>Enter</kbd>:
 
 ```shell
-wget -qO - https://git.habd.as/comfusion/after-dark/raw/branch/master/bin/install | sh
+wget -qO - https://go.habd.as/after-dark | sh
 ```
 
 Installation should complete in a matter of seconds resulting in a functional offline website ready to go live.

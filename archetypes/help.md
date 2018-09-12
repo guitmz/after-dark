@@ -40,9 +40,9 @@ After Dark includes a custom module system and provides a number of prebuilt mod
 
 Module Name | Version | Description
 ---|---|---
-[Fractal Forest] | ![Latest NPM version](https://img.shields.io/badge/dynamic/json.svg?url=https://git.habd.as/comfusion/fractal-forest/raw/branch/master/package.json&label=vers&query=$.version&colorB=000000&style=for-the-badge&longCache=true&maxAge=86400) | Better Portable Graphics (Preinstalled)
-[Voyeur] | ![Latest NPM version](https://img.shields.io/badge/dynamic/json.svg?url=https://git.habd.as/comfusion/voyeur/raw/branch/master/package.json&label=vers&query=$.version&colorB=000000&style=for-the-badge&longCache=true&maxAge=86400) | Fathom Analytics
-[Hall of Mirrors] | ![Latest NPM version](https://img.shields.io/badge/dynamic/json.svg?url=https://git.habd.as/comfusion/hall-of-mirrors/raw/branch/master/package.json&label=vers&query=$.version&colorB=000000&style=for-the-badge&longCache=true&maxAge=86400) | PhotoSwipe Image Gallery
+[Fractal Forest] | ![Latest version](https://img.shields.io/badge/dynamic/json.svg?url=https://git.habd.as/comfusion/fractal-forest/raw/branch/master/package.json&label=vers&query=$.version&colorB=000000&style=for-the-badge&longCache=true&maxAge=86400) | Better Portable Graphics (Preinstalled)
+[Voyeur] | ![Latest version](https://img.shields.io/badge/dynamic/json.svg?url=https://git.habd.as/comfusion/voyeur/raw/branch/master/package.json&label=vers&query=$.version&colorB=000000&style=for-the-badge&longCache=true&maxAge=86400) | Fathom Analytics
+[Hall of Mirrors] | ![Latest version](https://img.shields.io/badge/dynamic/json.svg?url=https://git.habd.as/comfusion/hall-of-mirrors/raw/branch/master/package.json&label=vers&query=$.version&colorB=000000&style=for-the-badge&longCache=true&maxAge=86400) | PhotoSwipe Image Gallery
 
 Shown here, an animation made possible with the `Fractal Forest` module:
 
@@ -492,7 +492,8 @@ Snippets are reusable bits of code you can add to your site to reduce repetition
 
 The following core snippets are supplied by the theme:
 
-- `external` - Create styled links in layout or markdown.
+- `external` - Create styled anchor links.
+- `navmenu` - Displays a navigation menu.
 
 After Dark also includes snippets to take advantage of [hackcss components][hackcss]:
 
@@ -539,7 +540,7 @@ The default display variant uses the `dark` color palette with the `hack` displa
   palette = "dark" # Optional, choose from 'dark', 'dark-grey' and 'solarized-dark'
 ```
 
-Once updated review the [404 Page](#404-page), [Trim Color](#trim-color) and tweak your [Custom Styles](#custom-styles) to suit your personal taste.
+Once updated review the [Error Page](#error-page), [Trim Color](#trim-color) and tweak your [Custom Styles](#custom-styles) to suit your personal taste.
 
 ## Custom Styles
 
@@ -604,11 +605,11 @@ After Dark ships with a 224B SVG favicon embedded into every page.
 
 To customize the favicon create a `favicon.html` under `layouts/partials/head` within your site and place an [`icon` link](http://devdocs.io/html/link_types#icon) within it as illustrated in the included [`favicon.html` partial](layouts/partials/head/favicon.html). If you're planning to optimize for specific [platform experiences](https://github.com/h5bp/html5-boilerplate/blob/6.1.0/dist/doc/extend.md#web-apps) this override file is a good place to add any additional tags required.
 
-## 404 Page
+## Error Page
 
-Linkrot can be embarrassing. If you forget to set your [page aliases](https://gohugo.io/content-management/urls/#aliases) or sipmly fat-finger a URL, don't send your users packing. After Dark includes an engaging 404 page which links back to your homepage. Use it to encourage users to stick around when resources can't be located by redirecting them to `404.html` when a page can't be found.
+Errors can be embarrassing. If you forget to set your [page aliases](https://gohugo.io/content-management/urls/#aliases) or sipmly fat-finger a URL, don't send your users packing. After Dark includes an engaging 404 error page which links back to your homepage. Use it to encourage users to stick around when resources can't be located by redirecting them to `404.html` when a page can't be found.
 
-To customize the provided 404 page create a `404.html` in your site `layouts` directory and let [Hugo's Lookup Order](https://gohugo.io/templates/lookup-order/) do the rest.
+To customize the provided error page create a `404.html` in your site `layouts` directory and let [Hugo's Lookup Order](https://gohugo.io/templates/lookup-order/) do the rest.
 
 [lazySizes]: https://afarkas.github.io/lazysizes/
 [hackcss]: https://hackcss.egoist.moe/dark.html
