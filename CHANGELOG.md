@@ -2,6 +2,71 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="6.9.6"></a>
+## [6.9.6](https://git.habd.as/comfusion/after-dark/compare/v6.9.5...v6.9.6) (2018-09-12)
+
+
+### Bug Fixes
+
+* **archetypes:** fix broken links in post archetype ([9a46e86](https://git.habd.as/comfusion/after-dark/commits/9a46e86))
+
+
+
+<a name="6.9.5"></a>
+## [6.9.5](https://git.habd.as/comfusion/after-dark/compare/v6.9.4...v6.9.5) (2018-09-12)
+
+
+### Bug Fixes
+
+* **archetypes:** prevent internal links from opening in new window ([a5237a8](https://git.habd.as/comfusion/after-dark/commits/a5237a8))
+
+
+
+<a name="6.9.4"></a>
+## [6.9.4](https://git.habd.as/comfusion/after-dark/compare/v6.9.3...v6.9.4) (2018-09-12)
+
+
+### Bug Fixes
+
+* **archetypes:** close tag body on last external shortcode ([aa97ed3](https://git.habd.as/comfusion/after-dark/commits/aa97ed3))
+
+
+
+<a name="6.9.3"></a>
+## [6.9.3](https://git.habd.as/comfusion/after-dark/compare/v6.9.2...v6.9.3) (2018-09-12)
+
+
+### Bug Fixes
+
+* **scripts:** automatically stop running help servers on upgrade ([b6b9a56](https://git.habd.as/comfusion/after-dark/commits/b6b9a56))
+
+
+
+<a name="6.9.2"></a>
+## [6.9.2](https://git.habd.as/comfusion/after-dark/compare/v6.9.1...v6.9.2) (2018-09-12)
+
+
+### Bug Fixes
+
+* **archetypes:** default posts to display as published content ([b4fd2bf](https://git.habd.as/comfusion/after-dark/commits/b4fd2bf))
+
+
+
+<a name="6.9.1"></a>
+## [6.9.1](https://git.habd.as/comfusion/after-dark/compare/v6.9.0...v6.9.1) (2018-09-12)
+
+
+
+<a name="6.9.0"></a>
+# [6.9.0](https://git.habd.as/comfusion/after-dark/compare/v6.8.0...v6.9.0) (2018-09-12)
+
+
+### Features
+
+* **help:** multipage help docs ([0446f50](https://git.habd.as/comfusion/after-dark/commits/0446f50)), closes [#61](https://git.habd.as/comfusion/after-dark/issues/61)
+
+
+
 <a name="6.8.0"></a>
 # [6.8.0](https://git.habd.as/comfusion/after-dark/compare/v6.7.9...v6.8.0) (2018-09-08)
 
