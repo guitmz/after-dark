@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="6.10.0"></a>
+# [6.10.0](https://git.habd.as/comfusion/after-dark/compare/v6.9.7...v6.10.0) (2018-09-14)
+
+
+### Features
+
+* **shortcodes:** add navmenu ([3e53c48](https://git.habd.as/comfusion/after-dark/commits/3e53c48)), closes [#78](https://git.habd.as/comfusion/after-dark/issues/78)
+
+
+
+<a name="6.9.7"></a>
+## [6.9.7](https://git.habd.as/comfusion/after-dark/compare/v6.9.6...v6.9.7) (2018-09-14)
+
+
+### Bug Fixes
+
+* **layouts/partials:** move navmenu snippet into theme ([e432e5c](https://git.habd.as/comfusion/after-dark/commits/e432e5c)), closes [#78](https://git.habd.as/comfusion/after-dark/issues/78)
+
+
+
 <a name="6.9.6"></a>
 ## [6.9.6](https://git.habd.as/comfusion/after-dark/compare/v6.9.5...v6.9.6) (2018-09-12)
 
