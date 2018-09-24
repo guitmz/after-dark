@@ -1,6 +1,6 @@
 #
 # Hugo Dockerfile for After Dark.
-# View the theme at <https://themes.gohugo.io/after-dark/>.
+# View the theme at <https://after-dark.habd.as/>.
 #
 # Copyright (C) 2018 Josh Habdas <jhabdas@protonmail.com>
 #
