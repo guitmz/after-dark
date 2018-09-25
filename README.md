@@ -41,6 +41,10 @@ Complete [Online Help](https://after-dark.habd.as/feature/online-help/) document
 
 Run the [Upgrade Script](https://after-dark.habd.as/feature/upgrade-script/) to check for updates and upgrade to the latest version.
 
+### Verification
+
+Run the [Release Validator](https://after-dark.habd.as/validate/) to verify your running a PGP-signed release.
+
 ## License
 
 Copyright (C) 2016–2018 Josh Habdas <jhabdas@protonmail.com>
