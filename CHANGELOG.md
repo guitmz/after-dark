@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="6.12.6"></a>
+## [6.12.6](https://git.habd.as/comfusion/after-dark/compare/v6.12.5...v6.12.6) (2018-09-25)
+
+
+
 <a name="6.12.5"></a>
 ## [6.12.5](https://git.habd.as/comfusion/after-dark/compare/v6.12.4...v6.12.5) (2018-09-24)
 
