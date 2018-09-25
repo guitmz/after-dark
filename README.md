@@ -9,15 +9,11 @@
 [![Telegram chat](https://img.shields.io/badge/chat-telegram-32AFED.svg?style=flat-square&longCache=true)](https://t.me/joinchat/Iw_6FEhmKL9sPUAukX9jzg)
 [![Keybase profile](https://img.shields.io/badge/pm-keybase-4c8eff.svg?style=flat-square&longCache=true)](https://keybase.io/jhabdas)
 
-![After Dark screenshots](https://after-dark.habd.as/images/minimal-mac_1600x1200-fs8.png)
-
-## Demo
-
-View a [live demo](https://after-dark.habd.as) and check out some [example sites](/comfusion/after-dark/wiki#example-sites) to see what others are doing.
+![After Dark screenshots for desktop and mobile](https://after-dark.habd.as/images/minimal-mac_1600x1200-fs8.png "After Dark with default and Dark Grey skin settings in Hack and Standard modes on Desktop and Mobile browsers showing a lazy-loaded responsive post image.")
 
 ## Features
 
-Visit the online demo for a [full list](https://after-dark.habd.as/feature/) of features.
+Visit the [online demo](https://after-dark.habd.as) for a [full list](https://after-dark.habd.as/feature/) of features.
 
 ## Getting Started
 
