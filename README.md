@@ -21,9 +21,11 @@ Visit the online demo for a [full list](https://after-dark.habd.as/feature/) of 
 
 ## Getting Started
 
+Please [Install Hugo](https://gohugo.io/getting-started/installing) before getting started.
+
 ### Installation
 
-[Install Hugo](https://gohugo.io/getting-started/installing) then run the [Quick Installer](https://after-dark.habd.as/feature/quick-installer/) and you're done:
+Simply run the [Quick Installer](https://after-dark.habd.as/feature/quick-installer/) to start a new website:
 
 ```shell
 wget -qO - https://go.habd.as/after-dark | sh
@@ -31,19 +33,19 @@ wget -qO - https://go.habd.as/after-dark | sh
 
 [![Monthly downloads](https://img.shields.io/npm/dm/after-dark.svg?style=flat-square)](https://www.npmjs.com/package/after-dark)
 
-Installation should complete in a matter of seconds.
+Installation will download and install After Dark, and should complete in a matter of seconds.
 
-### Help
+### Verifying
 
-Complete [Online Help](https://after-dark.habd.as/feature/online-help/) documentation included with installation.
+Run the [Release Validator](https://after-dark.habd.as/validate/) to verify your running a PGP-signed release.
 
 ### Upgrading
 
 Run the [Upgrade Script](https://after-dark.habd.as/feature/upgrade-script/) to check for updates and upgrade to the latest version.
 
-### Verification
+### Help
 
-Run the [Release Validator](https://after-dark.habd.as/validate/) to verify your running a PGP-signed release.
+Full [Online Help](https://after-dark.habd.as/feature/online-help/) documentation included with installation and available for offline use.
 
 ## License
 
