@@ -3,7 +3,7 @@ title = "Code Highlighter"
 description = "Highlight code written in more than 160 languages."
 categories = ["Experience"]
 tags = ["color", "style", "syntax"]
-features = ["snippets", "related content"]
+features = ["snippets", "related content", "jit requests"]
 +++
 
 After Dark uses a customized version of {{< external href="https://atom.io/themes/one-dark-syntax" text="One Dark Syntax" />}} to produce print-friendly code highlighting for more than 160 languages.
@@ -42,6 +42,8 @@ To see the CSS used to display the highlighter highlighting highlighted:
 {{< highlight css >}}
 {{< include type="source" file="themes/after-dark/static/css/syntax.css" >}}
 {{< /highlight >}}
+
+Not feeling the colors? No problem. Use the `hugo gen chromastyles` command to {{< external href="https://gohugo.io/content-management/syntax-highlighting/#generate-syntax-highlighter-css" text="generate your own" />}} `syntax.css` stylesheet from the {{< external href="https://help.farbox.com/pygments.html" text="style gallery" />}} and customize it using the general-purpose {{< external href="https://git.habd.as/comfusion/atom-one-chroma" text="Atom One Chroma" />}} syntax theme-roller.
 
 And if you're really enterprising why not create some executable ASCII art representing the name of the game you implemented in the language used:
 

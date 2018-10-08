@@ -1,7 +1,7 @@
 baseurl = "https://after-dark.habd.as/" # Controls base URL sitewide
 languageCode = "en-US" # Controls site language
 title = "After Dark" # Homepage title and page title suffix
-paginate = 32 # Number of items to show before paginating
+paginate = 33 # Number of items to show before paginating
 
 # Controls default theme and theme components
 theme = [

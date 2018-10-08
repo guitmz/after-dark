@@ -23,7 +23,7 @@ With auto-focused [Text Input](../text-input) requesting a new email address:
 With [Text Input](../text-input) and [Label](../label) inside [Form Group](../form-group) running [Fuzzy Search](/feature/fuzzy-search) in new window:
 
 ```html
-{{</* hackcss-form id="search" action="/search" target="_blank" */>}}
+{{</* hackcss-form id="search" action="/search/" target="_blank" */>}}
 {{</* hackcss-formgroup >}}
   {{< hackcss-label for="query" text="Search query:" />}}
   {{< hackcss-textinput id="query" type="search" name="s" form="search" >}}
@@ -42,7 +42,7 @@ Two forms with a [Button](../button) and [Text Input](../text-input) inside [Ale
 {{</* hackcss-alert type="info" >}}
   {{< hackcss-form id="throttle" method="post" action="/throttle" />}}
   {{< hackcss-form id="choke" novalidate="true" />}}
-  {{< hackcss-button type="primary" form="choke" text="Retry" />}}
+  {{< hackcss-button type="primary" form="choke" text="Doh!" disabled="true" />}}
   This one doesn't actually do anything… {{< hackcss-throbber >}}
   {{< hackcss-textinput type="hidden" name="speed" value="80" form="throttle" >}}
 {{< /hackcss-alert */>}}
@@ -51,7 +51,7 @@ Two forms with a [Button](../button) and [Text Input](../text-input) inside [Ale
 {{< hackcss-alert type="info" >}}
   {{< hackcss-form id="throttle" method="post" action="/throttle" />}}
   {{< hackcss-form id="choke" novalidate="true" />}}
-  {{< hackcss-button type="primary" form="choke" text="Okay" />}}
+  {{< hackcss-button type="primary" form="choke" text="Doh!" disabled="true" />}}
   This one doesn't actually do anything… {{< hackcss-throbber >}}
   {{< hackcss-textinput type="hidden" name="speed" value="80" form="throttle" >}}
 {{< /hackcss-alert >}}

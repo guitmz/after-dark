@@ -2,6 +2,114 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="6.13.0"></a>
+# [6.13.0](https://git.habd.as/comfusion/after-dark/compare/v6.12.7...v6.13.0) (2018-10-05)
+
+
+### Bug Fixes
+
+* **layouts/partials:** add main menu display condition ([a8fb1cb](https://git.habd.as/comfusion/after-dark/commits/a8fb1cb)), closes [#78](https://git.habd.as/comfusion/after-dark/issues/78)
+* **shortcodes/button:** allow name attribute & pass id as expected ([7aca084](https://git.habd.as/comfusion/after-dark/commits/7aca084))
+
+
+### Features
+
+* **module/toxic-swamp:** integrate module beta ([8f0bc30](https://git.habd.as/comfusion/after-dark/commits/8f0bc30))
+* **shortcodes/button:** add custom class support ([eb8f2db](https://git.habd.as/comfusion/after-dark/commits/eb8f2db))
+
+
+
+<a name="6.12.7"></a>
+## [6.12.7](https://git.habd.as/comfusion/after-dark/compare/v6.12.6...v6.12.7) (2018-09-26)
+
+
+
+<a name="6.12.6"></a>
+## [6.12.6](https://git.habd.as/comfusion/after-dark/compare/v6.12.5...v6.12.6) (2018-09-25)
+
+
+
+<a name="6.12.5"></a>
+## [6.12.5](https://git.habd.as/comfusion/after-dark/compare/v6.12.4...v6.12.5) (2018-09-24)
+
+
+
+<a name="6.12.4"></a>
+## [6.12.4](https://git.habd.as/comfusion/after-dark/compare/v6.12.3...v6.12.4) (2018-09-23)
+
+
+### Bug Fixes
+
+* **help/home:** add missing query string param to search link ([5b842f4](https://git.habd.as/comfusion/after-dark/commits/5b842f4))
+
+
+
+<a name="6.12.3"></a>
+## [6.12.3](https://git.habd.as/comfusion/after-dark/compare/v6.12.2...v6.12.3) (2018-09-22)
+
+
+
+<a name="6.12.2"></a>
+## [6.12.2](https://git.habd.as/comfusion/after-dark/compare/v6.12.1...v6.12.2) (2018-09-22)
+
+
+
+<a name="6.12.1"></a>
+## [6.12.1](https://git.habd.as/comfusion/after-dark/compare/v6.12.0...v6.12.1) (2018-09-22)
+
+
+
+<a name="6.12.0"></a>
+# [6.12.0](https://git.habd.as/comfusion/after-dark/compare/v6.11.2...v6.12.0) (2018-09-22)
+
+
+### Features
+
+* **scripts/upgrade:** prompt for update if metadata cannot be found ([b3a62ff](https://git.habd.as/comfusion/after-dark/commits/b3a62ff))
+
+
+
+<a name="6.11.2"></a>
+## [6.11.2](https://git.habd.as/comfusion/after-dark/compare/v6.11.1...v6.11.2) (2018-09-22)
+
+
+### Bug Fixes
+
+* **scripts:** add || to server shutdown ([f834a0d](https://git.habd.as/comfusion/after-dark/commits/f834a0d))
+
+
+
+<a name="6.11.1"></a>
+## [6.11.1](https://git.habd.as/comfusion/after-dark/compare/v6.11.0...v6.11.1) (2018-09-22)
+
+
+### Bug Fixes
+
+* **onboarding:** add explicit site port setting in install script ([64fefb2](https://git.habd.as/comfusion/after-dark/commits/64fefb2))
+* **onboarding:** serve site not help when starting site from installer ([384895b](https://git.habd.as/comfusion/after-dark/commits/384895b))
+
+
+
+<a name="6.11.0"></a>
+# [6.11.0](https://git.habd.as/comfusion/after-dark/compare/v6.10.1...v6.11.0) (2018-09-21)
+
+
+### Features
+
+* **onboarding:** streamline installation ([8a1cfee](https://git.habd.as/comfusion/after-dark/commits/8a1cfee))
+
+
+
+<a name="6.10.1"></a>
+## [6.10.1](https://git.habd.as/comfusion/after-dark/compare/v6.10.0...v6.10.1) (2018-09-19)
+
+
+### Bug Fixes
+
+* **help/home:** add performance info & undocumented features ([14c1faa](https://git.habd.as/comfusion/after-dark/commits/14c1faa))
+
+
+
 <a name="6.10.0"></a>
 # [6.10.0](https://git.habd.as/comfusion/after-dark/compare/v6.9.7...v6.10.0) (2018-09-14)
 
