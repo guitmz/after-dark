@@ -53,5 +53,11 @@
     <main>{{ block "main" . }}{{ end }}</main>
     <footer>{{ block "footer" . }}{{ end }}</footer>
     {{ partial "modules-footer.html" . }}
+    <script>fetchInject([
+        "https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"
+      ]).then(() => {
+        baffle(document.querySelector('h1')).start().reveal(1500);
+      })
+    </script>
   </body>
 </html>
