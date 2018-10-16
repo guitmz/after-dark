@@ -1,6 +1,6 @@
 +++
 title = "After Dark"
-description = "After Dark is a Web content management system for Hugo."
+description = "After Dark is an extensible flat-file CMS built on Hugo designed to create incredibly fast static websites."
 +++
 
 <section class="grid logo">
@@ -14,7 +14,7 @@ description = "After Dark is a Web content management system for Hugo."
 
 <section class="grid tagline">
   <div class="cell -12of12">
-    <p>After Dark is a low-tech, extensible Web content management system designed to create incredibly fast websites that are rewarding to build, easy to maintain and securely designed.</p>
+    <p>After Dark is an extensible flat-file CMS built on Hugo designed to create incredibly fast static websites which are easy to learn, rewarding to build, simple to maintain and securely designed.</p>
   </div>
 </section>
 
@@ -31,46 +31,34 @@ description = "After Dark is a Web content management system for Hugo."
   {{< figure alt="After Dark screenshots" src="/images/minimal-mac_1600x1200-fs8.png" lqipsrc="/images/minimal-mac_800x600-fs8.png" >}}
 </section>
 
-<aside class="capabilities">
+<section class="capabilities">
   <svg id="i-options" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
     <path d="M28 6 L4 6 M28 16 L4 16 M28 26 L4 26 M24 3 L24 9 M8 13 L8 19 M20 23 L20 29" />
   </svg>
-  <h2>Unprecedented Capability</h2>
+  <h2>Highly Capable</h2>
   <table>
-    <legend>Ditch the bundler and reprogram the way you think about building for the Web with a unique set of publishing capabilities you won't find elsewhere:</legend>
+    <legend>Realize new efficiencies in your content publishing workflow with a unique set of capabilities you won't find anywhere else:</legend>
     <tr>
-      <th scope="col" width="33%"><a href="./feature/">Features</a></th>
-      <th scope="col" width="33%"><a href="./module/">Modules</a></th>
-      <th scope="col" width="33%"><a href="./shortcode/">Shortcodes</th>
+      <th scope="col" width="25%">Features</th>
+      <th scope="col" width="25%">Modules</th>
+      <th scope="col" width="25%">Shortcodes</th>
+      <th scope="col" width="25%">Extras</th>
     </tr>
     <tr>
-      <td>33</td>
-      <td>4</td>
-      <td>23</td>
+      <td><a href="./feature/">33</a></td>
+      <td><a href="./module/">4</a></td>
+      <td><a href="./shortcode/">23</a></td>
+      <td><a href="./extra/">1</a></td>
     </tr>
   </table>
-</aside>
-<section class="feature">
-  <svg id="feature-graphics" id="i-photo" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-    <path d="M20 24 L12 16 2 26 2 2 30 2 30 24 M16 20 L22 14 30 22 30 30 2 30 2 24" />
-    <circle cx="10" cy="9" r="3" />
-  </svg>
-  <h2>Unreal Graphics</h2>
-  <p>Create lazy-loading responsive images and galleries with low-quality image placeholders and special effects all without touching an image editor.</p>
-  <nav><p>
-    <a href="/shortcode/figure">Figures</a> |
-    <a href="/feature/post-images">Post Images</a> |
-    <a href="/module/hall-of-mirrors">Galleries</a> |
-    <a href="/module/fractal-forest">BPG</a>
-  </p></nav>
 </section>
 
 <section id="feature-speed" class="feature">
   <svg id="i-lightning" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
     <path d="M18 13 L26 2 8 13 14 19 6 30 24 19 Z" />
   </svg>
-  <h2>Ludicrous Speed</h2>
-  <p>Load entire pages in less than &frac15; of a second without relying on complex build systems or browser sniffing and may the schwartz be with you.</p>
+  <h2>Incredibly Fast</h2>
+  <p>Display page content in less than a half second without relying on complex build systems and generate entire websites in the blink of an eye.</p>
   <nav><p>
     <a href="/feature/fetch-injection">Fetch Inject</a> |
     <a href="/feature/lazy-loading">Lazy Load</a> |
@@ -106,6 +94,21 @@ description = "After Dark is a Web content management system for Hugo."
   </p></nav>
 </section>
 
+<section class="feature">
+  <svg id="feature-graphics" id="i-photo" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+    <path d="M20 24 L12 16 2 26 2 2 30 2 30 24 M16 20 L22 14 30 22 30 30 2 30 2 24" />
+    <circle cx="10" cy="9" r="3" />
+  </svg>
+  <h2>Unreal Graphics</h2>
+  <p>Create lazy-loading responsive images and galleries with low-quality image placeholders and special effects all without touching an image editor.</p>
+  <nav><p>
+    <a href="/shortcode/figure">Figures</a> |
+    <a href="/feature/post-images">Post Images</a> |
+    <a href="/module/hall-of-mirrors">Galleries</a> |
+    <a href="/module/fractal-forest">BPG</a>
+  </p></nav>
+</section>
+
 <section id="feature-mining" class="feature">
   <svg id="i-creditcard" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
     <path d="M2 7 L2 25 30 25 30 7 Z M5 18 L9 18 M5 21 L11 21" />
@@ -113,7 +116,7 @@ description = "After Dark is a Web content management system for Hugo."
   </svg>
   <h2 style="margin-bottom:0.2rem">Web Mining</h2>
   <small><i style="color:lime">(Now in Beta!)</i></small>
-  <p>Earn incentives for remaining up-to-date and reward {{< external href="http://ryuc.info/common/creativity_perspective/truly_creative_endeavor.htm" text="creative endeavors" />}} throughout the entire Web content lifecycle, start to finish.</p>
+  <p>Earn generous incentives for remaining up-to-date and reward creativity throughout the entire Web content lifecycle, start to finish.</p>
   <nav><p>
     <a href="/module/toxic-swamp">Learn How</a> |
     <a href="/module/toxic-swamp#config-generator">Generate Config</a>

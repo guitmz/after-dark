@@ -10,20 +10,21 @@ snippets_used = ["external", "button"]
 
 Basic usage:
 
-```
-{{</* external "https://after-dark.habd.as" /*/>}}
-{{</* external "gopher://gopher.quux.org:70" /*/>}}
-```
 ```html
-{{</* external text="After Dark" href="//after-dark.habd.as" /*/>}}
-{{</* external class="muted" href="//after-dark.habd.as" /*/>}}
+{{</* external text="After Dark" href="https://after-dark.habd.as" /*/>}}
+{{</* external href="https://after-dark.habd.as" /*/>}}
 ```
 
-{{< external "https://after-dark.habd.as" />}}
-{{< external text="After Dark" href="//after-dark.habd.as" />}}
+{{< external text="After Dark" href="https://after-dark.habd.as" />}}
+{{< external href="https://after-dark.habd.as" />}}
 
-{{< external class="muted" href="//after-dark.habd.as" />}}
-{{< external "gopher://gopher.quux.org:70" />}}
+```
+{{</* external "https://go.habd.as/after-dark" /*/>}}
+{{</* external "wss://fs1.habd.as:80" /*/>}}
+```
+
+{{< external "https://go.habd.as/after-dark" />}}
+{{< external href="wss://fs1.habd.as:80" />}}
 
 With external link styling removed:
 

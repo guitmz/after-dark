@@ -1,7 +1,7 @@
 {
   "name": "after-dark",
-  "version": "6.13.0",
-  "description": "A deceptively simple dark theme for Hugo.",
+  "version": "6.13.2",
+  "description": "After Dark is an extensible flat-file CMS built on Hugo designed to create incredibly fast static websites.",
   "author": "Josh Habdas <jhabdas@protonmail.com>",
   "keywords": [
     "hugo",
