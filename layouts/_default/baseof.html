@@ -49,6 +49,7 @@
   {{ $hackcss_mode := .Site.Params.hackcss.mode | default "hack" }}
   {{ $hackcss_palette := .Site.Params.hackcss.palette | default "dark" }}
   <body class="{{ if ne $hackcss_disabled true }}{{ $hackcss_mode }} {{ $hackcss_palette }} main container{{ end }}">
+    {{ partial "components/social.html" . }}
     <header>{{ block "header" . }}{{ end }}</header>
     <main>{{ block "main" . }}{{ end }}</main>
     <footer>{{ block "footer" . }}{{ end }}</footer>
