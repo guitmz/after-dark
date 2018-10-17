@@ -29,7 +29,7 @@
     </header>
     {{ partial "toc-maybe.html" . }}
     <div itemprop="articleBody">
-      {{ partial "addthis" . }}
+      {{/* {{ partial "addthis" . }} */}}
       {{ .Content }}
     </div>
     {{ if .Site.DisqusShortname }}
