@@ -86,7 +86,7 @@ Use [Quick Installer](https://after-dark.habd.as/feature/quick-installer/) to st
 wget -qO - https://go.habd.as/after-dark | sh
 ```
 
-Scripted installation should complete in under 5-20 seconds depending on connection speed:
+Scripted installation should complete in 5-10 seconds depending on connection speed:
 
 <a href="https://asciinema.org/a/E1Ds7jbjhTel52PvMqZzuGsWE" target="_blank"><img src="https://asciinema.org/a/E1Ds7jbjhTel52PvMqZzuGsWE.png" alt="Quick Installer screenshot"></a>
 
