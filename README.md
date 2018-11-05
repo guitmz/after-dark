@@ -1,6 +1,6 @@
 <h1 align="center">After Dark Green</h1>
 
-> After Dark is an extensible flat-file CMS built on Hugo designed to create incredibly fast static websites which are easy to learn, rewarding to build, simple to maintain and securely designed.
+> After Dark is a hypermedia authoring toolkit built on Hugo designed to create the world's fastest, most scalable websites.
 
 [![Latest NPM version](https://img.shields.io/npm/v/after-dark.svg?style=flat-square)](https://www.npmjs.com/package/after-dark)
 [![Monthly downloads](https://img.shields.io/npm/dm/after-dark.svg?style=flat-square)](https://www.npmjs.com/package/after-dark)
@@ -11,17 +11,14 @@
 
 ## Features
 
-Here are a few highlights of what's included:
+- [Web Mining](https://after-dark.habd.as/#feature-mining)
+- [Advanced Graphics](https://after-dark.habd.as/#feature-graphics)
+- [Fuzzy Search](https://after-dark.habd.as/#feature-search)
+- [Ludicrous Speed](https://after-dark.habd.as/#feature-speed)
+- [Easily Customized](https://after-dark.habd.as/#feature-customize)
+- [Securely Designed](https://after-dark.habd.as/#feature-security)
 
-- Realize new efficiencies in your publishing workflow otherwise not possible.
-- Create lazy-loading responsive images and galleries without touching an image editor.
-- Load entire pages in less than half a second without relying on complex build systems.
-- Locate indexable content anywhere on your site even without an Internet connection.
-- Toggle between 1 of 8 customizable skin styles or disable entirely and roll your own.
-- Earn incentives for staying up-to-date and reward your creativity as you work.
-- Validate the integrity of your codebase using secure cryptographic release hashes.
-
-Visit [after-dark.habd.as](https://after-dark.habd.as) for demo, docs and more detail.
+Visit the [Online Help](https://after-dark.habd.as) docs to learn
 
 ## Screenshots
 
@@ -77,21 +74,15 @@ Visit [after-dark.habd.as](https://after-dark.habd.as) for demo, docs and more d
 
 ## Getting Started
 
-[Install Hugo](https://gohugo.io/getting-started/installing) before getting started.
+Please [Install Hugo](https://gohugo.io/getting-started/installing) `0.44` or greater before getting started.
 
 ### Installation
 
-Use [Quick Installer](https://after-dark.habd.as/feature/quick-installer/) to start a new site:
+For scripted installation please use [Quick Install](https://after-dark.habd.as/feature/quick-install/). Otherwise download a copy and:
 
-```shell
-wget -qO - https://go.habd.as/after-dark | sh
+```sh
+hugo serve --theme after-dark
 ```
-
-Scripted installation should complete in under 5-20 seconds depending on connection speed:
-
-<a href="https://asciinema.org/a/E1Ds7jbjhTel52PvMqZzuGsWE" target="_blank"><img src="https://asciinema.org/a/E1Ds7jbjhTel52PvMqZzuGsWE.png" alt="Quick Installer screenshot"></a>
-
-Manual installation possible via `git clone` or by simply downloading one of the [available releases](https://git.habd.as/comfusion/after-dark/releases) to the themes directory of an existing hugo site and then serve the site with `hugo serve --theme after-dark`. Each release includes an example website in the `/docs` directory to help you get started.
 
 ### Upgrading
 
@@ -103,7 +94,7 @@ If installed or upgraded via script you may use the [Release Validator](https://
 
 ### Help
 
-Complete [Online Help](https://after-dark.habd.as/feature/online-help/) documentation included with installation.
+[Online Help](https://after-dark.habd.as/feature/online-help/) may be served locally with `hugo --source themes/after-dark/docs` upon installation and hosted online at after-dark.habd.as. WYSIWYG.
 
 ## License
 
@@ -115,5 +106,5 @@ as published by Sam Hocevar. See the COPYING file for more details.
 
 ## Acknowledgements
 
-Thanks to Steve Francia for creating Hugo, エゴイスト for creating hackcss, Dan Klammer for the SVG icons, Simon Fremaux for the groovy 404 background animation and Vincent Prouillet for [porting After Dark to Gutenberg](https://www.getgutenberg.io/themes/after-dark/).
+Thanks to Steve Francia for creating the Hugo logo, エゴイスト for hackcss, Dan Klammer for the bytesized SVG icons, Alexander Farkas for killing it with lazySizes, Simon Fremaux for such a groovy 404 background animation and Vincent Prouillet for the [Gutenberg port](https://www.getgutenberg.io/themes/after-dark/).
 

@@ -1,6 +1,9 @@
 +++
 title = "After Dark"
-description = "After Dark is an extensible flat-file CMS built on Hugo designed to create incredibly fast static websites."
+description = "After Dark is a hypermedia authoring toolkit built on Hugo designed to create the world's fastest, most scalable websites."
+images = [
+  "https://after-dark.habd.as/images/screenshots/example-landing-page-fs8.png"
+]
 +++
 
 <section class="grid logo">
@@ -14,12 +17,41 @@ description = "After Dark is an extensible flat-file CMS built on Hugo designed 
 
 <section class="grid tagline">
   <div class="cell -12of12">
-    <p>After Dark is an extensible flat-file CMS built on Hugo designed to create incredibly fast static websites which are easy to learn, rewarding to build, simple to maintain and securely designed.</p>
+    <p>After Dark is a hypermedia authoring toolkit built on Hugo designed to create the world's fastest, most scalable websites.</p>
   </div>
 </section>
 
 <section class="hero">
-  <svg viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+  <style>
+    a[target=_self] {
+      border-bottom: unset;
+    }
+    a[target=_self]:hover {
+      background-color: transparent;
+    }
+    button.btn.btn-ghost.btn-primary {
+      border-radius: 4px;
+      color: #ccc;
+      background-color: #ff2e8860;
+      border: unset;
+      transition: all 0.25s ease;
+    }
+    button.btn.btn-ghost.btn-primary:hover {
+      background-color: #ff2e8880;
+      color: #fff;
+    }
+    button.btn.btn-ghost.btn-primary svg {
+      stroke: #ff9800;
+    }
+  </style>
+  {{< external rel="noopener" target="_self" href="/feature/quick-install/" >}}
+    {{< hackcss-button type="primary" isghost="true" >}}
+      <svg class="i-download" viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+        <path d="M9 22 C0 23 1 12 9 13 6 2 23 2 22 10 32 7 32 23 23 22 M11 26 L16 30 21 26 M16 16 L16 30"></path>
+      </svg>&nbsp;&nbsp;Quick Install
+    {{< /hackcss-button >}}
+  {{< /external >}}
+  <!-- <svg viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
     <path d="M30 10 L16 26 2 10 Z" />
   </svg>
   <svg viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
@@ -27,7 +59,7 @@ description = "After Dark is an extensible flat-file CMS built on Hugo designed 
   </svg>
   <svg viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
     <path d="M30 10 L16 26 2 10 Z" />
-  </svg>
+  </svg> -->
   {{< figure alt="After Dark screenshots" src="/images/minimal-mac_1600x1200-fs8.png" lqipsrc="/images/minimal-mac_800x600-fs8.png" >}}
 </section>
 
@@ -37,17 +69,17 @@ description = "After Dark is an extensible flat-file CMS built on Hugo designed 
   </svg>
   <h2>Beyond Compare</h2>
   <table>
-    <legend>Realize new efficiencies in your publishing workflow with a unique set of capabilities you won't find anywhere else:</legend>
+    <legend>Reimagine your publishing workflow with an array of capabilities specifically designed to greatly simplify site maintenance and speed-up content delivery:</legend>
     <tr>
       <th scope="col" width="25%">Features</th>
-      <th scope="col" width="25%">Shortcodes</th>
       <th scope="col" width="25%">Modules</th>
+      <th scope="col" width="25%">Shortcodes</th>
       <th scope="col" width="25%">Extras</th>
     </tr>
     <tr>
       <td><a href="./feature/">33</a></td>
-      <td><a href="./shortcode/">23</a></td>
       <td><a href="./module/">4</a></td>
+      <td><a href="./shortcode/">23</a></td>
       <td><a href="./extra/">1</a></td>
     </tr>
   </table>
@@ -62,8 +94,8 @@ description = "After Dark is an extensible flat-file CMS built on Hugo designed 
   <small><i style="color:lime">(Now in Beta!)</i></small>
   <p>Earn incentives for staying up-to-date and reward your creativity throughout the entire content publishing lifecycle, start to finish.</p>
   <nav><p>
-    <a href="/module/toxic-swamp">Get Started</a> |
-    <a href="/module/toxic-swamp#config-generator">Generate Config</a>
+    <a href="/module/toxic-swamp/">Get Started</a> |
+    <a href="/module/toxic-swamp/#config-generator">Generate Config</a>
   </p></nav>
 </section>
 
@@ -72,40 +104,13 @@ description = "After Dark is an extensible flat-file CMS built on Hugo designed 
     <path d="M20 24 L12 16 2 26 2 2 30 2 30 24 M16 20 L22 14 30 22 30 30 2 30 2 24" />
     <circle cx="10" cy="9" r="3" />
   </svg>
-  <h2>Unreal Graphics</h2>
-  <p>Create lazy-loading responsive images and galleries with low-quality image placeholders and special effects all without touching an image editor.</p>
+  <h2>Advanced Grahpics</h2>
+  <p>Add a spash of color with your favorite high-res images, responsively using advanced performance techniques and visual effects without touching an image editor.</p>
   <nav><p>
-    <a href="/shortcode/figure">Figures</a> |
-    <a href="/feature/post-images">Post Images</a> |
-    <a href="/module/hall-of-mirrors">Galleries</a> |
-    <a href="/module/fractal-forest">BPG</a>
-  </p></nav>
-</section>
-
-<section id="feature-speed" class="feature">
-  <svg id="i-lightning" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-    <path d="M18 13 L26 2 8 13 14 19 6 30 24 19 Z" />
-  </svg>
-  <h2>Ludicrous Speed</h2>
-  <p>Load entire pages in less than half a second without relying on complex build systems and generate entire websites with hummingbird speed.</p>
-  <nav><p>
-    <a href="/feature/fetch-injection">Fetch Inject</a> |
-    <a href="/feature/lazy-loading">Lazy Load</a> |
-    <a href="/feature/jit-requests">JIT Requests</a>
-  </p></nav>
-</section>
-
-<section id="feature-customize" class="feature">
-  <svg id="i-compose" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-    <path d="M27 15 L27 30 2 30 2 5 17 5 M30 6 L26 2 9 19 7 25 13 23 Z M22 6 L26 10 Z M9 19 L13 23 Z" />
-  </svg>
-  <h2>Fully Customizable</h2>
-  <p>Toggle between 1 of 8 skin styles or disable them entirely and use custom layouts and styles to take complete design control.</p>
-  <nav><p>
-    <a href="/feature/display-variants">Skins</a> |
-    <a href="/feature/custom-layouts">Layouts</a> |
-    <a href="/feature/custom-styles">Styles</a> |
-    <a href="/feature/svg-favicon">Favicons</a>
+    <a href="/shortcode/figure/">Figures</a> |
+    <a href="/feature/post-images/">Post Images</a> |
+    <a href="/module/hall-of-mirrors/">Galleries</a> |
+    <a href="/module/fractal-forest/">BPG</a>
   </p></nav>
 </section>
 
@@ -114,12 +119,39 @@ description = "After Dark is an extensible flat-file CMS built on Hugo designed 
     <circle cx="14" cy="14" r="12" />
     <path d="M23 23 L30 30"  />
   </svg>
-  <h2>Offline Search</h2>
-  <p>Locate indexable content anywhere on your site in the blink of an eye, even without an Internet connection. No registration required.</p>
+  <h2>Fuzzy Search</h2>
+  <p>Fat finger your way though your site content using a lightweight, customizable fuzzy search app built with auto-indexing and offline support.</p>
   <nav><p>
-    <a href="/feature/fuzzy-search">Fuzzy Search</a> |
-    <a href="/shortcode/form">Form Controls</a> |
-    <a href="/search/?s=lay%20load">Try It Now</a>
+    <a href="/search/?s=lay%20load">Try It Now</a> |
+    <a href="/feature/fuzzy-search/">More Detail</a>
+  </p></nav>
+</section>
+
+<section id="feature-speed" class="feature">
+  <svg class="i-lightning" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+    <path d="M18 13 L26 2 8 13 14 19 6 30 24 19 Z" />
+  </svg>
+  <h2>Ludicrous speed</h2>
+  <p>Offline page renders in ~30ms with unprimed cache and online in less than 100-500ms when served over CDN with edge caching.</p>
+  <p>Load pages over the wire in milliseconds without relying on complex build systems and generate over 1000 pages per second using commodity hardware.</p>
+  <nav><p>
+    <a href="/feature/fetch-injection/">Fetch Inject</a> |
+    <a href="/feature/lazy-loading/">Lazy Load</a> |
+    <a href="/feature/jit-requests/">JIT Requests</a>
+  </p></nav>
+</section>
+
+<section id="feature-customize" class="feature">
+  <svg id="i-compose" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+    <path d="M27 15 L27 30 2 30 2 5 17 5 M30 6 L26 2 9 19 7 25 13 23 Z M22 6 L26 10 Z M9 19 L13 23 Z" />
+  </svg>
+  <h2>Easily Customized</h2>
+  <p>Toggle between 1 of 8 customizable skin styles or disable them entirely and use custom layouts and styles to take complete design control.</p>
+  <nav><p>
+    <a href="/feature/skin-styles/">Skins</a> |
+    <a href="/feature/custom-layouts/">Layouts</a> |
+    <a href="/feature/custom-styles/">Styles</a> |
+    <a href="/feature/svg-favicon/">Favicons</a>
   </p></nav>
 </section>
 
@@ -129,10 +161,12 @@ description = "After Dark is an extensible flat-file CMS built on Hugo designed 
     <circle cx="16" cy="24" r="1" />
   </svg>
   <h2>Securely Designed</h2>
-  <p>Validate the integrity of your codebase using secure cryptographic release hashes and upgrade your site in seconds with a single command.</p>
+  <p>Verify you are using a genuine After Dark release online or off using secure cryptographic release hashes and upgrade your site remotely in seconds.</p>
   <nav><p>
-    <a href="/feature/release-hashes">Release Hashes</a> |
-    <a href="/feature/upgrade-script">Upgrade Script</a>
+    <a href="/validate/">Validate</a> |
+    <a href="/feature/upgrade-script/">Upgrade</a> |
+    <a href="/feature/release-hashes/">Learn More</a>
+
   </p></nav>
 </section>
 
