@@ -12,13 +12,13 @@
 ## Features
 
 - [Web Mining](https://after-dark.habd.as/#feature-mining)
-- [Unreal Graphics](https://after-dark.habd.as/#feature-graphics)
+- [Advanced Graphics](https://after-dark.habd.as/#feature-graphics)
+- [Fuzzy Search](https://after-dark.habd.as/#feature-search)
 - [Ludicrous Speed](https://after-dark.habd.as/#feature-speed)
-- [Fully Customizable](https://after-dark.habd.as/#feature-customize)
-- [Offline Search](https://after-dark.habd.as/#feature-search)
+- [Easily Customized](https://after-dark.habd.as/#feature-customize)
 - [Securely Designed](https://after-dark.habd.as/#feature-security)
 
-And a lot more. Visit [after-dark.habd.as](https://after-dark.habd.as) to get a feel for what's possible.
+Visit the [Online Help](https://after-dark.habd.as) docs to learn
 
 ## Screenshots
 
@@ -94,7 +94,7 @@ If installed or upgraded via script you may use the [Release Validator](https://
 
 ### Help
 
-Complete [Online Help](https://after-dark.habd.as/feature/online-help/) included in the `/docs` directory.
+[Online Help](https://after-dark.habd.as/feature/online-help/) may be served locally with `hugo --source themes/after-dark/docs` upon installation and hosted online at after-dark.habd.as. WYSIWYG.
 
 ## License
 
