@@ -69,8 +69,25 @@
     .hack header h2 {
       margin-top: -1rem;
     }
-    .hack header h2 i {
-      border-bottom: 1px solid currentcolor;
+    .hack .install.cta {
+      margin-bottom: 2rem;
+    }
+    .hack .install.cta form[action*="quick-install"] {
+      width: unset;
+    }
+    .hack .install.cta form[action*="quick-install"] button {
+      border-radius: 4px;
+      color: #ccc;
+      background-color: #ff2e8860;
+      transition: all 0.25s ease;
+    }
+    .hack .install.cta form[action*="quick-install"] button:hover,
+    .hack .install.cta form[action*="quick-install"] button:focus {
+      background-color: #ff2e8880;
+      color: #fff;
+    }
+    .hack .install.cta form[action*="quick-install"] button svg {
+      stroke: #ff9800;
     }
     .hack section:not(.capabilities) {
       margin: var(--vertical-rhythm) 0;
@@ -116,6 +133,9 @@
       display: block;
       margin: 3rem;
     }
+    .hack footer section.license blockquote {
+      margin-top: 3rem;
+    }
     .hack footer section.license a {
       border-bottom: none;
       background-color: inherit;
@@ -129,10 +149,11 @@
 {{ define "main" }}
   <header>
     <h1>{{ .Title }}<sup class="muted">v{{ .Site.Data.npm.latest.version }}</sup></h1>
-    <h2 class="muted">The <i>fastest</i> way to the IndieWeb.</h2>
+    <h2 class="muted">The deep end of the Surface Web.</h2>
   </header>
   {{ .Content }}
 {{ end }}
 {{ define "footer" }}
   {{ partial "powered-by.html" . }}
+  {{ partial "cookie-disclaimer.html" . }}
 {{ end }}

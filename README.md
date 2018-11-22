@@ -1,6 +1,6 @@
 <h1 align="center">After Dark Green</h1>
 
-> After Dark is a hypermedia authoring toolkit built on Hugo designed to create the world's fastest, most scalable websites.
+> After Dark is a privacy-focused hypermedia authoring system designed to amplify the world's most influential voices.
 
 [![Latest NPM version](https://img.shields.io/npm/v/after-dark.svg?style=flat-square)](https://www.npmjs.com/package/after-dark)
 [![Monthly downloads](https://img.shields.io/npm/dm/after-dark.svg?style=flat-square)](https://www.npmjs.com/package/after-dark)
