@@ -11,14 +11,16 @@
 
 ## Features
 
-- [Web Mining](https://after-dark.habd.as/#feature-mining)
-- [Advanced Graphics](https://after-dark.habd.as/#feature-graphics)
-- [Fuzzy Search](https://after-dark.habd.as/#feature-search)
+- [Streamlined Workflow](https://after-dark.habd.as/#streamlined-workflow)
 - [Ludicrous Speed](https://after-dark.habd.as/#feature-speed)
+- [Advanced Graphics](https://after-dark.habd.as/#feature-graphics)
 - [Easily Customized](https://after-dark.habd.as/#feature-customize)
+- [Fuzzy Search](https://after-dark.habd.as/#feature-search)
+- [Passive Income](https://after-dark.habd.as/#feature-income)
 - [Securely Designed](https://after-dark.habd.as/#feature-security)
+- [Privacy Focused](https://after-dark.habd.as/#feature-privacy)
 
-Visit the [Online Help](https://after-dark.habd.as) docs to learn
+Visit the [After Dark Docs](https://after-dark.habd.as) site to learn more.
 
 ## Screenshots
 
