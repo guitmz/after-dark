@@ -12,11 +12,11 @@
 ## Features
 
 - [Streamlined Workflow](https://after-dark.habd.as/#streamlined-workflow)
-- [Ludicrous Speed](https://after-dark.habd.as/#feature-speed)
+- [Unparalleled Speed](https://after-dark.habd.as/#feature-speed)
 - [Advanced Graphics](https://after-dark.habd.as/#feature-graphics)
-- [Easily Customized](https://after-dark.habd.as/#feature-customize)
+- [Rewards System](https://after-dark.habd.as/#feature-rewards)
 - [Fuzzy Search](https://after-dark.habd.as/#feature-search)
-- [Passive Income](https://after-dark.habd.as/#feature-income)
+- [Easily Customized](https://after-dark.habd.as/#feature-customize)
 - [Securely Designed](https://after-dark.habd.as/#feature-security)
 - [Privacy Focused](https://after-dark.habd.as/#feature-privacy)
 
