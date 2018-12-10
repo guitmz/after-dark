@@ -11,7 +11,7 @@
 
 ## Features
 
-- [Streamlined Workflow](https://after-dark.habd.as/#streamlined-workflow)
+- [Streamlined Workflow](https://after-dark.habd.as/#feature-workflow)
 - [Unparalleled Speed](https://after-dark.habd.as/#feature-speed)
 - [Advanced Graphics](https://after-dark.habd.as/#feature-graphics)
 - [Rewards System](https://after-dark.habd.as/#feature-rewards)
