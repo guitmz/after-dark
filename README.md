@@ -1,6 +1,6 @@
 <h1 align="center">After Dark Green</h1>
 
-> After Dark is a privacy-focused hypermedia authoring system designed to amplify the world's most influential voices.
+> After Dark is free and open source software you can use to create a privacy-aware website, blog or app. Unparalleled speed, secure design and add-on rewards system help you own your data and monetize your users.
 
 [![Latest NPM version](https://img.shields.io/npm/v/after-dark.svg?style=flat-square)](https://www.npmjs.com/package/after-dark)
 [![Monthly downloads](https://img.shields.io/npm/dm/after-dark.svg?style=flat-square)](https://www.npmjs.com/package/after-dark)
@@ -11,14 +11,16 @@
 
 ## Features
 
-- [Web Mining](https://after-dark.habd.as/#feature-mining)
+- [Streamlined Workflow](https://after-dark.habd.as/#feature-workflow)
+- [Unparalleled Speed](https://after-dark.habd.as/#feature-speed)
 - [Advanced Graphics](https://after-dark.habd.as/#feature-graphics)
+- [Rewards System](https://after-dark.habd.as/#feature-rewards)
 - [Fuzzy Search](https://after-dark.habd.as/#feature-search)
-- [Ludicrous Speed](https://after-dark.habd.as/#feature-speed)
 - [Easily Customized](https://after-dark.habd.as/#feature-customize)
 - [Securely Designed](https://after-dark.habd.as/#feature-security)
+- [Privacy Focused](https://after-dark.habd.as/#feature-privacy)
 
-Visit the [Online Help](https://after-dark.habd.as) docs to learn
+Visit the [After Dark Docs](https://after-dark.habd.as) site to learn more.
 
 ## Screenshots
 
@@ -66,7 +68,7 @@ Visit the [Online Help](https://after-dark.habd.as) docs to learn
     </td>
   </tr>
   <tr>
-    <th scope="col">Webmining</th>
+    <th scope="col">Rewards System</th>
     <th scope="col">Form Controls</th>
     <th scope="col">Extras</th>
   </tr>
@@ -90,11 +92,11 @@ Run the [Upgrade Script](https://after-dark.habd.as/feature/upgrade-script/) any
 
 ### Verifying
 
-If installed or upgraded via script you may use the [Release Validator](https://after-dark.habd.as/validate/) to verify you're running a PGP-signed and SHA-verified release.
+If installed or upgraded via script you may use the [Release Validator](https://after-dark.habd.as/validate/) to verify you're running a PGP-signed and SHA-verified release. Integrity is checked at the source level and may be performed offline. See [Release Hashes](https://after-dark.habd.as/feature/release-hashes/) for more info.
 
 ### Help
 
-[Online Help](https://after-dark.habd.as/feature/online-help/) may be served locally with `hugo --source themes/after-dark/docs` upon installation and hosted online at after-dark.habd.as. WYSIWYG.
+Use the included [Online Help](https://after-dark.habd.as/feature/online-help/) to learn how to set-up and use After Dark. Help docs may be served locally and do not require an Internet connection to function.
 
 ## License
 
@@ -106,5 +108,5 @@ as published by Sam Hocevar. See the COPYING file for more details.
 
 ## Acknowledgements
 
-Thanks to Steve Francia for creating the Hugo logo, エゴイスト for hackcss, Dan Klammer for the bytesized SVG icons, Alexander Farkas for killing it with lazySizes, Simon Fremaux for such a groovy 404 background animation and Vincent Prouillet for the [Gutenberg port](https://www.getgutenberg.io/themes/after-dark/).
+Thanks to Steve Francia for creating the Hugo logo, エゴイスト for hackcss, Dan Klammer for the bytesized SVG icons, Alexander Farkas for killing it with lazySizes, Simon Fremaux for such a groovy 404 background animation and Vincent Prouillet for the [Zola port](https://www.getzola.org/themes/after-dark/).
 

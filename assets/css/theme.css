@@ -86,8 +86,7 @@ select.form-control,
 .help-block {
   font-size: initial;
 }
-@media only screen
-  and ( max-width: 30em ) {
+@media only screen and (max-width: 768px) {
   .help-block {
     font-size: unset;
   }
@@ -111,6 +110,10 @@ html {
 .hack .alert .highlight:last-of-type .chroma,
 .hack .card .highlight:last-of-type .chroma {
   margin-bottom: unset;
+}
+.hack blockquote,
+.hack blockquote:after {
+  line-height: 1.5rem;
 }
 .hack figure {
   margin: unset;

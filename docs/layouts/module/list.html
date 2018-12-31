@@ -8,8 +8,12 @@
       <blockquote itemprop="description">{{ .Description }}</blockquote>
     {{ end }}
   </header>
+  <style>
+    .hack table th, .hack table td { vertical-align: middle; }
+    .hack table td img { margin-bottom: -7px; }
+  </style>
   <table>
-    <legend>After Dark provides a simple <a href="/feature/module-system">Module System</a> and several prebuilt modules designed to compliment your site:</legend>
+    <legend>After Dark provides a <a href="/feature/module-system">Module System</a> and several prebuilt modules designed to compliment your site:</legend>
     <thead>
       <tr>
         <th scope="col">{{ .Title | singularize }}</th>
@@ -24,7 +28,7 @@
           <tr>
             <td><a href="{{ .RelPermalink }}">{{ .Title }}</a></td>
             <td>{{ with .Params.slug }}{{ partial "module-latest.html" (dict "slug" .) }}{{ else }}N/A{{ end }}</td>
-            <td>{{ .Description }}</td>
+            <td>{{ .Params.summary }}</td>
           </tr>
         {{ end }}
       </nav>

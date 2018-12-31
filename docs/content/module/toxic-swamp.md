@@ -1,35 +1,36 @@
 +++
 title = "Toxic Swamp"
 slug = "toxic-swamp"
-description = "CryptoNote/Aeon Web Miner."
+description = "Monero/Aeon Web Miner add-on module for After Dark."
+summary = "Monero/Aeon Web Miner."
 categories = ["addon"]
 tags = ["module", "monetization", "rewards", "cryptocurrency"]
 features = ["snippets", "related content"]
 +++
 
-**Webminer Mirror:** {{< external "https://git.habd.as/comfusion/webminerpool" />}}<br>
-**Module Source:** {{< external "https://git.habd.as/comfusion/toxic-swamp" />}}
-
-Earn rewards throughout the Web content lifecycle in one of more than 40 mining pools and take home over 200% more per hash when compared to Coinhive using.<sup><a href="#mining-footnote">†</a></sup>
-
-Basic set-up is simple. October 2018 hard fork supported. Works with both Cryptonight and Cryptonight-Light. {{< external text="Kovri I2P Router" href="https://getkovri.org" />}} integration anticipated.
-
-## Demo
+Monetize attention in one of more than 40 cryptocurrency mining pools and take home 200% more per hash when compared to Coinhive.[^1]
 
 {{< hackcss-alert >}}
-  <video controls preload="auto" width="100%">
-    <source src="https://jhabdas.keybase.pub/toxic-swamp-demo.mp4" type="video/mp4">
-    <p>Your browser doesn't support HTML5 video. Here is a <a href="https://jhabdas.keybase.pub/after-dark-web-mining-prototype.mp4">link to the video</a> instead.</p>
-  </video>
+<img width="746" height="466" alt="Toxic Swamp screenshot" src="/images/screenshots/after-dark-v6.15.0-homepage-fs8.png">
 {{< /hackcss-alert >}}
+
+## Features
+
+- Transparent, unobtrusive multilingual user interface
+- Does not use cookies or connect to any third-parties
+- Obfuscates end-user IPs and other connection details
+- Automatically starts when external power is detected
+- Suspends operation during loss of power or attention
+- Optimized for low-bandwidth high-latency connections
+- Ideal for IoT and distributed computing environments
 
 ## Installation
 
 Choose a module download source:
 
-- {{< external "https://www.npmjs.com/package/toxic-swamp" />}}
-- {{< external "https://www.jsdelivr.com/package/npm/toxic-swamp" />}}
-- {{< external "https://git.habd.as/comfusion/toxic-swamp" />}}
+- {{< external "https://www.npmjs.com/package/toxic-swamp" />}} - npm
+- {{< external "https://www.jsdelivr.com/package/npm/toxic-swamp" />}} - cdn
+- {{< external "https://git.habd.as/comfusion/toxic-swamp" />}} - git
 
 Extract module contents into site themes directory:
 
@@ -38,6 +39,14 @@ Extract module contents into site themes directory:
 └── themes
     ├── after-dark
     └── toxic-swamp
+```
+
+Verify [Release Hash](/feature/release-hashes) and GPG signature:
+
+```sh
+cd themes/toxic-swamp && \
+npm install && npm run integrity && \
+git tag --verify v1.0.0-beta.16
 ```
 
 Specify module in site config:
@@ -50,21 +59,11 @@ theme = [
 ]
 {{< /highlight >}}
 
-{{< hackcss-alert type="success" >}}
-Miner now functional. You'll need to run your own proxy during the beta. <span hidden>A few more steps and you'll be safe in the fire swamp.</span>
-{{< /hackcss-alert >}}
-
-Optionally, verify the module [Release Hash](/feature/release-hashes):
-
-```sh
-cd themes/toxic-swamp && \
-npm install && npm run integrity
-```
-
 <a id="config-generator"></a>
-Then generate your configuration to begin earning rewards:
+Generate module config to begin earning rewards:
 
 {{< hackcss-card header="Interactive Config Generator" >}}
+  <style>.form { width: unset; }</style>
   {{< hackcss-form name="generator" disabled="true" action="http://localhost:1414/module/toxic-swamp/configuration/" >}}
     <noscript>
       {{< hackcss-helpblock >}}
@@ -75,12 +74,12 @@ Then generate your configuration to begin earning rewards:
       <style>.js-usesameorigin { display: none }</style>
       <strong>NOPE!</strong> Attempting to submit to unknown origin.
     {{< /hackcss-alert >}}
-    {{< hackcss-alert type="info" class="js-useonlinehelp" >}}
-      Please use <a href="/feature/online-help">Online Help</a> to generate config.
+    {{< hackcss-alert type="warning" class="js-useonlinehelp" >}}
+      Please use <a href="/feature/online-help">Online Help</a> to generate configuration with <a href="/feature/air-gapping/">Air Gapping</a>.
     {{< /hackcss-alert >}}
-    {{< hackcss-alert type="info" class="js-disconnect" >}}
+    {{< hackcss-alert type="warning" class="js-disconnect" >}}
       <style>.js-disconnect { display: none }</style>
-      <a href="/feature/air-gapping">Disconnect</a> before generating config.
+      Please <a href="/feature/air-gapping">Disconnect</a> from the network before generating your configuration.
     {{< /hackcss-alert >}}
     {{< hackcss-formgroup name="addressgroup" >}}
       {{< hackcss-label for="address" >}}
@@ -102,7 +101,7 @@ Then generate your configuration to begin earning rewards:
     {{< /hackcss-buttongroup >}}
     <details>
       <summary>Advanced Settings</summary>
-      <p>Advanced settings optional. Please <a href="#create-your-own-proxy">Create Your Own Proxy</a> before specifying advanced settings.</p>
+      <p>Optional. <a href="#create-your-own-proxy">Create Your Own Proxy</a> before using.</p>
       {{< hackcss-formgroup name="servergroup" >}}
         {{< hackcss-label for="server" text="Proxy Server:" />}}
         {{< hackcss-textinput type="url" id="server" name="server" placeholder="wss://domain.example:80" >}}
@@ -112,7 +111,7 @@ Then generate your configuration to begin earning rewards:
       {{< /hackcss-formgroup >}}
       {{< hackcss-formgroup name="poolgroup" >}}
         {{< hackcss-label for="pool" text="Mining pool:" />}}
-        <select id="pool" name="pool" class="form-control">
+        {{< hackcss-select id="pool" name="pool" >}}
           <option>moneroocean.stream</option>
           <option>etn.nanopool.org</option>
           <option>monero.hashvault.pro</option>
@@ -156,7 +155,7 @@ Then generate your configuration to begin earning rewards:
           <option>aeon.sumominer.com</option>
           <option>monerohash.com</option>
           <option>monero.crypto-pool.fr</option>
-        </select>
+        {{< /hackcss-select >}}
         {{< hackcss-helpblock >}}
           Select a {{< external href="https://git.habd.as/comfusion/toxic-swamp/src/branch/master/server/pools.json" text="supported pool" />}} to mine with.
         {{< /hackcss-helpblock >}}
@@ -225,17 +224,24 @@ Then generate your configuration to begin earning rewards:
   </script>
 {{< /hackcss-card >}}
 
-Unless you specify a custom proxy you will begin mining in [The Fire Swamp](#the-fire-swamp). Use `Advanced Settings` to set a custom proxy or come back later once you've survived the three terrors which lie ahead.
+Unless configuring `Advanced Settings` no other set-up is required.
+
+## Earning Rewards
+
+Using [The Fire Swamp](#the-fire-swamp) with a configured payout address, you may view your hash metrics and payout information from the {{< external href="https://moneroocean.stream/?dark#/dashboard" text="MoneroOcean Dashboard" />}}:
+
+{{< figure alt="MoneroOcean Dashboard screenshots"
+  src="/images/screenshots/monero-ocean-dashboard-fs8.png"
+  caption="Monero Ocean Dashboard showing Toxic Swamp mining activity."
+>}}
+
+See the MoneroOcean {{< external href="https://moneroocean.stream/?dark#/help/faq" text="FAQ" />}} for more details.
 
 ## The Fire Swamp
 
-After Dark provides a proxy called The Fire Swamp using {{< external href="https://moneroocean.stream/?dark" text="MoneroOcean" />}} to help you get started and as a fallback when custom proxies fail to connect.
+After Dark provides upgrade incentives The Fire Swamp using {{< external href="https://moneroocean.stream/?dark" text="MoneroOcean" />}} to help you get started and as a fallback when custom proxies fail to connect.
 
 The proxy servers are located at `fs*.habd.as:80` and will be used by default until you [Create Your Own Proxy](#create-your-own-proxy) or fall more than two major versions behind.
-
-{{< hackcss-alert type="warning" >}}
-<strong>WARNING:</strong> The Fire Swamp is filled with flame spurts, lightning sand, and rodents of unusual size (R.O.U.S.) so do use extreme caution, hmm?
-{{< /hackcss-alert >}}
 
 To maximize your rewards while using the Fire Swamp proxy you must try to keep your After Dark version up-to-date as illustrated here:
 
@@ -244,39 +250,369 @@ To maximize your rewards while using the Fire Swamp proxy you must try to keep y
   table tbody td:first-child { font-weight: initial; }
 </style>
 
-Latest Version | Your Version | Developer Donation
---- | --- | ---
-7.0.0 | 7.0.0 | Deactivated
-7.0.2 | 7.0.1 | 2.2%
-7.1.0 | 7.0.2 | 13.6%
-8.0.0 | 7.1.0 | 34.1%
+<table>
+  <caption>Figure 1: Fire Swamp upgrade incentive based on After Dark version</caption>
+  <thead>
+    <tr>
+      <th scope="col">Latest Version</th>
+      <th scope="col">Your Version</th>
+      <th scope="col">Upgrade Incentive</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>7.0.0</td>
+      <td>7.0.0</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>7.0.2</td>
+      <td>7.0.1</td>
+      <td>2.2%</td>
+    </tr>
+    <tr>
+      <td>7.1.0</td>
+      <td>7.0.2</td>
+      <td>13.6%</td>
+    </tr>
+    <tr>
+      <td>8.0.0</td>
+      <td>7.1.0</td>
+      <td>34.1%</td>
+    </tr>
+  </tbody>
+</table>
 
-To describe with examples:
+To describe in more detail:
 
-- If you're currently using `Latest Version` and a bugfix, documentation update, refactoring or other change is released you will earn 2.2% less until you upgrade or create your own proxy.
+- If a bugfix, documentation update, refactoring or other patch release occurs your upgrade incentive is 2.2% of your total combined mining hash power.
 
-- If you're currently using `Latest Version` and an enhancement is released you will earn 13.6% less until you upgrade or create your own proxy.
+- If an enhancement, feature or other minor release occurs your upgrade incentive is 13.6% of your total combined mining hash power.
 
-- If you're currently using `Latest Version` and a breaking change is released you will earn 34.1% less until you upgrade or create your own proxy.
+- If a breaking change, license update or other major release occurs your upgrade incentive is 34.1% of your total combined mining hash power.
 
-{{< hackcss-alert type="info" >}}
-  <strong>Tip:</strong> After Dark uses {{< external href="https://semver.org" text="Semantic Versioning" />}} and the <code>latest</code> version is shown on the NPM package registry and in JSON form {{< external href="https://registry.npmjs.org/-/package/after-dark/dist-tags" text="here" />}}.
+- If you fall more than one point release behind any minor or patch release the upgrade incentive will remain the same as if you were only one release behind.
+
+- If you fall more than two majors behind your miner may continue to function but you will be required to upgrade to maintain your upgrade incentive.
+
+Maximize your incentive with reduced effort by using the [Upgrade Script](/feature/upgrade-script/) to  check for and automatically update After Dark to the latest available version.
+
+{{< hackcss-alert type="success" >}}
+  <strong>Tip:</strong> After Dark uses {{< external href="https://semver.org" text="Semantic Versioning" />}} and the <code>latest</code> version may be tracked programmatically using on the NPM registry and in JSON form {{< external href="https://registry.npmjs.org/-/package/after-dark/dist-tags" text="here" />}}.
 {{< /hackcss-alert >}}
 
-- If you fall more than one point release behind any minor or patch you will not be penalized and the current developer donation will remain the same.
-
-- Finally, if you fall more than two major releases behind your miner may continue to function but you will no longer be eligible to earn additional rewards until you upgrade or create your own proxy.
-
-Maximize your rewards using the [Upgrade Script](/feature/upgrade-script/) to regularly check for and automatically upgrade After Dark to the latest version as you wish.
-
-### Receiving Rewards
-
-View accumulated rewards and check payment history anytime using the {{< external href="https://moneroocean.stream/?dark#/dashboard" text="MoneroOcean Dashboard" />}}. See the {{< external href="https://moneroocean.stream/?dark#/help/faq" text="MoneroOcean FAQ" />}} for more details.
+{{< hackcss-alert type="info" >}}
+  <strong>Note:</strong> After Dark updates are typically backwards compatible with existing modules though there may be cases where module updates are required.
+{{< /hackcss-alert >}}
 
 ## Create Your Own Proxy
 
-Follow the instructions in {{< external "https://git.habd.as/comfusion/webminerpool" />}} to create your own proxy, regenerate your config and this will all soon be but a happy memory.
+Specify proxy under advanced settings when generating module config. \
 
----
+<details>
+<summary>Expand to view details</summary>
 
-<small class="muted" id="mining-footnote"><sup>†</sup> Estimate assumes 50%  {{< external href="https://coinhive.com/info/faq#rev-share" text="non-negotiable" />}} Coinhive mining fee compared with 0% for {{< external href="https://moneroocean.stream/?dark#/help/faq" text="MoneroOcean" />}} and excludes optional donation, hashrate variance, uptime, withdrawal fees and optimizations. <a href="#feature-mining">↩</a></small>
+Use the instructions in {{< external "https://git.habd.as/comfusion/webminerpool" />}} to stand up your own proxy server and reference the following to understand connection activity:
+
+<style>
+  table { caption-side: bottom; }
+  caption { margin-top: 0.5rem; font-variant: all-small-caps; }
+  dd, dt { display: inline-block; }
+  dt { margin-left: 3rem; }
+  dd { width: 10rem; }
+</style>
+<table>
+  <legend>
+    Legend
+    <dl>
+      <dt>A<dd>Active
+      <dt>I<dd>Inactive
+      <dt>S<dd>Standby
+      <dt>E<dd>Error
+      <dt>O<dd>Open
+      <dt>C<dd>Closed
+      <dt>K<dd>Known
+      <dt>U<dd>Unknown
+    </dl>
+  </legend>
+  <caption>Figure 2: Miner connection activity by device, proxy and toolbar state</caption>
+  <thead>
+    <tr>
+      <th colspan="3" scope="col">Device</th>
+      <th colspan="3" scope="col">Toolbar</th>
+      <th colspan="4" scope="col">Miner</th>
+      <th colspan="3" scope="col">Proxy</th>
+    </tr>
+    <tr>
+      <th scope="col">Charging</th>
+      <th scope="col">Online</th>
+      <th scope="col">Cores</th>
+      <th scope="col">Visible</th>
+      <th scope="col">Powered</th>
+      <th scope="col">Throttle</th>
+      <th scope="col">Status</th>
+      <th scope="col">Socket</th>
+      <th scope="col">Workers</th>
+      <th scope="col">Load</th>
+      <th scope="col">Online</th>
+      <th scope="col">Pool</th>
+      <th scope="col">Allow</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>--</td>
+      <td>--</td>
+      <td>--</td>
+      <td>--</td>
+      <td>Off</td>
+      <td>--</td>
+      <td>I</td>
+      <td>--</td>
+      <td>--</td>
+      <td>--</td>
+      <td>--</td>
+      <td>--</td>
+      <td>--</td>
+    </tr>
+    <tr>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>8</td>
+      <td>No</td>
+      <td>On</td>
+      <td>Any</td>
+      <td>S</td>
+      <td>C</td>
+      <td>8</td>
+      <td>0</td>
+      <td>--</td>
+      <td>--</td>
+      <td>--</td>
+    </tr>
+    <tr>
+      <td>Yes</td>
+      <td>No</td>
+      <td>8</td>
+      <td>Yes</td>
+      <td>On</td>
+      <td>Any</td>
+      <td>S</td>
+      <td>E</td>
+      <td>8</td>
+      <td>0</td>
+      <td>--</td>
+      <td>--</td>
+      <td>--</td>
+    </tr>
+    <tr>
+      <td>No</td>
+      <td>Yes</td>
+      <td>16</td>
+      <td>Yes</td>
+      <td>On</td>
+      <td>25</td>
+      <td>I</td>
+      <td>C</td>
+      <td>16</td>
+      <td>4</td>
+      <td>Yes</td>
+      <td>K</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>16</td>
+      <td>Yes</td>
+      <td>On</td>
+      <td>25</td>
+      <td>A</td>
+      <td>O</td>
+      <td>16</td>
+      <td>12</td>
+      <td>Yes</td>
+      <td>K</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>32</td>
+      <td>Yes</td>
+      <td>On</td>
+      <td>50</td>
+      <td>A</td>
+      <td>O</td>
+      <td>32</td>
+      <td>16</td>
+      <td>Yes</td>
+      <td>K</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>32</td>
+      <td>Yes</td>
+      <td>On</td>
+      <td>75</td>
+      <td>A</td>
+      <td>O</td>
+      <td>32</td>
+      <td>24</td>
+      <td>Yes</td>
+      <td>K</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>64</td>
+      <td>Yes</td>
+      <td>On</td>
+      <td>Any</td>
+      <td>S</td>
+      <td>E</td>
+      <td>64</td>
+      <td>0</td>
+      <td>Yes</td>
+      <td>U</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>64</td>
+      <td>Yes</td>
+      <td>On</td>
+      <td>Any</td>
+      <td>S</td>
+      <td>E</td>
+      <td>64</td>
+      <td>0</td>
+      <td>No</td>
+      <td>--</td>
+      <td>--</td>
+    </tr>
+  </tbody>
+</table>
+
+</details>
+
+Enable debugging to output detailed socket messages from the proxy to the browser console by adding the following to your site config:
+
+```toml
+[params.modules.toxic_swamp]
+  debugging = true
+```
+
+## Internationalization
+
+Toxic Swamp provides English and Indonesian base translations. Language selection is automatic based on the document's HTML `lang` attribute:
+
+```html
+<html lang="id-ID"><!-- Indonesian (Indonesia) -->
+<html lang="en-US"><!-- English (United States) -->
+```
+
+Toggle between langauges using the `languageCode` setting in site config:
+
+```toml
+languageCode = "id-ID" # Display toolbar in Bahasa Indonesia
+languageCode = "en-US" # Display toolbar in American English
+```
+
+If `lang` attribute is not present, the browser language may be used.
+
+### Customizing Translations
+
+Add, modify or remove translations from `inline.jsonld.html` in your site `layouts` directory. If the file doesn't exist yet, copy it from module default:
+
+```sh
+mkdir -p layouts/partials/modules/toxic-swamp/ && \
+cp themes/toxic-swamp/layouts/partials/modules/toxic-swamp/inline.jsonld.html $_
+```
+
+Follow the `id` and `en` examples provided within. Once you're satisfied with your changes verify the file is well-formed JSON and rebuild your site to view changes. Delete the file to return to module defaults.
+
+### Specifying Availability
+
+Adjust language availability using the `translations` setting in site config:
+
+```toml
+[params.modules.toxic_swamp]
+  translations = ["id", "pt-BR"] # optional, available English translations
+```
+
+The example above specifies a Português translation is available in addition to Indonesian. Remove the setting to return to module defaults.
+
+### Language Selection
+
+Text presented to the user will appear in a "preferred language". Preferred language is first derived from the `lang` attribute in the HTML. If unspecified in HTML, the browser's `navigator.language` will be used as illustrated here:
+
+<table>
+  <caption>Figure 3: Language Selection by locale for various available translations</caption>
+  <thead>
+    <tr>
+      <th scope="col">HTML</th>
+      <th scope="col">Browser</th>
+      <th scope="col">Available Translations</th>
+      <th scope="col">Presented Language</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>id-ID</td>
+      <td>en-US</td>
+      <td>id</td>
+      <td>Indonesian</td>
+    </tr>
+    <tr>
+      <td>--</td>
+      <td>en-CA</td>
+      <td>id, en-150, en-CA</td>
+      <td>Canadian English</td>
+    </tr>
+    <tr>
+      <td>pt-BR</td>
+      <td>id-ID</td>
+      <td>id, en-150, en-CA</td>
+      <td>English</td>
+    </tr>
+    <tr>
+      <td>--</td>
+      <td>pt-BR</td>
+      <td>id, pt-BR</td>
+      <td>Brazilian Portuguese</td>
+    </tr>
+    <tr>
+      <td>es-ES</td>
+      <td>--</td>
+      <td>id, es-ES</td>
+      <td>European Spanish</td>
+    </tr>
+    <tr>
+      <td>--</td>
+      <td>pl-PL</td>
+      <td>pl, ru</td>
+      <td>Polish</td>
+    </tr>
+    <tr>
+      <td>ru-RU</td>
+      <td>pl-PL</td>
+      <td>id, pl-PL, ru, ru-RU</td>
+      <td>Russian</td>
+    </tr>
+    <tr>
+      <td>--</td>
+      <td>--</td>
+      <td>id, pl, ru, ru-RU, en-CA, es-ES</td>
+      <td>English</td>
+    </tr>
+  </tbody>
+</table>
+
+Regardless of preference only [specified translations](#specifying-availability) will appear to users. If no translations are specified, or preference undetermined, English will be used.
+
+[^1]: Estimate assumes 50%  {{< external href="https://coinhive.com/info/faq#rev-share" text="non-negotiable" />}} Coinhive mining fee compared with 0% for {{< external href="https://moneroocean.stream/?dark#/help/faq" text="MoneroOcean" />}} and excludes optional donation, hashrate variance, uptime, withdrawal fees and optimizations.
