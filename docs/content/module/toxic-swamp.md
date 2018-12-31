@@ -512,15 +512,15 @@ Enable debugging to output detailed socket messages from the proxy to the browse
 Toxic Swamp provides English and Indonesian base translations. Language selection is automatic based on the document's HTML `lang` attribute:
 
 ```html
-<html lang="id-ID"><!-- Bahasa Indonesia -->
-<html lang="en-US"><!-- American English -->
+<html lang="id-ID"><!-- Indonesian (Indonesia) -->
+<html lang="en-US"><!-- English (United States) -->
 ```
 
 Toggle between langauges using the `languageCode` setting in site config:
 
 ```toml
-languageCode = "id-ID" # Display toolbar in Indonesian
-languageCode = "en-UK" # Display toolbar in English
+languageCode = "id-ID" # Display toolbar in Bahasa Indonesia
+languageCode = "en-US" # Display toolbar in American English
 ```
 
 If `lang` attribute is not present, the browser language may be used.
@@ -549,17 +549,70 @@ The example above specifies a Português translation is available in addition to
 
 ### Language Selection
 
-Text presented to the user will appear in a "preferred language". Preferred language is first derived from the `lang` attribute. If left unspecified, the browser's `navigator.language` will be used instead:
+Text presented to the user will appear in a "preferred language". Preferred language is first derived from the `lang` attribute in the HTML. If unspecified in HTML, the browser's `navigator.language` will be used as illustrated here:
 
-HTML | Browser | Available Translations | Presented Language
---- | --- | --- | ---
-id-ID | en-US | id | Indonesian
-pt-BR | id-ID | id | English
--\- | pt-BR | id, pt-BR | Português (Brazilian)
--\- | en-UK | id, pt-BR | English
-es-ES | es-US | es, es-419, es-ES | Español de España
-ru-RU | en-UK | ru | Pу́сский (Russian)
+<table>
+  <caption>Figure 3: Language Selection by locale for various available translations</caption>
+  <thead>
+    <tr>
+      <th scope="col">HTML</th>
+      <th scope="col">Browser</th>
+      <th scope="col">Available Translations</th>
+      <th scope="col">Presented Language</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>id-ID</td>
+      <td>en-US</td>
+      <td>id</td>
+      <td>Indonesian</td>
+    </tr>
+    <tr>
+      <td>--</td>
+      <td>en-CA</td>
+      <td>id, en-150, en-CA</td>
+      <td>Canadian English</td>
+    </tr>
+    <tr>
+      <td>pt-BR</td>
+      <td>id-ID</td>
+      <td>id, en-150, en-CA</td>
+      <td>English</td>
+    </tr>
+    <tr>
+      <td>--</td>
+      <td>pt-BR</td>
+      <td>id, pt-BR</td>
+      <td>Brazilian Portuguese</td>
+    </tr>
+    <tr>
+      <td>es-ES</td>
+      <td>--</td>
+      <td>id, es-ES</td>
+      <td>European Spanish</td>
+    </tr>
+    <tr>
+      <td>--</td>
+      <td>pl-PL</td>
+      <td>pl, ru</td>
+      <td>Polish</td>
+    </tr>
+    <tr>
+      <td>ru-RU</td>
+      <td>pl-PL</td>
+      <td>id, pl-PL, ru, ru-RU</td>
+      <td>Russian</td>
+    </tr>
+    <tr>
+      <td>--</td>
+      <td>--</td>
+      <td>id, pl, ru, ru-RU, en-CA, es-ES</td>
+      <td>English</td>
+    </tr>
+  </tbody>
+</table>
 
-Regardless of language preference, only [available translations](#specifying-availability) will be presented to the user. If no available translations are specified, English will be used.
+Regardless of preference only [specified translations](#specifying-availability) will appear to users. If no translations are specified, or preference undetermined, English will be used.
 
 [^1]: Estimate assumes 50%  {{< external href="https://coinhive.com/info/faq#rev-share" text="non-negotiable" />}} Coinhive mining fee compared with 0% for {{< external href="https://moneroocean.stream/?dark#/help/faq" text="MoneroOcean" />}} and excludes optional donation, hashrate variance, uptime, withdrawal fees and optimizations.
