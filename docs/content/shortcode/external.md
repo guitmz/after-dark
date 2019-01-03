@@ -1,30 +1,38 @@
 +++
 title = "External"
-description = "Create links with SVG icon and custom behavior."
+description = "Create links with external icon and custom behavior."
 categories = ["navigation"]
 tags = ["links", "security", "privacy"]
 html_attributes = ["href", "class", "referrerpolicy", "target", "type", "rel"]
-custom_attributes = []
-snippets_used = ["external", "button"]
+custom_attributes = ["text"]
+snippets_used = ["external", "button", "alert"]
 +++
 
 Basic usage:
 
 ```html
-{{</* external text="After Dark" href="https://after-dark.habd.as" /*/>}}
+{{</* external href="https://after-dark.habd.as" text="After Dark" /*/>}}
 {{</* external href="https://after-dark.habd.as" /*/>}}
 ```
 
-{{< external text="After Dark" href="https://after-dark.habd.as" />}}
+{{< external href="https://after-dark.habd.as" text="After Dark" />}}
 {{< external href="https://after-dark.habd.as" />}}
 
+Shorthand usage:
+
 ```
+{{</* external "https://after-dark.habd.as" "After Dark" /*/>}}
 {{</* external "https://go.habd.as/after-dark" /*/>}}
 {{</* external "wss://fs1.habd.as:80" /*/>}}
 ```
 
+{{< external "https://after-dark.habd.as" "After Dark" />}}
 {{< external "https://go.habd.as/after-dark" />}}
 {{< external href="wss://fs1.habd.as:80" />}}
+
+{{< hackcss-alert type="info" >}}
+<strong>Note:</strong> URIs such as those using the <code>wss</code> scheme may be considered unsafe by the {{< external "https://golang.org/pkg/html/template/" "Go template package" />}}. Learn more in the package {{< external "https://golang.org/pkg/html/template/#hdr-Security_Model" "Security Model" />}}.
+{{< /hackcss-alert >}}
 
 With external link styling removed:
 
