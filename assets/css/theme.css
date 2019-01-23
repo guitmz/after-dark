@@ -36,6 +36,9 @@ main, footer {
   animation: intro 0.3s both;
   animation-delay: 0.15s;
 }
+header:first-of-type + details {
+  margin-top: 1rem;
+}
 footer time[datetime$="M"]:before {
   content: "\2013\0020";
 }
@@ -94,7 +97,8 @@ select.form-control,
 html {
   font-size: 13px;
 }
-.hack pre {
+.hack pre,
+.hack samp {
   font-size: 17px;
 }
 .hack .form input,

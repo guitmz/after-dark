@@ -1,7 +1,7 @@
 +++
 title = "Code Highlighter"
 description = "Highlight code written in more than 160 languages."
-categories = ["Experience"]
+categories = ["experience"]
 tags = ["color", "style", "syntax"]
 features = ["snippets", "related content", "jit requests"]
 +++

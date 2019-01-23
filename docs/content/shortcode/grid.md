@@ -8,13 +8,8 @@ custom_attributes = []
 snippets_used = ["cell", "card", "button"]
 +++
 
-<style>.margin-reset { margin: 0; }</style>
-{{< hackcss-card header="Quick Example" >}}
-  {{< hackcss-grid class="margin-reset" >}}
-    {{< hackcss-cell class="-4of12" text="4" />}}
-    {{< hackcss-cell class="-4of12" text="4" />}}
-    {{< hackcss-cell class="-4of12" text="4" />}}
-  {{< /hackcss-grid >}}
+Containing three [Cell](../cell) of equal size:
+
 {{< highlight html "linenos=inline" >}}
 {{</* hackcss-grid >}}
   {{< hackcss-cell class="-4of12" text="4" />}}
@@ -22,7 +17,12 @@ snippets_used = ["cell", "card", "button"]
   {{< hackcss-cell class="-4of12" text="4" />}}
 {{< /hackcss-grid */>}}
 {{< /highlight >}}
-{{< /hackcss-card >}}
+
+{{< hackcss-grid class="unset-margin" >}}
+  {{< hackcss-cell class="-4of12" text="4" />}}
+  {{< hackcss-cell class="-4of12" text="4" />}}
+  {{< hackcss-cell class="-4of12" text="4" />}}
+{{< /hackcss-grid >}}
 
 With two columns of odd size:
 
@@ -138,4 +138,35 @@ Enclosing [Cards](../card/) with various [Buttons](../button/) inside:
   {{< /hackcss-cell >}}
 {{< /hackcss-grid >}}
 
-See the {{< external text="hackcss" href="https://hackcss.egoist.moe/" />}} docs for full list of flexbox modifiers available.
+Aligning three [SVG Favicons]({{< relref "svg-favicon" >}}) using `-around` modifier:
+
+```html
+{{</* hackcss-grid class="-around" >}}
+  {{< hackcss-cell class="-2of12" >}}
+    <img src="data:image/svg+xml,%3Csvg%20viewBox='0%200%2046%2045'%20xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3EAfter%20Dark%3C/title%3E%3Cpath%20d='M.708%2045L23%20.416%2045.292%2045H.708zM35%2038L23%2019%2011%2038h24z'%20fill='%23f00'/%3E%3C/svg%3E">
+  {{< /hackcss-cell >}}
+  {{< hackcss-cell class="-2of12" >}}
+    <img src="data:image/svg+xml,%3Csvg%20viewBox='0%200%2046%2045'%20xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3EAfter%20Dark%3C/title%3E%3Cpath%20d='M.708%2045L23%20.416%2045.292%2045H.708zM35%2038L23%2019%2011%2038h24z'%20fill='lime'/%3E%3C/svg%3E">
+  {{< /hackcss-cell >}}
+  {{< hackcss-cell class="-2of12" >}}
+    <img src="data:image/svg+xml,%3Csvg%20viewBox='0%200%2046%2045'%20xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3EAfter%20Dark%3C/title%3E%3Cpath%20d='M.708%2045L23%20.416%2045.292%2045H.708zM35%2038L23%2019%2011%2038h24z'%20fill='%2300f'/%3E%3C/svg%3E">
+  {{< /hackcss-cell >}}
+{{< /hackcss-grid */>}}
+```
+
+{{< hackcss-grid class="-around" >}}
+  {{< hackcss-cell class="-2of12" >}}
+    <img src="data:image/svg+xml,%3Csvg%20viewBox='0%200%2046%2045'%20xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3EAfter%20Dark%3C/title%3E%3Cpath%20d='M.708%2045L23%20.416%2045.292%2045H.708zM35%2038L23%2019%2011%2038h24z'%20fill='%23f00'/%3E%3C/svg%3E">
+  {{< /hackcss-cell >}}
+  {{< hackcss-cell class="-2of12" >}}
+    <img src="data:image/svg+xml,%3Csvg%20viewBox='0%200%2046%2045'%20xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3EAfter%20Dark%3C/title%3E%3Cpath%20d='M.708%2045L23%20.416%2045.292%2045H.708zM35%2038L23%2019%2011%2038h24z'%20fill='lime'/%3E%3C/svg%3E">
+  {{< /hackcss-cell >}}
+  {{< hackcss-cell class="-2of12" >}}
+    <img src="data:image/svg+xml,%3Csvg%20viewBox='0%200%2046%2045'%20xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3EAfter%20Dark%3C/title%3E%3Cpath%20d='M.708%2045L23%20.416%2045.292%2045H.708zM35%2038L23%2019%2011%2038h24z'%20fill='%2300f'/%3E%3C/svg%3E">
+  {{< /hackcss-cell >}}
+{{< /hackcss-grid >}}
+
+See the {{< external text="hackcss" href="https://hackcss.egoist.moe/" />}} docs for full list of flexbox modifiers available. Reference the following resources for additional help:
+
+- {{< external "https://philipwalton.github.io/solved-by-flexbox/" "Solved by Flexbox" />}} for cleaner, hack-free CSS
+- {{< external "https://www.w3.org/TR/css-flexbox-1/" "CSS Flexible Box Layout Module" />}} for Level 1 spec on W3C

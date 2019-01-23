@@ -1,7 +1,7 @@
 +++
 title = "Upgrade Script"
 description = "Check for After Dark updates and upgrade effortlessly."
-categories = ["experience"]
+categories = ["core"]
 tags = ["updating", "installation", "scripts"]
 features = ["code highlighter", "related content", "snippets"]
 +++

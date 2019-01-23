@@ -14,17 +14,18 @@ Monetize attention in one of more than 40 cryptocurrency mining pools and take h
 <img width="746" height="466" alt="Toxic Swamp screenshot" src="/images/screenshots/after-dark-v6.15.0-homepage-fs8.png">
 {{< /hackcss-alert >}}
 
-## Features
+# Features
 
+- Earn cryptocurrency while visitors browse your sites
+- Reward effort during site development and publishing
 - Transparent, unobtrusive multilingual user interface
 - Does not use cookies or connect to any third-parties
 - Obfuscates end-user IPs and other connection details
 - Automatically starts when external power is detected
 - Suspends operation during loss of power or attention
 - Optimized for low-bandwidth high-latency connections
-- Ideal for IoT and distributed computing environments
 
-## Installation
+# Installation
 
 Choose a module download source:
 
@@ -226,7 +227,7 @@ Generate module config to begin earning rewards:
 
 Unless configuring `Advanced Settings` no other set-up is required.
 
-## Earning Rewards
+# Earning Rewards
 
 Using [The Fire Swamp](#the-fire-swamp) with a configured payout address, you may view your hash metrics and payout information from the {{< external href="https://moneroocean.stream/?dark#/dashboard" text="MoneroOcean Dashboard" />}}:
 
@@ -237,7 +238,7 @@ Using [The Fire Swamp](#the-fire-swamp) with a configured payout address, you ma
 
 See the MoneroOcean {{< external href="https://moneroocean.stream/?dark#/help/faq" text="FAQ" />}} for more details.
 
-## The Fire Swamp
+# The Fire Swamp
 
 After Dark provides upgrade incentives The Fire Swamp using {{< external href="https://moneroocean.stream/?dark" text="MoneroOcean" />}} to help you get started and as a fallback when custom proxies fail to connect.
 
@@ -305,9 +306,11 @@ Maximize your incentive with reduced effort by using the [Upgrade Script](/featu
   <strong>Note:</strong> After Dark updates are typically backwards compatible with existing modules though there may be cases where module updates are required.
 {{< /hackcss-alert >}}
 
-## Create Your Own Proxy
+# Create Your Own Proxy
 
-Specify proxy under advanced settings when generating module config. \
+Advanced users may wish to configure their own proxy servers.
+
+advanced settings when running the [Config Generator](#config-generator) and stand up your proxy using the proxy server described in more detail here:
 
 <details>
 <summary>Expand to view details</summary>
@@ -507,112 +510,63 @@ Enable debugging to output detailed socket messages from the proxy to the browse
   debugging = true
 ```
 
-## Internationalization
+# Internationalization
 
-Toxic Swamp provides English and Indonesian base translations. Language selection is automatic based on the document's HTML `lang` attribute:
+Included languages available for UI presentation:
 
-```html
-<html lang="id-ID"><!-- Indonesian (Indonesia) -->
-<html lang="en-US"><!-- English (United States) -->
-```
+- English
+- Indonesian
+- Russian
 
-Toggle between langauges using the `languageCode` setting in site config:
+Use `languageCode` in site config to control display language:
 
 ```toml
-languageCode = "id-ID" # Display toolbar in Bahasa Indonesia
-languageCode = "en-US" # Display toolbar in American English
+languageCode = "en-US" # English (United States) or English by default
+languageCode = "id-ID" # Indonesian (Indonesia) or Indonesian, if available
+languageCode = "ru-RU" # Russian (Russia) or Russian, if available
 ```
 
-If `lang` attribute is not present, the browser language may be used.
+{{< hackcss-alert type="info" >}}
+<strong>Note:</strong> Language tag syntax is defined by the <abbr title="Internet Engineering Task Force">IETF</abbr>'s {{< external href="https://tools.ietf.org/html/bcp47" text="BCP 47" />}}.
+{{< /hackcss-alert >}}
 
-### Customizing Translations
+Customize translations without modifying source:
 
-Add, modify or remove translations from `inline.jsonld.html` in your site `layouts` directory. If the file doesn't exist yet, copy it from module default:
+<details>
+<summary>Expand to view details</summary>
+
+Modify translations from `inline.jsonld.html` in your site `layouts` directory. If the file doesn't exist yet, copy it from module default:
 
 ```sh
 mkdir -p layouts/partials/modules/toxic-swamp/ && \
 cp themes/toxic-swamp/layouts/partials/modules/toxic-swamp/inline.jsonld.html $_
 ```
 
-Follow the `id` and `en` examples provided within. Once you're satisfied with your changes verify the file is well-formed JSON and rebuild your site to view changes. Delete the file to return to module defaults.
-
-### Specifying Availability
-
-Adjust language availability using the `translations` setting in site config:
+Whitelist available `translations` for module in site config using override:
 
 ```toml
 [params.modules.toxic_swamp]
-  translations = ["id", "pt-BR"] # optional, available English translations
+  translations = ["id", "ru"] # Override available English translations
 ```
 
-The example above specifies a Português translation is available in addition to Indonesian. Remove the setting to return to module defaults.
+Remove any customizations to return to module defaults.
 
-### Language Selection
+</details>
 
-Text presented to the user will appear in a "preferred language". Preferred language is first derived from the `lang` attribute in the HTML. If unspecified in HTML, the browser's `navigator.language` will be used as illustrated here:
+# Indemnification
 
-<table>
-  <caption>Figure 3: Language Selection by locale for various available translations</caption>
-  <thead>
-    <tr>
-      <th scope="col">HTML</th>
-      <th scope="col">Browser</th>
-      <th scope="col">Available Translations</th>
-      <th scope="col">Presented Language</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>id-ID</td>
-      <td>en-US</td>
-      <td>id</td>
-      <td>Indonesian</td>
-    </tr>
-    <tr>
-      <td>--</td>
-      <td>en-CA</td>
-      <td>id, en-150, en-CA</td>
-      <td>Canadian English</td>
-    </tr>
-    <tr>
-      <td>pt-BR</td>
-      <td>id-ID</td>
-      <td>id, en-150, en-CA</td>
-      <td>English</td>
-    </tr>
-    <tr>
-      <td>--</td>
-      <td>pt-BR</td>
-      <td>id, pt-BR</td>
-      <td>Brazilian Portuguese</td>
-    </tr>
-    <tr>
-      <td>es-ES</td>
-      <td>--</td>
-      <td>id, es-ES</td>
-      <td>European Spanish</td>
-    </tr>
-    <tr>
-      <td>--</td>
-      <td>pl-PL</td>
-      <td>pl, ru</td>
-      <td>Polish</td>
-    </tr>
-    <tr>
-      <td>ru-RU</td>
-      <td>pl-PL</td>
-      <td>id, pl-PL, ru, ru-RU</td>
-      <td>Russian</td>
-    </tr>
-    <tr>
-      <td>--</td>
-      <td>--</td>
-      <td>id, pl, ru, ru-RU, en-CA, es-ES</td>
-      <td>English</td>
-    </tr>
-  </tbody>
-</table>
+Though not specifically required, you may choose to place an indemnity clause in a prominent — or obvious — location within your website, app or service.
 
-Regardless of preference only [specified translations](#specifying-availability) will appear to users. If no translations are specified, or preference undetermined, English will be used.
+An example clause might look like the following:
 
-[^1]: Estimate assumes 50%  {{< external href="https://coinhive.com/info/faq#rev-share" text="non-negotiable" />}} Coinhive mining fee compared with 0% for {{< external href="https://moneroocean.stream/?dark#/help/faq" text="MoneroOcean" />}} and excludes optional donation, hashrate variance, uptime, withdrawal fees and optimizations.
+<b><i>By using [Site] you acknowledge you are the sole owner of the computer or device used to connect to [Site] and hereby agree to indemnify, defend, and hold harmless [Site] in any matter arising from or in relation to the unauthorized use thereof.</i></b>
+
+The clause intends to limit liability should someone attempt to use [Site] in a way which may be construed by another as illicit.
+
+{{< blockquote
+  text="Hanlon's Razor: Never attribute to malice that which can be adequately explained by stupidity."
+  cite="Robert Heinlein, Logic of Empire (1941)"
+/>}}
+
+[^1]: Estimate assumes 50%  {{< external href="https://coinhive.com/info/faq#rev-share" text="non-negotiable" />}} Coinhive mining fee compared with 0% for {{< external href="https://moneroocean.stream/?dark#/help/faq" text="MoneroOcean" />}} and excludes upgrade incentives, hashrate variance, pool and proxy uptime, withdrawal fees and other optimizations.
+
