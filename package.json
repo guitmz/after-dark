@@ -1,8 +1,8 @@
 {
   "name": "after-dark",
   "version": "6.16.1",
-  "description": "The Deep End of the Surface Web.",
-  "author": "Josh Habdas <jhabdas@protonmail.com>",
+  "description": "Semantic Design System for Hugo.",
+  "author": "Josh Habdas <jhabdas@protonmail.com> (https://habd.as)",
   "keywords": [
     "hugo",
     "hackcss",
