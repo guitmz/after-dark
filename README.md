@@ -1,6 +1,6 @@
 <h1 align="center">After Dark Green</h1>
 
-> After Dark is free and open source software you can use to create a privacy-aware website, blog or app. Unparalleled speed, secure design and add-on rewards system help you own your data and monetize your users.
+> After Dark is free and open-source software you can use to create a website, blog or app. Utilize the world's fastest framework for building websites and design your entire site right inside the terminal.
 
 [![Latest NPM version](https://img.shields.io/npm/v/after-dark.svg?style=flat-square)](https://www.npmjs.com/package/after-dark)
 [![Monthly downloads](https://img.shields.io/npm/dm/after-dark.svg?style=flat-square)](https://www.npmjs.com/package/after-dark)

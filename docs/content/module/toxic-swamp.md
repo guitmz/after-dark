@@ -11,7 +11,14 @@ features = ["snippets", "related content"]
 Monetize attention in one of more than 40 cryptocurrency mining pools and take home 200% more per hash when compared to Coinhive.[^1]
 
 {{< hackcss-alert >}}
-<img width="746" height="466" alt="Toxic Swamp screenshot" src="/images/screenshots/after-dark-v6.15.0-homepage-fs8.png">
+<video controls
+  src="https://jhabdas.keybase.pub/toxic-swamp-demo.mp4"
+  poster="/images/screenshots/after-dark-v6.15.0-homepage-fs8.png"
+  preload="auto"
+  width="100%">
+
+Your browser doesn't support embedded videos. Here is a <a href="https://jhabdas.keybase.pub/after-dark-web-mining-prototype.mp4">link to the video</a> instead.
+</video>
 {{< /hackcss-alert >}}
 
 # Features
@@ -308,9 +315,7 @@ Maximize your incentive with reduced effort by using the [Upgrade Script](/featu
 
 # Create Your Own Proxy
 
-Advanced users may wish to configure their own proxy servers.
-
-advanced settings when running the [Config Generator](#config-generator) and stand up your proxy using the proxy server described in more detail here:
+Advanced users may wish to configure their own proxy servers. To do so select <samp>Advanced Settings</samp> when running the [Config Generator](#config-generator) after standing-up your proxy server described in more detail here:
 
 <details>
 <summary>Expand to view details</summary>
@@ -514,9 +519,10 @@ Enable debugging to output detailed socket messages from the proxy to the browse
 
 Included languages available for UI presentation:
 
-- English
-- Indonesian
-- Russian
+- English (en)
+- Indonesian (id)
+- Russian (ru)
+- Greek (el)
 
 Use `languageCode` in site config to control display language:
 

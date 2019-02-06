@@ -18,7 +18,7 @@ After Dark termasuk skrip instalasi portabel untuk pengaturan cepat:
 <style>.card-content .inner { overflow: scroll; max-height: 30em; }</style>
 {{< hackcss-card header="themes/after-dark/bin/install" >}}
 <details>
-<summary>perluas untuk melihat skrip</summary>
+<summary>Perluas untuk melihat skrip</summary>
 {{< highlight shell "linenos=inline" >}}
 {{< include "themes/after-dark/bin/install" >}}
 {{< /highlight >}}
@@ -81,7 +81,7 @@ Misalnya, untuk mengahasilkan situs audio menggunakan instalasi After Dark saat 
 
 {{< hackcss-card header="flying-toasters/bin/gen-audio-site" >}}
 {{< highlight shell >}}#!/bin/sh
-hugo -c sites/audio -d public/audio.domain.example{{< /highlight >}}
+hugo -c sites/audio -d public/static.domain.example{{< /highlight >}}
 {{< /hackcss-card >}}
 
 Dimana `audio` berisi konten untuk situs itu:
@@ -102,7 +102,7 @@ Dan `public` berisi folder untuk setiap situs:
 
 ```
 public
-└── audio.balibebas.com
+└── static.domain.example
     ├── categories
     │   └── index.xml
     ├── audiobooks
