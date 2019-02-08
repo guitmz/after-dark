@@ -11,66 +11,64 @@
 
 ## Features
 
-- [Streamlined Workflow](https://after-dark.habd.as/#feature-workflow)
-- [Unparalleled Speed](https://after-dark.habd.as/#feature-speed)
-- [Advanced Graphics](https://after-dark.habd.as/#feature-graphics)
-- [Rewards System](https://after-dark.habd.as/#feature-rewards)
-- [Fuzzy Search](https://after-dark.habd.as/#feature-search)
-- [Easily Customized](https://after-dark.habd.as/#feature-customize)
-- [Securely Designed](https://after-dark.habd.as/#feature-security)
-- [Privacy Focused](https://after-dark.habd.as/#feature-privacy)
-
-Visit the [After Dark Docs](https://after-dark.habd.as) site to learn more.
+- [Streamlined Workflow](https://after-dark.habd.as/#feature-workflow) – cross-platform, 1 dependency, single-codebase
+- [Unparalleled Speed](https://after-dark.habd.as/#feature-speed) – ~0.615s builds, 100-200ms page loads
+- [Advanced Graphics](https://after-dark.habd.as/#feature-graphics) – responsive post images with lqip
+- [Rewards System](https://after-dark.habd.as/#feature-rewards) – monetize attention and earn borderless income
+- [Fuzzy Search](https://after-dark.habd.as/#feature-search) – automatic indexing and no third-parties
+- [Easily Customized](https://after-dark.habd.as/#feature-customize) – change skins, strip styles, create layouts
+- [Securely Designed](https://after-dark.habd.as/#feature-security) – verify release hashes even offline
+- [Privacy Focused](https://after-dark.habd.as/#feature-privacy) – no cookies and no external requests
 
 ## Screenshots
 
-<table role="presentation">
+<table>
   <tr>
     <td>
-      <a target="_blank" href="https://after-dark.habd.as/images/screenshots/example-landing-page-fs8.png">
-        <img alt="Example Landing Page screenshot" src="https://after-dark.habd.as/images/screenshots/example-landing-page-fs8.png">
+      <a href="https://after-dark.habd.as/">
+        <img alt src="https://after-dark.habd.as/images/screenshots/after-dark-v6.15.0-homepage-fs8.png">
       </a>
     </td>
     <td>
-      <a target="_blank" href="https://after-dark.habd.as/images/screenshots/feature-online-help-fs8.png">
-        <img alt="Online Help screenshot" src="https://after-dark.habd.as/images/screenshots/feature-online-help-fs8.png">
+      <a href="https://after-dark.habd.as/feature/">
+        <img alt src="https://after-dark.habd.as/images/screenshots/feature-online-help-fs8.png">
       </a>
     </td>
     <td>
-      <a target="_blank" href="https://after-dark.habd.as/images/screenshots/feature-error-page-fs8.png">
-        <img alt="Error Page screenshot" src="https://after-dark.habd.as/images/screenshots/feature-error-page-fs8.png">
+      <a href="https://after-dark.habd.as/404.html">
+        <img alt src="https://after-dark.habd.as/images/screenshots/feature-error-page-fs8.png">
       </a>
     </td>
   </tr>
   <tr>
-    <th scope="col">Landing Page Example</th>
-    <th scope="col">Online Help</th>
-    <th scope="col">Error Page</th>
+    <th scope="col"><center>Multilingual Docs</center></th>
+    <th scope="col"><center>Comprehensive Features</center></th>
+    <th scope="col"><center>Canvas Animations</center></th>
   </tr>
 </table>
 
-<table role="presentation">
+<table>
   <tr>
     <td>
-      <a target="_blank" href="https://after-dark.habd.as/images/screenshots/module-toxic-swamp-fs8.png">
-        <img alt="Webmining screenshot" src="https://after-dark.habd.as/images/screenshots/module-toxic-swamp-fs8.png">
+      <a href="https://after-dark.habd.as/module/toxic-swamp/">
+        <img alt src="https://after-dark.habd.as/images/screenshots/module-toxic-swamp-fs8.png">
       </a>
     </td>
     <td>
-      <a target="_blank" href="https://after-dark.habd.as/images/screenshots/shortcode-button-fs8.png">
-        <img alt="Form Controls screenshot" src="https://after-dark.habd.as/images/screenshots/shortcode-button-fs8.png">
+      <a href="https://after-dark.habd.as/shortcode/button/">
+        <img alt src="https://after-dark.habd.as/images/screenshots/shortcode-button-fs8.png">
       </a>
     </td>
     <td>
-      <a target="_blank" href="https://after-dark.habd.as/images/screenshots/extra-high-tea-fs8.png">
-        <img alt="Extras screenshot" src="https://after-dark.habd.as/images/screenshots/extra-high-tea-fs8.png">
+      <a href="https://after-dark.habd.as/extra/">
+        <img alt src="https://after-dark.habd.as/images/screenshots/extra-high-tea-fs8.png">
       </a>
     </td>
   </tr>
   <tr>
-    <th scope="col">Rewards System</th>
-    <th scope="col">Form Controls</th>
-    <th scope="col">Extras</th>
+    <th scope="col"><center>Web Mining Add-on</center></th>
+    <th scope="col"><center>Composable Shortcodes</center></th>
+    <th scope="col"><center>IndieWeb Extras</center></th>
   </tr>
 </table>
 

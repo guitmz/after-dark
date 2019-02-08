@@ -1,9 +1,9 @@
 :root {
   scroll-behavior: smooth;
-  --screen-size-small: 768px; /* breakpoint reference only */
+  --screen-size-small: 30em; /* breakpoint reference only */
 }
 @keyframes intro {
-  0% { opacity: 0 }; 100% { opacity: 1 }
+  0% { opacity: 0 } 100% { opacity: 1 }
 }
 .blur-up {
   -webkit-filter: blur(5px);
