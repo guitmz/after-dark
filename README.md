@@ -30,7 +30,7 @@
       </a>
     </td>
     <td>
-      <a href="https://after-dark.habd.as/feature/">
+      <a href="https://after-dark.habd.as/feature/svg-favicon/">
         <img alt src="https://after-dark.habd.as/images/screenshots/feature-online-help-fs8.png">
       </a>
     </td>
@@ -42,7 +42,7 @@
   </tr>
   <tr>
     <th scope="col"><center>Multilingual Docs</center></th>
-    <th scope="col"><center>Comprehensive Features</center></th>
+    <th scope="col"><center>SVG Favicon</center></th>
     <th scope="col"><center>Canvas Animations</center></th>
   </tr>
 </table>
@@ -60,7 +60,7 @@
       </a>
     </td>
     <td>
-      <a href="https://after-dark.habd.as/extra/">
+      <a href="https://after-dark.habd.as/extra/high-tea/">
         <img alt src="https://after-dark.habd.as/images/screenshots/extra-high-tea-fs8.png">
       </a>
     </td>
