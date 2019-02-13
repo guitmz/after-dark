@@ -12,12 +12,12 @@
 ## Features
 
 - [Streamlined Workflow](https://after-dark.habd.as/#feature-workflow) – cross-platform, 1 dependency, single-codebase
-- [Unparalleled Speed](https://after-dark.habd.as/#feature-speed) – ~0.615s builds, 100-200ms page loads
+- [Unparalleled Speed](https://after-dark.habd.as/#feature-speed) – ~0.615s builds, decisecond page loads
 - [Advanced Graphics](https://after-dark.habd.as/#feature-graphics) – responsive post images with lqip
 - [Rewards System](https://after-dark.habd.as/#feature-rewards) – monetize attention and earn borderless income
 - [Fuzzy Search](https://after-dark.habd.as/#feature-search) – automatic indexing and no third-parties
 - [Easily Customized](https://after-dark.habd.as/#feature-customize) – change skins, strip styles, create layouts
-- [Securely Designed](https://after-dark.habd.as/#feature-security) – verify release hashes even offline
+- [Securely Designed](https://after-dark.habd.as/#feature-security) – referrer policy, release hashes, air gapping
 - [Privacy Focused](https://after-dark.habd.as/#feature-privacy) – no cookies and no external requests
 
 ## Screenshots
