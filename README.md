@@ -22,6 +22,8 @@
 
 ## Screenshots
 
+Click a screenshot to view a live demo of the functionality.
+
 <table>
   <tr>
     <td>
@@ -41,9 +43,9 @@
     </td>
   </tr>
   <tr>
-    <th scope="col"><center>Multilingual Docs</center></th>
+    <th scope="col"><center>Help Docs</center></th>
     <th scope="col"><center>SVG Favicon</center></th>
-    <th scope="col"><center>Canvas Animations</center></th>
+    <th scope="col"><center>404 Page</center></th>
   </tr>
 </table>
 
@@ -66,8 +68,8 @@
     </td>
   </tr>
   <tr>
-    <th scope="col"><center>Web Mining Add-on</center></th>
-    <th scope="col"><center>Composable Shortcodes</center></th>
+    <th scope="col"><center>Add-on Modules</center></th>
+    <th scope="col"><center>Form Controls</center></th>
     <th scope="col"><center>IndieWeb Extras</center></th>
   </tr>
 </table>
@@ -78,7 +80,7 @@ Please [Install Hugo](https://gohugo.io/getting-started/installing) `0.44` or gr
 
 ### Installation
 
-For scripted installation please use [Quick Install](https://after-dark.habd.as/feature/quick-install/). Otherwise download a copy and:
+For scripted installation use [Quick Install](https://after-dark.habd.as/feature/quick-install/). Otherwise download a copy and:
 
 ```sh
 hugo serve --theme after-dark
@@ -86,24 +88,28 @@ hugo serve --theme after-dark
 
 ### Upgrading
 
-Run the [Upgrade Script](https://after-dark.habd.as/feature/upgrade-script/) anytime to check for updates and automatically upgrade to the latest version.
+Run the [Upgrade Script](https://after-dark.habd.as/feature/upgrade-script/) to check for updates and upgrade automatically:
 
-### Verifying
+```sh
+./themes/after-dark/bin/upgrade
+```
+
+## Verifying
 
 If installed or upgraded via script you may use the [Release Validator](https://after-dark.habd.as/validate/) to verify you're running a PGP-signed and SHA-verified release. Integrity is checked at the source level and may be performed offline. See [Release Hashes](https://after-dark.habd.as/feature/release-hashes/) for more info.
 
-### Help
+## Usage
 
 Use the included [Online Help](https://after-dark.habd.as/feature/online-help/) to learn how to set-up and use After Dark. Help docs may be served locally and do not require an Internet connection to function.
 
+## Credits
+
+Special thanks to エゴイスト for [hackcss](https://git.habd.as/comfusion/hack), Dan Klammer for the [bytesize icons](https://git.habd.as/comfusion/bytesize-icons) and Vincent Prouillet for the [Zola port](https://www.getzola.org/themes/after-dark/).
+
 ## License
 
-Copyright (C) Josh Habdas <jhabdas@protonmail.com>
+Copyright (C) 2016–2019 by Josh Habdas <jhabdas@protonmail.com>
 
 This work is free. You can redistribute it and/or modify it under the
 terms of the Do What The Fuck You Want To Public License, Version 2,
-as published by Sam Hocevar. See the COPYING file for more details.
-
-## Acknowledgements
-
-Thanks to Steve Francia for creating the Hugo logo, エゴイスト for hackcss, Dan Klammer for the bytesized SVG icons, Alexander Farkas for killing it with lazySizes, Simon Fremaux for such a groovy 404 background animation and Vincent Prouillet for the [Zola port](https://www.getzola.org/themes/after-dark/).
+as published by Sam Hocevar.
