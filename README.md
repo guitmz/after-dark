@@ -108,8 +108,6 @@ Special thanks to エゴイスト for [hackcss](https://git.habd.as/comfusion/ha
 
 ## License
 
-Copyright (C) 2016–2019 by Josh Habdas <jhabdas@protonmail.com>
-
 This work is free. You can redistribute it and/or modify it under the
 terms of the Do What The Fuck You Want To Public License, Version 2,
-as published by Sam Hocevar.
+as published by Sam Hocevar. The full text of the license is included in the file COPYING in the source.
