@@ -17,10 +17,10 @@
 - [Rewards System](https://after-dark.habd.as/#feature-rewards) – monetize attention and earn borderless income
 - [Fuzzy Search](https://after-dark.habd.as/#feature-search) – automatic indexing and no third-parties
 - [Easily Customized](https://after-dark.habd.as/#feature-customize) – change skins, strip styles, create layouts
-- [Securely Designed](https://after-dark.habd.as/#feature-security) – csp, referrer policy, release hashes, air gapping
-- [Privacy Focused](https://after-dark.habd.as/#feature-privacy) – no cookies and no external requests
+- [Securely Designed](https://after-dark.habd.as/#feature-security) – csp, referrer policy, release hashes
+- [Privacy Focused](https://after-dark.habd.as/#feature-privacy) – no cookies and no external requests, ephemeral ssh hosting
 
-## Screenshots
+## Demo
 
 Click a screenshot to view a live demo of the functionality.
 
