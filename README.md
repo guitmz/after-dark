@@ -94,11 +94,11 @@ Run the [Upgrade Script](https://after-dark.habd.as/feature/upgrade-script/) to 
 ./themes/after-dark/bin/upgrade
 ```
 
-## Verifying
+### Verifying
 
 If installed or upgraded via script you may use the [Release Validator](https://after-dark.habd.as/validate/) to verify you're running a PGP-signed and SHA-verified release. Integrity is checked at the source level and may be performed offline. See [Release Hashes](https://after-dark.habd.as/feature/release-hashes/) for more info.
 
-## Usage
+### Usage
 
 Use the included [Online Help](https://after-dark.habd.as/feature/online-help/) to learn how to set-up and use After Dark. Help docs may be served locally and do not require an Internet connection to function.
 
@@ -106,7 +106,7 @@ Use the included [Online Help](https://after-dark.habd.as/feature/online-help/) 
 
 Special thanks to エゴイスト for [hackcss](https://git.habd.as/comfusion/hack), Dan Klammer for the [bytesize icons](https://git.habd.as/comfusion/bytesize-icons) and Vincent Prouillet for the [Zola port](https://www.getzola.org/themes/after-dark/).
 
-## License
+## Rights
 
 This work is free. You can redistribute it and/or modify it under the
 terms of the Do What The Fuck You Want To Public License, Version 2,
