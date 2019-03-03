@@ -9,7 +9,8 @@ feature = ["related content", "snippets", "code highlighter"]
 Secara otomatis menghasilkan daftar isi dengan tautan gulir halus berdasarkan {{< external href="https://gsnedders.html5.org/outliner/" text="page outline" />}} saat ini. Untuk melakukannya tambahkan yang berikut ini ke postingan {{< external href="https://gohugo.io/content-management/front-matter/" text="Front Matter" />}}:
 
 ```toml
-toc = true
+toc = true # display collapsed
+toc = "open" # display expanded
 ```
 
 Atur `false`, atau cukup hapus pengaturan untuk menonaktifkan.

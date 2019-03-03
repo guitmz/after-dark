@@ -6,10 +6,11 @@ tags = ["metadata"]
 features = ["related content", "snippets", "code highlighter"]
 +++
 
-Automatically generate a table of contents with smooth-scroll links based on the current {{< external href="https://gsnedders.html5.org/outliner/" text="page outline" />}}. To do so add the following to post {{< external href="https://gohugo.io/content-management/front-matter/" text="Front Matter" />}}:
+Automatically generate a table of contents with smooth-scroll links based on the {{< external href="https://gsnedders.html5.org/outliner/" text="page outline" />}}. To do so add one of the following to post {{< external href="https://gohugo.io/content-management/front-matter/" text="Front Matter" />}}:
 
 ```toml
-toc = true
+toc = true # display collapsed
+toc = "open" # display expanded
 ```
 
 Set `false`, or simply remove the setting, to disable.

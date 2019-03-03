@@ -1,6 +1,6 @@
-{{ if and (isset .Params "toc") .Params.toc }}
-  <details>
+{{ with .Params.toc }}
+  <details{{ if eq . "open" }} open{{ end }}>
     <summary>Table of Contents</summary>
-    {{ .TableOfContents }}
+    {{ $.TableOfContents }}
   </details>
 {{ end }}
