@@ -12,15 +12,17 @@
 ## Features
 
 - [Streamlined Workflow](https://after-dark.habd.as/#feature-workflow) – cross-platform, 1 dependency, single-codebase
-- [Unparalleled Speed](https://after-dark.habd.as/#feature-speed) – ~0.615s builds, 100-200ms page loads
+- [Unparalleled Speed](https://after-dark.habd.as/#feature-speed) – ~0.615s builds, decisecond page loads
 - [Advanced Graphics](https://after-dark.habd.as/#feature-graphics) – responsive post images with lqip
 - [Rewards System](https://after-dark.habd.as/#feature-rewards) – monetize attention and earn borderless income
 - [Fuzzy Search](https://after-dark.habd.as/#feature-search) – automatic indexing and no third-parties
 - [Easily Customized](https://after-dark.habd.as/#feature-customize) – change skins, strip styles, create layouts
-- [Securely Designed](https://after-dark.habd.as/#feature-security) – verify release hashes even offline
-- [Privacy Focused](https://after-dark.habd.as/#feature-privacy) – no cookies and no external requests
+- [Securely Designed](https://after-dark.habd.as/#feature-security) – csp, referrer policy, release hashes
+- [Privacy Focused](https://after-dark.habd.as/#feature-privacy) – no cookies, no external requests, ephemeral ssh hosting
 
-## Screenshots
+## Demo
+
+Click a screenshot to view a live demo of the functionality.
 
 <table>
   <tr>
@@ -41,9 +43,9 @@
     </td>
   </tr>
   <tr>
-    <th scope="col"><center>Multilingual Docs</center></th>
+    <th scope="col"><center>Help Docs</center></th>
     <th scope="col"><center>SVG Favicon</center></th>
-    <th scope="col"><center>Canvas Animations</center></th>
+    <th scope="col"><center>404 Page</center></th>
   </tr>
 </table>
 
@@ -66,8 +68,8 @@
     </td>
   </tr>
   <tr>
-    <th scope="col"><center>Web Mining Add-on</center></th>
-    <th scope="col"><center>Composable Shortcodes</center></th>
+    <th scope="col"><center>Add-on Modules</center></th>
+    <th scope="col"><center>Form Controls</center></th>
     <th scope="col"><center>IndieWeb Extras</center></th>
   </tr>
 </table>
@@ -78,7 +80,7 @@ Please [Install Hugo](https://gohugo.io/getting-started/installing) `0.44` or gr
 
 ### Installation
 
-For scripted installation please use [Quick Install](https://after-dark.habd.as/feature/quick-install/). Otherwise download a copy and:
+For scripted installation use [Quick Install](https://after-dark.habd.as/feature/quick-install/). Otherwise download a copy and:
 
 ```sh
 hugo serve --theme after-dark
@@ -86,25 +88,35 @@ hugo serve --theme after-dark
 
 ### Upgrading
 
-Run the [Upgrade Script](https://after-dark.habd.as/feature/upgrade-script/) anytime to check for updates and automatically upgrade to the latest version.
+Run the [Upgrade Script](https://after-dark.habd.as/feature/upgrade-script/) to check for updates and upgrade automatically:
+
+```sh
+./themes/after-dark/bin/upgrade
+```
 
 ### Verifying
 
 If installed or upgraded via script you may use the [Release Validator](https://after-dark.habd.as/validate/) to verify you're running a PGP-signed and SHA-verified release. Integrity is checked at the source level and may be performed offline. See [Release Hashes](https://after-dark.habd.as/feature/release-hashes/) for more info.
 
-### Help
+### Usage
 
 Use the included [Online Help](https://after-dark.habd.as/feature/online-help/) to learn how to set-up and use After Dark. Help docs may be served locally and do not require an Internet connection to function.
 
-## License
+## Credits
 
-Copyright (C) Josh Habdas <jhabdas@protonmail.com>
+Special thanks to エゴイスト for [hackcss](https://git.habd.as/comfusion/hack), Dan Klammer for the [bytesize icons](https://git.habd.as/comfusion/bytesize-icons) and Vincent Prouillet for the [Zola port](https://www.getzola.org/themes/after-dark/).
+
+## Rights
 
 This work is free. You can redistribute it and/or modify it under the
 terms of the Do What The Fuck You Want To Public License, Version 2,
+<<<<<<< HEAD
 as published by Sam Hocevar. See the COPYING file for more details.
 
 ## Acknowledgements
 
 Thanks to Steve Francia for creating the Hugo logo, エゴイスト for hackcss, Dan Klammer for the bytesized SVG icons, Alexander Farkas for killing it with lazySizes, Simon Fremaux for such a groovy 404 background animation and Vincent Prouillet for the [Zola port](https://www.getzola.org/themes/after-dark/).
 
+=======
+as published by Sam Hocevar. The full text of the license is included in the file COPYING in the source.
+>>>>>>> upstream/master

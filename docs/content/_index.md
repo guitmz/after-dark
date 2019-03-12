@@ -41,7 +41,7 @@ images = [
   </svg>
   <h2>Streamlined Workflow</h2>
   <table>
-    <legend>Develop and publish websites cross-platform using a <strong>single codebase</strong> with just <strong>one dependency</strong> and capabilities designed to make you more productive:</legend>
+    <caption>Develop and publish websites cross-platform using a <strong>single codebase</strong> with just <strong>one dependency</strong> and capabilities designed to make you more productive:</caption>
     <tr>
       <th scope="col" width="25%">Features</th>
       <th scope="col" width="25%">Modules</th>
@@ -49,9 +49,9 @@ images = [
       <th scope="col" width="25%">Extras</th>
     </tr>
     <tr>
-      <td><a href="./feature/">33</a></td>
+      <td><a href="./feature/">35</a></td>
       <td><a href="./module/">4</a></td>
-      <td><a href="./shortcode/">26</a></td>
+      <td><a href="./shortcode/">26+</a></td>
       <td><a href="./extra/">1</a></td>
     </tr>
   </table>
@@ -62,11 +62,11 @@ images = [
     <path d="M18 13 L26 2 8 13 14 19 6 30 24 19 Z" />
   </svg>
   <h2>Unparalleled Speed</h2>
-  <p>With {{< external text="0.615s average" href="https://forestry.io/blog/hugo-vs-jekyll-benchmark/" />}} builds and <strong><i>sub-second</i> page loads</strong> you could conceivably develop and serve your content from an {{< external "https://amzn.to/2Wx7xJk" "ODROID" />}} in space.</p>
+  <p>With {{< external text="0.615s average" href="https://forestry.io/blog/hugo-vs-jekyll-benchmark/" />}} builds and <strong><i>decisecond</i> page loads</strong> you could conceivably develop and serve your content from an {{< external "https://amzn.to/2Wx7xJk" "ODROID" />}} in space.</p>
   <nav><p>
     <a href="/feature/fetch-injection/">Fetch Inject</a> |
     <a href="/feature/lazy-loading/">Lazy Loading</a> |
-    <a target="_blank" rel="external noopener nofollow" href="https://tools.pingdom.com/#5a03920a7b000000">Benchmark</a>
+    <a target="_blank" rel="external noopener nofollow" href="https://tools.pingdom.com/#5a399f9666400000">Benchmark</a>
   </p></nav>
 </section>
 
@@ -94,7 +94,8 @@ images = [
   <small><i style="color:lime">(Now in Beta!)</i></small>
   <p>Earn rewards for keeping your software up-to-date and <strong>monetize attention</strong> to generate a <strong><i>borderless</i></strong>, low-maintenance & passive income.</p>
   <nav><p>
-    <a href="/module/toxic-swamp/#config-generator">Start Earning</a> |
+    <a href="/module/toxic-swamp/#installation">Installation</a> |
+    <a href="/module/toxic-swamp/#earning-rewards">Earning Rewards</a> |
     <a href="/module/toxic-swamp/">Learn More</a>
   </p></nav>
 </section>
@@ -132,11 +133,11 @@ images = [
     <circle cx="16" cy="24" r="1" />
   </svg>
   <h2>Securely Designed</h2>
-  <p>Verify the <i>authenticity</i> of your installation using secure cryptographic hashes and <strong>upgrade confidently</strong> to the latest version in seconds.</p>
+  <p>Verify the <i>authenticity</i> of your installation using secure cryptographic hashes and use CSP, SRI and Referrer Policy to <strong>lock down your content</strong>.</p>
   <nav><p>
-    <a href="/validate/">Validate</a> |
-    <a href="/feature/upgrade-script/">Upgrade</a> |
-    <a href="/feature/release-hashes/">Learn More</a>
+    <a href="/feature/release-hashes/">Release Hashes</a> |
+    <a href="/feature/content-security-policy/">CSP</a> |
+    <a href="/feature/referrer-policy/">Referrer Policy</a>
   </p></nav>
 </section>
 
@@ -150,7 +151,7 @@ images = [
   <p>Develop your entire site <strong><i>without</i> Internet</strong> connectivity and <i>expose</i> an ephemeral Web server with e2e encryption and <strong>real-time traffic inspection</strong>.</p>
   <nav><p>
     <a href="/feature/air-gapping/">Air Gapping</a> |
-    <a href="/feature/air-gapping/#ephemeral-hosting-with-end-to-end-encryption">Hosting</a> |
+    <a href="/feature/ephemeral-hosting">SSH Hosting</a> |
     <a href="/feature/referrer-policy/">Referrer Policy</a>
   </p></nav>
 </section>
