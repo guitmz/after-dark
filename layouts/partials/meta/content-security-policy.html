@@ -37,5 +37,5 @@
       {{ else }} 'none'{{ end }};">
   {{ end }}
 {{ else if not $is_disabled }}
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: 'unsafe-inline' 'unsafe-eval'; worker-src 'self' blob:; connect-src 'self' wss: data:; font-src 'self' https: data:; img-src 'self' https: data:; object-src 'none'">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: 'unsafe-inline' 'unsafe-eval'; worker-src 'self' blob:; connect-src 'self' https://cdn.jsdelivr.net wss: data:; font-src 'self' https: data:; img-src 'self' https: data:; object-src 'none'">
 {{ end }}
