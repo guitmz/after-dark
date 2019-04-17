@@ -1,11 +1,16 @@
 {
   "name": "after-dark",
 <<<<<<< HEAD
+<<<<<<< HEAD
   "version": "7.0.3",
 =======
   "version": "7.2.1",
 >>>>>>> upstream/master
   "description": "Semantic Design System for Hugo.",
+=======
+  "version": "7.2.4",
+  "description": "Build Fast Websites with Hugo.",
+>>>>>>> upstream/master
   "author": "Josh Habdas <jhabdas@protonmail.com> (https://habd.as)",
   "keywords": [
     "hugo",

@@ -2,7 +2,7 @@
 <html lang="{{ .Site.LanguageCode }}">
   <head>
     {{ partial "meta/content-security-policy.html" . }}
-    {{ .Hugo.Generator }}
+    <meta name="generator" content="{{ with .Site.Data.npm.latest }}{{ .name | humanize | title }} {{ .version }} (Hugo {{ hugo.Version }}){{ else }}Hugo {{ hugo.Version }}{{ end }}">
     <meta charset="utf-8">
     <script src="https://use.fontawesome.com/0ae8a400c3.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,8 +32,8 @@
       {{- $baseof.Content | safeJS -}}
     </script>
     {{ partial "head/modules.html" . }}
-    {{ if .RSSLink }}
-      <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}">
+    {{ with .OutputFormats.Get "rss" }}
+      {{ printf "<link rel=\"%s\" type=\"%s\" href=\"%s\" title=\"%s\">" .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
     {{ end }}
     <link rel="canonical" href="{{ .Permalink }}">
     {{ if (isset .Params "prev") }}

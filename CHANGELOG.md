@@ -3,11 +3,39 @@
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 <a name="7.0.3"></a>
 ## [7.0.3](https://git.habd.as/comfusion/after-dark/compare/v7.0.2...v7.0.3) (2019-02-12)
 
 
 =======
+=======
+<a name="7.2.4"></a>
+## [7.2.4](https://git.habd.as/comfusion/after-dark/compare/v7.2.3...v7.2.4) (2019-04-16)
+
+### Bug Fixes
+
+Fix issue to allow docs site to load
+
+<a name="7.2.3"></a>
+## [7.2.3](https://git.habd.as/comfusion/after-dark/compare/v7.2.2...v7.2.3) (2019-04-12)
+
+### But Fixes
+
+Fix remaining Hugo warnings masked before last release
+
+<a name="7.2.2"></a>
+## [7.2.2](https://git.habd.as/comfusion/after-dark/compare/v7.2.1...v7.2.2) (2019-04-12)
+
+
+### Bug Fixes
+
+* **feature/web-feeds:** output last build date in rfc822 with 4-digit year ([c735feb](https://git.habd.as/comfusion/after-dark/commits/c735feb))
+* **shortcode/hackcss-alert:** restore legacy behavior for shortcode ([b127eeb](https://git.habd.as/comfusion/after-dark/commits/b127eeb))
+
+
+
+>>>>>>> upstream/master
 <a name="7.2.1"></a>
 ## [7.2.1](https://git.habd.as/comfusion/after-dark/compare/v7.2.0...v7.2.1) (2019-02-22)
 
