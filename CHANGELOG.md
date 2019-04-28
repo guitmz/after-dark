@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="7.4.0"></a>
+# [7.4.0](https://git.habd.as/comfusion/after-dark/compare/v7.2.3...v7.4.0) (2019-04-28)
+
+
+### Features
+
+* **fuzzy-search:** add ability to assign arbitrary hotkeys ([48a15c4](https://git.habd.as/comfusion/after-dark/commits/48a15c4)), closes [#74](https://git.habd.as/comfusion/after-dark/issues/74)
+* **shortcode:** add trusted custom attr to external ([0c81ba7](https://git.habd.as/comfusion/after-dark/commits/0c81ba7))
+
+
+
 <a name="7.3.0"></a>
 # [7.3.0](https://git.habd.as/comfusion/after-dark/compare/v7.2.3...v7.3.0) (2019-04-27)
 
