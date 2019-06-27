@@ -19,6 +19,7 @@
 - [Easily Customized](https://after-dark.habd.as/#feature-customize) – change skins, strip styles, create layouts
 - [Securely Designed](https://after-dark.habd.as/#feature-security) – csp, referrer policy, release hashes
 - [Privacy Focused](https://after-dark.habd.as/#feature-privacy) – no cookies, no external requests, ephemeral ssh hosting
+- [Batteries Included](https://after-dark.habd.as/#feature-extras) – self-host with gitea, k3s, traefik and fathom
 
 ## Demo
 
