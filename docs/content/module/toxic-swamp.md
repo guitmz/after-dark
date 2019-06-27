@@ -453,7 +453,7 @@ Generate configuration with `Advanced Settings` specified:
           <option>monero.crypto-pool.fr</option>
         {{< /hackcss-select >}}
         {{< hackcss-helpblock >}}
-          Select a {{< external href="https://git.habd.as/comfusion/toxic-swamp/src/branch/master/server/pools.json" text="supported pool" />}} to mine with.
+          Select a {{< external href="https://git.habd.as/comfusion/webminerpool/src/branch/master/server/pools.json" text="supported pool" />}} to mine with.
         {{< /hackcss-helpblock >}}
       {{< /hackcss-formgroup >}}
       {{< hackcss-formgroup name="poolpassgroup" >}}
