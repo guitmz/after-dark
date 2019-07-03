@@ -1,10 +1,28 @@
+{{/*
+Copyright (C) 2019  Josh Habdas <jhabdas@protonmail.com>
+
+This file is part of After Dark.
+
+After Dark is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+After Dark is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+*/ -}}
+
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
   <head>
     {{ partial "meta/content-security-policy.html" . }}
-    <meta name="generator" content="{{ with .Site.Data.npm.latest }}{{ .name | humanize | title }} {{ .version }} (Hugo {{ hugo.Version }}){{ else }}Hugo {{ hugo.Version }}{{ end }}">
+    <meta name="generator" content="Hugo">
     <meta charset="utf-8">
-    <script src="https://use.fontawesome.com/0ae8a400c3.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ block "title" . }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
     <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ if .IsPage }}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
@@ -56,7 +74,6 @@
   {{ $hackcss_mode := .Site.Params.hackcss.mode | default "hack" }}
   {{ $hackcss_palette := .Site.Params.hackcss.palette | default "dark" }}
   <body class="{{ if ne $hackcss_disabled true }}{{ $hackcss_mode }} {{ $hackcss_palette }} main container{{ end }}">
-    {{ partial "components/social.html" . }}
     <header>{{ block "header" . }}{{ end }}</header>
     <main>{{ block "main" . }}{{ end }}</main>
     <footer>{{ block "footer" . }}{{ end }}</footer>
@@ -67,11 +84,5 @@
         {{ partial "modules/toxic-swamp/toolbar.html" dict }}
       {{ end }}
     {{ end }}
-    <script>fetchInject([
-        "https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"
-      ]).then(() => {
-        baffle(document.querySelector('h1')).start().reveal(1500);
-      })
-    </script>
   </body>
 </html>

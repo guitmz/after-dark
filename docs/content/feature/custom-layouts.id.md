@@ -4,6 +4,10 @@ description = "Menyesuaikan tata letak tanpa memodifikasi sumber tema."
 categories = ["customizing"]
 tags = ["layout", "templating", "style"]
 feature = ["code highlighter", "snippets", "related content"]
+[[copyright]]
+  owner = "Josh Habdas"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 After Dark menggunakan blok template untuk memfasilitasi pembuatan tata letak halaman yang unik di mana saja di dalam situs anda. Gunakan itu untuk menambah [Snippets](../snippets) ke setiap bagian halaman, secara selektif [Custom Styles](../custom-styles) atau tambahkan kira-kira satu bagian ke beranda.
@@ -78,5 +82,5 @@ Menghasilkan struktur pohon`layouts` sebagai berikut:
 Sesuaikan `list.html` dan `single.html` layouts dan gunakan [Custom Styles](../custom-styles) untuk mendapatkan hasil yang diinginkan. Gunakan referensi sumber daya berikut sebagai bantuan:
 
 - {{< external "https://gohugo.io/templates/" />}} untuk fungsi templating dan logika
-- {{< external "devdocs.io" />}} untuk HTML yang komprehensif dan CSS reference
+- {{< external "https://devdocs.io" />}} untuk HTML yang komprehensif dan CSS reference
 - {{< external "https://inclusive-components.design" />}} untuk ide pola design

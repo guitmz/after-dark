@@ -1,3 +1,22 @@
+{{/*
+Copyright (C) 2019  Josh Habdas <jhabdas@protonmail.com>
+
+This file is part of After Dark.
+
+After Dark is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+After Dark is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+*/ -}}
+
 {{ $is_disabled := .Param "disable_csp" }}
 {{ $site_directives := .Site.Params.security.csp.directives }}
 {{ if and $site_directives (ne $is_disabled true) }}
@@ -37,5 +56,5 @@
       {{ else }} 'none'{{ end }};">
   {{ end }}
 {{ else if not $is_disabled }}
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: 'unsafe-inline' 'unsafe-eval'; worker-src 'self' blob:; connect-src 'self' https://cdn.jsdelivr.net wss: data:; font-src 'self' https: data:; img-src 'self' https: data:; object-src 'none'">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: 'unsafe-inline' 'unsafe-eval'; worker-src 'self' blob:; connect-src 'self' wss: data:; font-src 'self' https: data:; img-src 'self' https: data:; object-src 'none'">
 {{ end }}

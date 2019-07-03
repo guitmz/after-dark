@@ -4,20 +4,26 @@ description = "After Dark is free and open-source software you can use to create
 images = [
   "https://after-dark.habd.as/images/screenshots/example-landing-page-fs8.png"
 ]
+[[copyright]]
+  owner = "Josh Habdas"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 <section class="grid logo">
   <div class="cell -12of12">
-    <svg class="shaded animated" viewBox="0 0 46 45" width="92" height="90" xmlns="http://www.w3.org/2000/svg">
-      <title>After Dark</title>
-      <path d="M.708 45L23 .416 45.292 45H.708zM35 38L23 19 11 38h24z" fill="#000"/>
-    </svg>
+    {{< external rel="author" target="_self" href="https://habd.as/code/after-dark/" >}}
+      <svg class="shaded animated" viewBox="0 0 46 45" width="92" height="90" xmlns="http://www.w3.org/2000/svg">
+        <title>After Dark</title>
+        <path d="M.708 45L23 .416 45.292 45H.708zM35 38L23 19 11 38h24z" fill="#000"/>
+      </svg>
+    {{< /external >}}
   </div>
 </section>
 
 <section class="grid tagline">
   <div class="cell -12of12">
-    <p>After Dark is free and open-source software you can use to create a website, blog or app. Utilize the world's fastest framework for building websites to build the fastest websites in the world.</p>
+    <p>After Dark is free and open-source software you can use to create a website, blog or app. Utilize the world's fastest framework for building websites to build the <a href="#feature-speed">fastest</a> websites in the world, online or off.</p>
   </div>
 </section>
 
@@ -52,7 +58,7 @@ images = [
       <td><a href="./feature/">36</a></td>
       <td><a href="./module/">4</a></td>
       <td><a href="./shortcode/">26+</a></td>
-      <td><a href="./extra/">1</a></td>
+      <td><a href="./extra/">2</a></td>
     </tr>
   </table>
 </section>
@@ -156,14 +162,27 @@ images = [
   </p></nav>
 </section>
 
+<section id="feature-extras" class="feature">
+  <svg class="i-paperclip" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+    <path d="M10 9 L10 24 C10 28 13 30 16 30 19 30 22 28 22 24 L22 6 C22 3 20 2 18 2 16 2 14 3 14 6 L14 23 C14 24 15 25 16 25 17 25 18 24 18 23 L18 9" />
+  </svg>
+  <h2>Batteries Included</h2>
+  <p>Self-host your entire stack using <strong><i>commodity hardware</i></strong> and keep your source code and visitor metrics entirely <strong>under your control</strong>.</p>
+  <nav><p>
+    <a href="/extra/high-tea">Gitea</a> |
+    <a href="/extra/after-dark-k3s/">Kubernetes</a> |
+    <a href="/module/voyeur/">Fathom</a>
+  </p></nav>
+</section>
+
 <footer>
   <section class="grid cta">
     <div class="cell -2of12">
-      {{< external rel="prefetch" target="_self" itemtype="significantLink" href="https://git.habd.as/comfusion/after-dark/activity" >}}
-        <svg id="activity" aria-labelledby="activity-label" class="i-activity" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-          <path d="M4 16 L11 16 14 29 18 3 21 16 28 16" />
+      {{< external rel="prefetch" target="_self" itemtype="significantLink" href="https://t.me/afterdarkupdates" >}}
+        <svg id="updates" aria-lebelledby="updates-label" class="i-bell" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+          <path d="M8 17 C8 12 9 6 16 6 23 6 24 12 24 17 24 22 27 25 27 25 L5 25 C5 25 8 22 8 17 Z M20 25 C20 25 20 29 16 29 12 29 12 25 12 25 M16 3 L16 6" />
         </svg>
-        <small role="tooltip" id="activity-label">Activity</small>
+        <small role="tooltip" id="updates-label">Updates</small>
       {{< /external >}}
     </div>
     <div class="cell -2of12">
@@ -175,11 +194,11 @@ images = [
       {{< /external >}}
     </div>
     <div class="cell -2of12">
-      {{< external rel="noopener" itemtype="significantLink" href="https://t.me/comfusion" >}}
-        <svg id="telegram" aria-labelledby="telegram-label" class="i-send" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-          <path d="M2 16 L30 2 16 30 12 20 Z M30 2 L12 20" />
+      {{< external trusted="true" rel="noopener" itemtype="significantLink" href="irc://chat.freenode.net:6667/after-dark" >}}
+        <svg id="chat" aria-labelledby="chat-label" class="i-message" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+          <path d="M2 4 L30 4 30 22 16 22 8 29 8 22 2 22 Z" />
         </svg>
-        <small role="tooltip" id="telegram-label">Telegram</small>
+        <small role="tooltip" id="chat-label">Chat</small>
       {{< /external >}}
     </div>
     <div class="cell -2of12">
@@ -191,13 +210,4 @@ images = [
       {{< /external >}}
     </div>
   </section>
-
-  <section class="grid license">
-    <div class="cell -12of12">
-      {{< external rel="noopener license" href="https://choosealicense.com/licenses/wtfpl/" >}}
-        <img width="48" src="/images/wtfpl.svg" alt="WTFPL logo" title="After Dark is yours, gratis and without restriction under the WTFPL.">
-      {{< /external >}}
-    </div>
-  </section>
-
 </footer>

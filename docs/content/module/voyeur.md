@@ -6,6 +6,10 @@ summary = "DIY self-hosted Fathom Analytics."
 categories = ["addon"]
 tags = ["module", "analytics", "privacy", "engagement"]
 features = ["related content", "snippets", "section menu"]
+[[copyright]]
+  owner = "Josh Habdas"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 **Fathom Mirror:** {{< external "https://git.habd.as/comfusion/fathom" />}}<br>
@@ -44,7 +48,5 @@ theme = [
   "after-dark"
 ]
 {{< /highlight >}}
-
-{{% hackcss-alert type="warning" %}}**Warning:** While Fathom was designed for privacy they {{% external "https://github.com/usefathom/fathom/issues/40" "made the mistake" /%}} of using a tracking cookie. If your version of Fathom uses cookies please set `has_cookies = true` in your site config.{{% /hackcss-alert %}}
 
 See {{< external href="https://git.habd.as/comfusion/voyeur/src/branch/master/README.md" text="README.md" />}} to confirm you're using the minimum required version of After Dark; and module setup, configuration and usage instructions. If you need help you may {{< external href="https://git.habd.as/comfusion/voyeur/issues" text="Submit an Issue" />}} with your question.

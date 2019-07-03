@@ -4,6 +4,10 @@ description = "Customize layouts without modifying theme source."
 categories = ["customizing"]
 tags = ["layout", "templating", "style"]
 features = ["code highlighter", "snippets", "related content"]
+[[copyright]]
+  owner = "Josh Habdas"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 After Dark uses block templates to facilitate the creation of unique page layouts anywhere on your site. Use them to add [Snippets](../snippets) to pages in a section, selectively apply [Custom Styles](../custom-styles) or add an about section to the homepage.
@@ -78,7 +82,7 @@ Resulting in the following `layouts` tree structure:
 Adjust `list.html` and `single.html` layouts and use [Custom Styles](../custom-styles) to achieve the desired result. Reference the following resources for help:
 
 - {{< external "https://gohugo.io/templates/" />}} for templating functions and logic
-- {{< external "devdocs.io" />}} for a comprehensive HTML and CSS reference
+- {{< external "https://devdocs.io" />}} for a comprehensive HTML and CSS reference
 - {{< external "https://internetingishard.com" />}} learn HTML & CSS for free
 - {{< external "https://inclusive-components.design" />}} for design pattern ideas
 - {{< external "https://diveintohtml5.info" >}} background behind HTML5

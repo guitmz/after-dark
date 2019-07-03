@@ -1,3 +1,22 @@
+/*!
+ * Copyright (C) 2019  Josh Habdas <jhabdas@protonmail.com>
+ *
+ * This file is part of After Dark.
+ *
+ * After Dark is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License as published
+ * by the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * After Dark is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Affero General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License
+ * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+ */
+
 fetchInject([
   "{{ "/js/vue.min.js" | relURL }}",
   "{{ "/js/lodash.custom.min.js" | relURL }}",
@@ -12,6 +31,7 @@ fetchInject([
     ).replace(/\+/g, ' ');
 
     const queryParam = 's';
+    const hotkeys = {{ (.Params.form.hotkeys | default (slice "/" "s")) | jsonify }};
     const selectors = {
       appContainer: '#search-app',
       resultContainer: '#search-results',
@@ -72,8 +92,14 @@ fetchInject([
         window.onpopstate = (evt) => {
           this.query = evt.state.query;
         };
-        document.onkeyup = function (evt) {
-          evt.key === 's' && focusSearchInput();
+        const searchInput = getSearchInput();
+        document.onkeydown = function (evt) {
+          if (evt.target === searchInput) return;
+          if (hotkeys.includes(evt.key)) {
+            evt.preventDefault();
+            focusSearchInput();
+            getSearchInput().select();
+          };
         }
         focusSearchInput();
       },

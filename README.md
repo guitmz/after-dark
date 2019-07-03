@@ -1,24 +1,36 @@
-<h1 align="center">After Dark Green</h1>
+<img
+  alt="After Dark"
+  src="https://git.habd.as/comfusion/after-dark/raw/branch/master/static/images/logo-dark.png"
+  width="358">
 
-> After Dark is free and open-source software you can use to create a website, blog or app. Utilize the world's fastest framework for building websites to build the fastest websites in the world.
+**Hugo Dark Theme Website Generator**
+<br>[Documentation](https://after-dark.habd.as) • [Releases](https://git.habd.as/comfusion/after-dark/releases) • [Community](https://t.me/afterdarkhugo)
+
+## After Dark
 
 [![Latest NPM version](https://img.shields.io/npm/v/after-dark.svg?style=flat-square)](https://www.npmjs.com/package/after-dark)
 [![Monthly downloads](https://img.shields.io/npm/dm/after-dark.svg?style=flat-square)](https://www.npmjs.com/package/after-dark)
 [![Minimum Hugo version](https://img.shields.io/badge/hugo->%3D%200.44-FF4088.svg?style=flat-square)](https://gohugo.io)
-[![WTFPL licensed](https://img.shields.io/npm/l/after-dark.svg?style=flat-square&longCache=true)](https://git.habd.as/comfusion/after-dark/src/branch/master/COPYING)
-[![Telegram chat](https://img.shields.io/badge/chat-telegram-32AFED.svg?style=flat-square&longCache=true)](https://t.me/comfusion)
-[![Keybase profile](https://img.shields.io/badge/pm-keybase-4c8eff.svg?style=flat-square&longCache=true)](https://keybase.io/jhabdas)
+[![IRC chat](https://img.shields.io/badge/irc-%23after--dark-32AFED.svg?style=flat-square&longCache=true)](https://after-dark.habd.as/#chat)
+[![AGPL licensed](https://img.shields.io/npm/l/after-dark.svg?style=flat-square&longCache=true)](https://git.habd.as/comfusion/after-dark/src/branch/master/COPYING)
+
+```sh
+wget -qO - https://go.habd.as/after-dark | sh
+```
+
+**After Dark** is an extensible, offline-first [Hugo](https://gohugo.io) theme written from the ground up for speed, privacy and security.
 
 ## Features
 
-- [Streamlined Workflow](https://after-dark.habd.as/#feature-workflow) – cross-platform, 1 dependency, single-codebase
-- [Unparalleled Speed](https://after-dark.habd.as/#feature-speed) – ~0.615s builds, decisecond page loads
-- [Advanced Graphics](https://after-dark.habd.as/#feature-graphics) – responsive post images with lqip
-- [Rewards System](https://after-dark.habd.as/#feature-rewards) – monetize attention and earn borderless income
-- [Fuzzy Search](https://after-dark.habd.as/#feature-search) – automatic indexing and no third-parties
-- [Easily Customized](https://after-dark.habd.as/#feature-customize) – change skins, strip styles, create layouts
-- [Securely Designed](https://after-dark.habd.as/#feature-security) – csp, referrer policy, release hashes
-- [Privacy Focused](https://after-dark.habd.as/#feature-privacy) – no cookies, no external requests, ephemeral ssh hosting
+- **[Streamlined Workflow](https://after-dark.habd.as/#feature-workflow)**: Cross-platform, 1 dependency, single-codebase.
+- **[Unparalleled Speed](https://after-dark.habd.as/#feature-speed)**: ~0.615s builds and decisecond page loads.
+- **[Advanced Graphics](https://after-dark.habd.as/#feature-graphics)**: Responsive post images with LQIP.
+- **[Rewards System](https://after-dark.habd.as/#feature-rewards)**: Monetize attention and earn a borderless income.
+- **[Fuzzy Search](https://after-dark.habd.as/#feature-search)**: Offline, automatic and no third-parties.
+- **[Easily Customized](https://after-dark.habd.as/#feature-customize)**: Change skins, strip styles, modify layouts.
+- **[Securely Designed](https://after-dark.habd.as/#feature-security)**: CSP, Referrer Policy, Release Hashes
+- **[Privacy Focused](https://after-dark.habd.as/#feature-privacy)**: No cookies, no external requests, ephemeral hosting.
+- **[Batteries Included](https://after-dark.habd.as/#feature-extras)**: Self-host with gitea, k3s, traefik and fathom.
 
 ## Demo
 
@@ -76,15 +88,24 @@ Click a screenshot to view a live demo of the functionality.
 
 ## Getting Started
 
-Please [Install Hugo](https://gohugo.io/getting-started/installing) `0.44` or greater before getting started.
+Unless you're starting with [After Dark K3s](https://after-dark.habd.as/extra/after-dark-k3s) please [Install Hugo](https://gohugo.io/getting-started/installing) `0.44` or greater on your machine prior to installation.
 
 ### Installation
 
-For scripted installation use [Quick Install](https://after-dark.habd.as/feature/quick-install/). Otherwise download a copy and:
+For scripted installation use the provided [Quick Install](https://after-dark.habd.as/feature/quick-install/) script. Quick Install is ideal for first-time users and does not require use of git. Use it to automatically set-up, configure and run a sample After Dark website you may re-purpose as your own.
+
+By convention After Dark may be used with an existing Hugo site by git cloning to or adding as a submodule:
 
 ```sh
-hugo serve --theme after-dark
+flying-toasters
+├── static
+└── themes
+    └── after-dark # git clone or add submodule here
 ```
+
+See [Install a Single Theme](https://gohugo.io/themes/installing-and-using-themes/#install-a-single-theme) on the Hugo docs site for step-by-step instructions.
+
+After Dark also ships [as an NPM module](https://www.npmjs.com/package/after-dark) as a convenience for users. As with git, Node isn't required to install or run After Dark but may be leveraged when integrating with existing publishing workflows.
 
 ### Upgrading
 
@@ -108,15 +129,17 @@ Special thanks to エゴイスト for [hackcss](https://git.habd.as/comfusion/ha
 
 ## Rights
 
-This work is free. You can redistribute it and/or modify it under the
-terms of the Do What The Fuck You Want To Public License, Version 2,
-<<<<<<< HEAD
-as published by Sam Hocevar. See the COPYING file for more details.
+Copyright (C) 2019  Josh Habdas <jhabdas@protonmail.com>
 
-## Acknowledgements
+After Dark is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as published
+by the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
 
-Thanks to Steve Francia for creating the Hugo logo, エゴイスト for hackcss, Dan Klammer for the bytesized SVG icons, Alexander Farkas for killing it with lazySizes, Simon Fremaux for such a groovy 404 background animation and Vincent Prouillet for the [Zola port](https://www.getzola.org/themes/after-dark/).
+After Dark is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
 
-=======
-as published by Sam Hocevar. The full text of the license is included in the file COPYING in the source.
->>>>>>> upstream/master
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.

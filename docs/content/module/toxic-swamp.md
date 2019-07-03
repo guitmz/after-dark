@@ -10,6 +10,10 @@ features = ["snippets", "related content"]
   scriptSrc = [
     "'sha512-TKVuLlCT8+a0Chpa6Pw3clhu9fhZ9JOzgblgxQaUQVP/z4lfPnrdyWDOgucORnS2qapWu/iPVG2d0ywyGH2NjA=='"
   ]
+[[copyright]]
+  owner = "Josh Habdas"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 Monetize attention in one of more than 40 cryptocurrency mining pools with support for the March 2019 Monero hard fork.
@@ -59,11 +63,7 @@ Verify [Release Hash]({{< relref "release-hashes" >}}) and GPG signature:
 ```sh
 cd themes/toxic-swamp && \
 npm install && npm run integrity && \
-<<<<<<< HEAD
-git tag --verify v1.0.0-beta.24
-=======
-git tag --verify v1.0.0-beta.26
->>>>>>> upstream/master
+git tag --verify v1.0.0-beta.28
 ```
 
 Specify module in site config:
@@ -453,7 +453,7 @@ Generate configuration with `Advanced Settings` specified:
           <option>monero.crypto-pool.fr</option>
         {{< /hackcss-select >}}
         {{< hackcss-helpblock >}}
-          Select a {{< external href="https://git.habd.as/comfusion/toxic-swamp/src/branch/master/server/pools.json" text="supported pool" />}} to mine with.
+          Select a {{< external href="https://git.habd.as/comfusion/webminerpool/src/branch/master/server/pools.json" text="supported pool" />}} to mine with.
         {{< /hackcss-helpblock >}}
       {{< /hackcss-formgroup >}}
       {{< hackcss-formgroup name="poolpassgroup" >}}
@@ -479,48 +479,6 @@ Generate configuration with `Advanced Settings` specified:
       {{< /hackcss-formgroup >}}
     </details>
   {{< /hackcss-form >}}
-<<<<<<< HEAD
-  <script>
-    (function (window, document, undefined) {
-      const form = document.forms.generator;
-      form.reset();
-      const isOnlineHelp = document.URL.includes('localhost:1414');
-      if (!isOnlineHelp) return;
-      form.querySelector('.js-useonlinehelp').style.display = 'none';
-      if (window.navigator.onLine) {
-        form.querySelector('.js-disconnect').style.display = 'block';
-      }
-      const activate = () => {
-        form.querySelector('.js-disconnect').style.display = 'block';
-        form.generate.disabled = true;
-        form.address.disabled = true;
-        form.address.value = '';
-        form.generate.classList.add('muted');
-      };
-      const deactivate = () => {
-        form.querySelector('.js-disconnect').style.display = 'none';
-        form.generate.disabled = false;
-        form.address.disabled = false;
-        form.generate.classList.remove('muted');
-      };
-      window.addEventListener('online', activate);
-      window.addEventListener('offline', deactivate);
-      if (!window.navigator.onLine) deactivate();
-      form.addEventListener('submit', evt => {
-        evt.preventDefault();
-        const isLocal = document.location.host.includes('localhost');
-        const hasSameOrigin = form.action.includes(document.location.origin);
-        if (isLocal && hasSameOrigin) {
-          evt.target.submit();
-        } else {
-          form.querySelector('.js-usesameorigin').style.display = 'block';
-          deactivate();
-        }
-      })
-    })(window, document);
-  </script>
-=======
->>>>>>> upstream/master
 {{< /hackcss-card >}}
 
 Enable debugging to output detailed socket messages from the proxy to the browser console by adding the following to your site config:
@@ -541,12 +499,13 @@ English translations available for toolbar display:
 - Greek (el)
 - German (de)
 - Polish (pl)
+- Italian (it)
 
 Enable them with module `translations` whitelist:
 
 ```toml
 [params.modules.toxic_swamp]
-  translations = ["id", "ru", "el", "de"] # English translations enabled
+  translations = ["id", "ru", "el", "de", "pl", "it"] # English translations enabled
 ```
 
 Use `languageCode` site config to control which is displayed:
@@ -555,8 +514,10 @@ Use `languageCode` site config to control which is displayed:
 languageCode = "en-US" # English (United States) or English by default
 languageCode = "id-ID" # Indonesian (Indonesia) or Indonesian, if available
 languageCode = "ru-RU" # Russian (Russia) or Russian, if available
+languageCode = "el-GR" # Greek (Greece) or Greek, if available
 languageCode = "de-DE" # German (Germany) or German, if available
 languageCode = "pl-PL" # Polish (Poland) or Polish, if available
+languageCode = "it-IT" # Italian (Italy) or Italian, if available
 ```
 
 {{< hackcss-alert type="info" >}}
@@ -570,20 +531,4 @@ mkdir -p layouts/partials/modules/toxic-swamp/ && \
 cp themes/toxic-swamp/layouts/partials/modules/toxic-swamp/inline.jsonld.html $_
 ```
 
-<<<<<<< HEAD
-Whitelist available `translations` for module in site config using override:
-
-```toml
-[params.modules.toxic_swamp]
-  translations = ["id", "ru"] # Override available English translations
-```
-
-Remove any customizations to return to module defaults.
-
-</details>
-
-[^1]: Estimate assumes 50%  {{< external href="https://coinhive.com/info/faq#rev-share" text="non-negotiable" />}} Coinhive mining fee compared with 0% for {{< external href="https://moneroocean.stream/?dark#/help/faq" text="MoneroOcean" />}} and excludes upgrade incentives, hashrate variance, pool and proxy uptime, withdrawal fees and other optimizations.
-
-=======
 Remove config and customizations to return to module defaults.
->>>>>>> upstream/master
